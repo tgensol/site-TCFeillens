@@ -68,7 +68,7 @@ const NavbarSection = () => {
                                     <NavDropdown.Item href="/coursSante">Tennis Santé</NavDropdown.Item>
                                     <NavDropdown.Item href="/coursStages">Stages</NavDropdown.Item>
                                 </NavDropdown>
-                                <NavDropdown
+                                {/* <NavDropdown
                                     title="Nos Animations"
                                     id={`offcanvasNavbarDropdown-expand`}
                                     menuVariant={"dark"}
@@ -80,8 +80,13 @@ const NavbarSection = () => {
                                     <NavDropdown.Item href="/animationVenteFromage">Vente de Fromage</NavDropdown.Item>
                                     <NavDropdown.Item href="/animationFeteJeunes">La fête de l'école de tennis</NavDropdown.Item>
                                     <NavDropdown.Item href="/animationFeteAdultes">Soirée du Club</NavDropdown.Item>
-                                    <NavDropdown.Item href="/animation">Les 40 ans du Club</NavDropdown.Item>
-                                </NavDropdown>
+                                </NavDropdown> */}
+                                <Nav.Link
+                                    href="/animations"
+                                    className="bg-primary bg-gradient text-light px-2 text-center"
+                                    >
+                                        Animations
+                                </Nav.Link>
                                 <NavDropdown
                                     title="Réservations"
                                     id={`offcanvasNavbarDropdown-expand`}

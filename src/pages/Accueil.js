@@ -2,19 +2,42 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-bootstrap/Carousel'
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 import imgActu from '../assets/img/imgActu';
+import imgAnim from '../assets/img/imgAnim';
+import { IconContext } from 'react-icons';
+import { FaChevronRight } from 'react-icons/fa';
+import saveDate from '../assets/img/imgHeader/save-date-red.png';
 
 const Accueil = () => {
 
   return (
-    <div >
+    <div className="mc-fond-ecran">
         <Container fluid>
             <Row>
-                <Col xs={2}className="p-4 bg-info border-end"></Col>
-                <Col xs={8} className="p-2 bg-info">
-                    <h4>Actualités</h4>
-                    <Carousel fade className='bg-transparent text-light p-1'>
+                <Col xs={3}className="p-2 border-end">
+                    <h4 className='text-light bg-dark px-2'>Programme à venir</h4>
+                    <Card className="rounded-0">
+                        <Card.Img className="rounded-0" variant="top" src={imgAnim[0]} />
+                        <Card.Img className="position-absolute ms-2 mt-2 w-25 bg-light" variant="top" src={saveDate} />
+                        <Card.Body className="bg-primary text-light">
+                            <Card.Title>Samedi 11 mars</Card.Title>
+                            <Card.Text>
+                                Tournoi de badminton de la Saint Patrick ouvert à tous.<br/>Venez nombreux ...
+                            </Card.Text>
+                            <Button role="button" variant="light" href="/animations/badminton" className="mt-2"><span className="pe-2">Accéder</span>
+                                <IconContext.Provider value={{ size: "1em" }}>
+                                    <FaChevronRight/>
+                                </IconContext.Provider>
+                            </Button>
+                        </Card.Body>
+                        </Card>
+                </Col>
+                <Col xs={6} className="p-2">
+                    <h4 className='text-light bg-dark px-2'>Actualités</h4>
+                    <Carousel fade className='text-light p-1'>
                         <Carousel.Item>
                             <img
                                 className="d-block w-100 border border-2"
@@ -69,7 +92,7 @@ const Accueil = () => {
                         </Carousel.Item>
                     </Carousel>
                 </Col>
-                <Col xs={2}className="p-4 bg-info border-start"></Col>
+                <Col xs={3}className="p-4 border-start"></Col>
             </Row>
         </Container>
     </div>

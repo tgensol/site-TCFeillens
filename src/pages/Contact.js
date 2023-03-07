@@ -5,11 +5,11 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FaCheck, FaChevronRight } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
-import { InputGroup } from 'react-bootstrap';
+import InputGroup from 'react-bootstrap/InputGroup';
 import Toast from 'react-bootstrap/Toast';
 import ToastContainer from 'react-bootstrap/ToastContainer';
+import { FaCheck, FaChevronRight } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 export const ContactUs = () => {
   console.log("Hello ContactUs!");
@@ -55,9 +55,9 @@ export const ContactUs = () => {
           <div>
             <h5>Bonjour,</h5>
             <p>
-            Si vous avez une question à adresser au bureau du TCF, n'hésitez pas à compléter le formulaire ci-dessous.
+            Pour toute demande d'informations ou nous adresser vos suggestions au bureau du TCF, n'hésitez pas à compléter le formulaire ci-dessous.
             <br/>
-            Nous nous ferons un devoir de vous répondre dans les plus brefs délais.
+            Nous nous ferons un plaisir de vous répondre dans les plus brefs délais.
             <br/>
             </p>
             <p>

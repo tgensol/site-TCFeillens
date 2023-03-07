@@ -10,14 +10,27 @@
     background-size: cover;
 }
 
+#tcf-email,
 #nav-dropdown {
     color: gray;
     padding-top: 0;
     padding-bottom: 0;
+    font-size: small;
 }
 
 #tcf-email:hover,
 #nav-dropdown:hover {
     text-decoration-line: underline;
     font-weight: 600;
+}
+
+.dropdown-item {
+    font-size: small;
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
+
+.mc-fond-ecran {
+    background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
+    background-size: cover;
 }
