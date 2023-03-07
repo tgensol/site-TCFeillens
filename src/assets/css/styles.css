@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+.mc-rampart {
+    font-family: "Rampart One", cursive;
+    font-size: 4vw;
+}
+
+.mc-banner {
+    background: url('../img/imgHeader/Tennis-banner_640x212.png') center center fixed no-repeat;
+    background-size: cover;
+}
+
+#nav-dropdown {
+    color: gray;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#tcf-email:hover,
+#nav-dropdown:hover {
+    text-decoration-line: underline;
+    font-weight: 600;
+}
