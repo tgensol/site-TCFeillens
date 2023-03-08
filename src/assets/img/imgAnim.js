@@ -1,10 +1,21 @@
-import badminton from "./imgAnimations/badminton_1920.jpg";
-import pickleball from "./imgAnimations/pickleball_1920.jpg";
-import programme from "./imgAnimations/programme.jpg";
-import venteFromageVin from "./imgAnimations/venteFromageVin.jpg";
-import soireeClub from "./imgAnimations/soireeClub.png";
-import ecoleTennis from "./imgAnimations/ecoleTennis.jpg";
+import badminton from "./imgAnimations/01_badminton_1920.jpg";
+import venteFromageVin from "./imgAnimations/02_venteFromageVin.jpg";
+import championnats from "./imgAnimations/03_tennis-court_1920.jpg";
+import tournoiInterne from "./imgAnimations/04_tennis-raquettes_1920.jpg";
+import programme from "./imgAnimations/05_programme.jpg";
+import pickleball from "./imgAnimations/06_pickleball_1920.jpg";
+import ecoleTennis from "./imgAnimations/07_ecoleTennis.jpg";
+import soireeClub from "./imgAnimations/08_soireeClub.png";
 
-const imgAnim = [badminton, pickleball, programme, venteFromageVin, soireeClub, ecoleTennis];
+const imgAnim = [
+  badminton,
+  venteFromageVin,
+  championnats,
+  tournoiInterne,
+  programme,
+  pickleball,
+  ecoleTennis,
+  soireeClub,
+];
 
 export default imgAnim;

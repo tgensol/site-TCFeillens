@@ -6,8 +6,18 @@
 }
 
 .mc-banner {
-    background: url('../img/imgHeader/Tennis-banner_640x212.png') center center fixed no-repeat;
+    background: url('../img/imgHeader/tennis-terre-battue_1920.jpg') center center fixed no-repeat;
     background-size: cover;
+}
+
+.footer {
+    height: 200px;
+    background-color: rgba(135, 209, 249, 0.2);
+}
+
+.imgHeader {
+    margin-right: 10px;
+    height: 100px;
 }
 
 #tcf-email,
@@ -31,6 +41,7 @@
 }
 
 .mc-fond-ecran {
-    background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
-    background-size: cover;
+    /* background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
+    background-size: cover; */
+    background-color: rgba(135, 209, 249, 0.3);
 }

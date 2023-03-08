@@ -9,10 +9,10 @@ const Layout = () => {
 
   return (
     <div className="layout">
-      <Header/>
-      <NavbarSection/>
-      <Outlet/>
-      <Footer/>
+      <Header />
+      <NavbarSection />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

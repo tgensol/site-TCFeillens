@@ -1,57 +1,44 @@
-import React from 'react';
-import { Container, Row, Col, Table } from 'react-bootstrap';
-
+import React from "react";
+import { Container, Row, Col, Table } from "react-bootstrap";
+import tableAnimations from "../../_params/tableAnimations";
 
 const programme = () => {
-
   return (
-    <div>
-        <Container>
-            <Row>
-                <Col>
-                    <h2 className="my-3 bg-success text-center text-light py-2">Programme des avtivités - 2023</h2>
-                </Col>
-            </Row>
+    <div className="mc-fond-ecran">
+      <Container>
+        <Row>
+          <Col>
+            <h2 className="my-3 bg-success text-center text-light py-2">
+              Programme des activités - 2023
+            </h2>
+          </Col>
+        </Row>
 
-        <Table responsive striped bordered hover>
-            <thead>
-                <tr className='bg-danger text-light'>
-                <th>Animations</th>
-                <th>Date</th>
-                <th>Lieu</th>
-                </tr>
-            </thead>
+        <Table responsive bordered hover>
+          <caption>
+            Liste des activités - Si vous avez de nouvelles idées contactez-nous
+          </caption>
+          <thead>
+            <tr className="bg-danger text-light">
+              <th>Animations</th>
+              <th>Date</th>
+              <th>Lieu</th>
+            </tr>
+          </thead>
+
+          {tableAnimations.map((activite) => (
             <tbody>
-                <tr>
-                <td>Assemblée Générale</td>
-                <td>15/10/2022</td>
-                <td>Clubhouse de 19h à 20h</td>
-                </tr>
-                <tr>
-                <td>Pickleball</td>
-                <td>19/11/2022</td>
-                <td>Courts couverts</td>
-                </tr>
-                <tr>
-                <td>Repas adultes</td>
-                <td>09/12/2022</td>
-                <td>Pizzeria au feu de bois</td>
-                </tr>
-                <tr>
-                <td>Vente de Fromage du Jura / Vin</td>
-                <td>17/12/2022</td>
-                <td>Maison des associations</td>
-                </tr>
-                <tr>
-                <td>Doubles de Noël</td>
-                <td>19 au 30/12/2022</td>
-                <td>Courts couverts</td>
-                </tr>
+              <tr>
+                <td>{activite.animation}</td>
+                <td>{activite.date}</td>
+                <td>{activite.lieu}</td>
+              </tr>
             </tbody>
+          ))}
         </Table>
-        </Container>
+      </Container>
     </div>
-  )
+  );
 };
 
 export default programme;
