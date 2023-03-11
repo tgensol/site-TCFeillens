@@ -12,8 +12,8 @@ const Footer = () => {
     <div className="footer">
       <Container fluid className="border-top">
         <Row>
-          <Col xs={6} md={4}>
-            <div className="ps-2 w-75">
+          <Col xs={12} md={6}>
+            <div className="ps-2">
               <OverlayTrigger
                 placement={"bottom"}
                 delay={{ show: 100, hide: 200 }}
@@ -54,16 +54,13 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col xs={6} md={4} className="ps-5">
-            <p className="fw-bold text-muted w-75 mx-auto pt-4">Liens</p>
-            <Nav
-              defaultActiveKey="/accueil"
-              className="flex-column w-75 mx-auto"
-            >
+          <Col xs={12} md={6} className="ps-2">
+            <p className="fw-bold text-muted ps-3 my-3">Liens du site</p>
+            <Nav defaultActiveKey="/accueil" className="">
               <Nav.Link
                 href="/accueil"
                 id="nav-dropdown"
-                className="text-muted py-0"
+                className="text-muted py-0 w-25"
               >
                 Accueil
               </Nav.Link>
@@ -73,6 +70,7 @@ const Footer = () => {
                 id="nav-dropdown"
                 menuVariant={"dark"}
                 align="end"
+                className=" w-25"
               >
                 <NavDropdown.Item href="/contact">
                   Notre histoire
@@ -95,6 +93,7 @@ const Footer = () => {
                 id="nav-dropdown"
                 menuVariant={"dark"}
                 align="end"
+                className=" w-25"
               >
                 <NavDropdown.Item href="/compJeunes">Jeunes</NavDropdown.Item>
                 <NavDropdown.Item href="/compAdultes">Adultes</NavDropdown.Item>
@@ -114,6 +113,7 @@ const Footer = () => {
                 id="nav-dropdown"
                 menuVariant={"dark"}
                 align="end"
+                className=" w-25"
               >
                 <NavDropdown.Item href="/coursEquipe">
                   Equipe Pédagogique
@@ -133,7 +133,7 @@ const Footer = () => {
               <Nav.Link
                 href="/animations"
                 id="nav-dropdown"
-                className="text-muted py-0"
+                className="text-muted py-0 w-25"
               >
                 Animations
               </Nav.Link>
@@ -143,6 +143,7 @@ const Footer = () => {
                 id="nav-dropdown"
                 menuVariant={"dark"}
                 align="end"
+                className=" w-25"
               >
                 <NavDropdown.Item href="/resaCouverts">
                   Courts Couverts
@@ -157,6 +158,7 @@ const Footer = () => {
                 id="nav-dropdown"
                 menuVariant={"dark"}
                 align="end"
+                className=" w-25"
               >
                 <NavDropdown.Item href="/event30Ans">
                   Le Club Fête Ses 30 ans
@@ -166,13 +168,13 @@ const Footer = () => {
                 </NavDropdown.Item>
               </NavDropdown>
             </Nav>
-          </Col>
-          <Col xs={6} md={4} className="text-center">
-            <p className="fw-bold text-muted pt-4">Contactez-nous</p>
-            <a className="text-muted text-decoration-none" href="/contact">
+            <p className="fw-bold text-muted ps-3 pt-4">Contactez-nous</p>
+            <a className="text-muted text-decoration-none ps-3" href="/contact">
               <span id="tcf-email">tcfeillens@gmail.com</span>
             </a>
           </Col>
+          {/* <Col xs={6} md={4} className="text-center">
+          </Col> */}
         </Row>
         <Row>
           <Col className="text-center py-2 bg-secondary text-light">

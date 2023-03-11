@@ -1,5 +1,6 @@
 const tablePgmAVenir = [
   {
+    image: "src/assets/img/imgAnimations/01_badminton_1920.jpg",
     date: "2023-03-11",
     dateText: "Samedi 11 mars",
     animation: "Tournoi de Bad de la St Patrick",
@@ -11,7 +12,7 @@ const tablePgmAVenir = [
     dateText: "samedi 1 avril",
     animation: "Vente de Fromages / Vins",
     texte: "Commandes à passer avant le 11 mars ...",
-    couleur: "bg-warning text-dark",
+    couleur: "bg-warning text-light",
   },
   {
     date: "2023-04-30",

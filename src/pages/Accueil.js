@@ -6,12 +6,14 @@ import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
-import imgActu from "../assets/img/imgActu";
+import imgNews from "../assets/img/imgNews";
 import imgAnim from "../assets/img/imgAnim";
+import imgPartners from "../assets/img/imgPartners";
 import { IconContext } from "react-icons";
 import { FaChevronRight } from "react-icons/fa";
 import saveDate from "../assets/img/imgHeader/save-date-red.png";
 import tablePgmAVenir from "../_params/tablePgmAVenir";
+import "../assets/css/styles.css";
 
 const Accueil = () => {
   let gap = undefined;
@@ -19,16 +21,17 @@ const Accueil = () => {
 
   const days = tablePgmAVenir.map((pgm) => {
     gap = today - Date.parse(pgm.date);
-    return Math.floor(gap / (24 * 60 * 60 * 1000)); // calcul du nb de jours (floor => donne l'entier avant la virgule).
+    // calcul du nb de jours (floor => donne l'entier avant la virgule).
+    return Math.floor(gap / (24 * 60 * 60 * 1000));
   });
 
   return (
     <div className="mc-fond-ecran">
       <Container fluid>
+        <h3 className="pt-3 ps-4">Programmes à venir</h3>
         <Row>
-          <h3 className="pt-3">Programmes à venir</h3>
           {tablePgmAVenir.map((pgm, index) => (
-            <Col xs={5} md={3} className="p-2 border-end">
+            <Col xs={5} lg={3} className="p-4 border-end">
               <Card className="mb-2" key={index}>
                 <Card.Img variant="top" src={imgAnim[index]} />
                 <Card.Img
@@ -49,11 +52,11 @@ const Accueil = () => {
                   <Card.Text className="lh-1">{pgm.texte}</Card.Text>
                   <Button
                     role="button"
-                    variant="light"
+                    variant="muted"
                     href="/animations/badminton"
                     className="shadow border border-2"
                   >
-                    <span className="pe-2">Accéder</span>
+                    <span className="pe-2">Voir</span>
                     <IconContext.Provider value={{ size: "1em" }}>
                       <FaChevronRight />
                     </IconContext.Provider>
@@ -63,14 +66,14 @@ const Accueil = () => {
             </Col>
           ))}
         </Row>
+        <h3 className="pt-3 ps-4">Actualités</h3>
         <Row>
-          <Col xs={6} className="p-2">
-            <h4 className="text-light bg-secondary px-2">Actualités</h4>
-            <Carousel fade className="text-light p-1">
+          <Col xs={6} className="p-4">
+            <Carousel fade className="text-light">
               <Carousel.Item>
                 <img
                   className="d-block w-100 border border-2"
-                  src={imgActu[0]}
+                  src={imgNews[0]}
                   alt="First slide"
                 />
                 <div className="border p-2 bg-secondary border-top-0 border-2">
@@ -84,7 +87,7 @@ const Accueil = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100 border border-2"
-                  src={imgActu[1]}
+                  src={imgNews[1]}
                   alt="Second slide"
                 />
                 <div className="border p-2 bg-dark border-top-0 border-2">
@@ -98,7 +101,7 @@ const Accueil = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100 border border-2"
-                  src={imgActu[2]}
+                  src={imgNews[2]}
                   alt="Third slide"
                 />
                 <div className="border p-2 bg-dark border-top-0 border-2">
@@ -113,7 +116,7 @@ const Accueil = () => {
               <Carousel.Item>
                 <img
                   className="d-block w-100 border border-2"
-                  src={imgActu[3]}
+                  src={imgNews[3]}
                   alt="Balle mouillée noire et blanc"
                 />
                 <div className="border p-2 bg-dark border-top-0 border-2">
@@ -127,6 +130,36 @@ const Accueil = () => {
               </Carousel.Item>
             </Carousel>
           </Col>
+        </Row>
+        <h3 className="pt-3 ps-4">Nos partenaires</h3>
+        <Row>
+          {/* <Carousel> */}
+          {/* <Carousel.Item key={img} className="d-inline w-25"> */}
+          <div className="defil-continu">
+            <div className="wrapper">
+              <div className="logo-partners">
+                {imgPartners.map((image, index) => (
+                  <div key={index}>
+                    <img className="mc-img" src={image} alt="" />
+                  </div>
+                ))}
+              </div>
+              <div className="logo-partners">
+                {imgPartners.map((image, index) => (
+                  <div key={index}>
+                    <img className="mc-img" src={image} alt="" />
+                  </div>
+                ))}
+              </div>
+              <div className="logo-partners">
+                {imgPartners.map((image, index) => (
+                  <div key={index}>
+                    <img className="mc-img" src={image} alt="" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </Row>
       </Container>
     </div>

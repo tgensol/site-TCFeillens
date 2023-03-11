@@ -27,7 +27,7 @@ const Animations = () => {
                   href="/programme"
                   className="mt-2"
                 >
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
@@ -45,7 +45,7 @@ const Animations = () => {
                   vins spécialement pour les fêtes ...
                 </Card.Text>
                 <Button variant="success" href="/vente" className="mt-2">
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
@@ -63,7 +63,7 @@ const Animations = () => {
                   tennis ...
                 </Card.Text>
                 <Button variant="info" href="/feteecole" className="mt-2">
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
@@ -80,7 +80,7 @@ const Animations = () => {
                   Soirée d'été entre amis ...
                 </Card.Text>
                 <Button variant="secondary" href="/soireeclub" className="mt-2">
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
@@ -100,7 +100,7 @@ const Animations = () => {
                   href="/badminton"
                   className="mt-2"
                 >
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
@@ -115,7 +115,7 @@ const Animations = () => {
                 <Card.Title>Pickleball</Card.Title>
                 <Card.Text>Tournois de novembre et de juillet.</Card.Text>
                 <Button variant="danger" href="/pickleball" className="mt-2">
-                  <span className="pe-2">Accéder</span>
+                  <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
                   </IconContext.Provider>
