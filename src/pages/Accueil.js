@@ -16,19 +16,25 @@ import tablePgmAVenir from "../_params/tablePgmAVenir";
 import "../assets/css/styles.css";
 
 const Accueil = () => {
-  let gap = undefined;
-  let today = Date.now();
-
   const days = tablePgmAVenir.map((pgm) => {
-    gap = today - Date.parse(pgm.date);
+    const gap = Date.now() - Date.parse(pgm.date);
     // calcul du nb de jours (floor => donne l'entier avant la virgule).
     return Math.floor(gap / (24 * 60 * 60 * 1000));
   });
 
+  const listImgPartners = imgPartners.map((image) => (
+    <div key={Math.random()}>
+      <img className="mc-img" src={image} alt="" />
+    </div>
+  ));
+  console.log("listImgPartners: ", listImgPartners);
+
   return (
     <div className="mc-fond-ecran">
       <Container fluid>
-        <h3 className="pt-3 ps-4">Programmes à venir</h3>
+        <h3 className="pt-3 ps-4 mc-rampart text-primary">
+          Programmes à venir
+        </h3>
         <Row>
           {tablePgmAVenir.map((pgm, index) => (
             <Col xs={5} lg={3} className="p-4 border-end">
@@ -66,7 +72,7 @@ const Accueil = () => {
             </Col>
           ))}
         </Row>
-        <h3 className="pt-3 ps-4">Actualités</h3>
+        <h3 className="pt-3 ps-4 mc-rampart text-primary">Actualités</h3>
         <Row>
           <Col xs={6} className="p-4">
             <Carousel fade className="text-light">
@@ -131,37 +137,22 @@ const Accueil = () => {
             </Carousel>
           </Col>
         </Row>
-        <h3 className="pt-3 ps-4">Nos partenaires</h3>
-        <Row>
-          {/* <Carousel> */}
-          {/* <Carousel.Item key={img} className="d-inline w-25"> */}
-          <div className="defil-continu">
+        <h3 className="py-3 ps-4">
+          <span className="mc-partners mc-rampart">Nos partenaires</span>
+        </h3>
+      </Container>
+      <Container fluid className="pt-3 pb-5">
+        <Row className="mc-neon">
+          <div className="mc-carousel-infinite">
             <div className="wrapper">
-              <div className="logo-partners">
-                {imgPartners.map((image, index) => (
-                  <div key={index}>
-                    <img className="mc-img" src={image} alt="" />
-                  </div>
-                ))}
-              </div>
-              <div className="logo-partners">
-                {imgPartners.map((image, index) => (
-                  <div key={index}>
-                    <img className="mc-img" src={image} alt="" />
-                  </div>
-                ))}
-              </div>
-              <div className="logo-partners">
-                {imgPartners.map((image, index) => (
-                  <div key={index}>
-                    <img className="mc-img" src={image} alt="" />
-                  </div>
-                ))}
-              </div>
+              <div className="mc-partners-logo">{listImgPartners}</div>
+              <div className="mc-partners-logo">{listImgPartners}</div>
             </div>
           </div>
         </Row>
       </Container>
+
+      <Container fluid></Container>
     </div>
   );
 };

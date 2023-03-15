@@ -10,7 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Footer = () => {
   return (
     <div className="footer">
-      <Container fluid className="border-top">
+      <Container fluid className="pt-5 border-top">
         <Row>
           <Col xs={12} md={6}>
             <div className="ps-2">
