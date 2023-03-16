@@ -2,11 +2,9 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
-import imgNews from "../assets/img/imgNews";
 import imgAnim from "../assets/img/imgAnim";
 import imgPartners from "../assets/img/imgPartners";
 import { IconContext } from "react-icons";
@@ -14,6 +12,8 @@ import { FaChevronRight } from "react-icons/fa";
 import saveDate from "../assets/img/imgHeader/save-date-red.png";
 import tablePgmAVenir from "../_params/tablePgmAVenir";
 import "../assets/css/styles.css";
+import Weather from "../components/Weather";
+import News from "../components/News";
 
 const Accueil = () => {
   const days = tablePgmAVenir.map((pgm) => {
@@ -27,7 +27,6 @@ const Accueil = () => {
       <img className="mc-img" src={image} alt="" />
     </div>
   ));
-  console.log("listImgPartners: ", listImgPartners);
 
   return (
     <div className="mc-fond-ecran">
@@ -74,67 +73,11 @@ const Accueil = () => {
         </Row>
         <h3 className="pt-3 ps-4 mc-rampart text-primary">Actualités</h3>
         <Row>
-          <Col xs={6} className="p-4">
-            <Carousel fade className="text-light">
-              <Carousel.Item>
-                <img
-                  className="d-block w-100 border border-2"
-                  src={imgNews[0]}
-                  alt="First slide"
-                />
-                <div className="border p-2 bg-secondary border-top-0 border-2">
-                  <h5>Balle mouillée en couleur</h5>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p>
-                  <br />
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100 border border-2"
-                  src={imgNews[1]}
-                  alt="Second slide"
-                />
-                <div className="border p-2 bg-dark border-top-0 border-2">
-                  <h5>Court Central US Open</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p>
-                  <br />
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100 border border-2"
-                  src={imgNews[2]}
-                  alt="Third slide"
-                />
-                <div className="border p-2 bg-dark border-top-0 border-2">
-                  <h5>Match de tennis féminin</h5>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
-                  <br />
-                </div>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  className="d-block w-100 border border-2"
-                  src={imgNews[3]}
-                  alt="Balle mouillée noire et blanc"
-                />
-                <div className="border p-2 bg-dark border-top-0 border-2">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p>
-                  <br />
-                </div>
-              </Carousel.Item>
-            </Carousel>
+          <Col xs={8} lg={6} className="p-4">
+            <News />
+          </Col>
+          <Col xs={8} lg={6} className="p-4">
+            <Weather />
           </Col>
         </Row>
         <h3 className="py-3 ps-4">
@@ -151,8 +94,6 @@ const Accueil = () => {
           </div>
         </Row>
       </Container>
-
-      <Container fluid></Container>
     </div>
   );
 };

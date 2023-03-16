@@ -8,6 +8,7 @@
 .mc-rampart {
     font-family: "Rampart One", cursive;
     font-size: 4vw;
+    letter-spacing: 5px;
 }
 
 .mc-banner {
@@ -50,6 +51,8 @@
     background-color: rgba(135, 209, 249, 0.3);
 }
 
+/* ========================== PARTENERS ============================= */
+
 .mc-img {
     height: 10rem;
     padding: 5px;
@@ -59,19 +62,6 @@
 
 .mc-img:last-of-type {
     padding-left: 0;
-}
-
-.mc-neon {
-    justify-content: center;
-    background-color: white;
-    width: 92vw;
-    margin: auto!important;
-    border: 4px solid #fff;
-    border-radius: 5px;
-    box-shadow:
-    0 0 8px #fff,
-    0 0 16px rgb(13,110,253),
-    0 0 32px rgb(13,110,253);
 }
 
 .mc-carousel-infinite {
@@ -103,24 +93,21 @@
     }
   }
     
-/* ======================================================= */
 
 .mc-partners {
-    /* font: 700 4em/1 "Oswald", sans-serif; */
-    letter-spacing: 0;
-    padding: 0.25em 0 0.325em;
+    padding: 0.25rem 0 0.325rem;
     margin: 0 auto;
 
     /* Clip Background Image */
 
-    background: url(../img/imgPartners/animated-text-fill-light-blue.png) repeat-y;
+    background: url('../img/imgPartners/animated-text-fill-light-blue1.png') repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
 
     /* Animate Background Image */
 
     -webkit-text-fill-color: transparent;
-    animation: aitf 80s linear infinite;
+    animation: aitf 60s linear infinite;
 }
 
 /* Animate Background Image */
@@ -133,4 +120,73 @@
       background-position: 100% 50%;
     }
   }
-  
+      
+/* ======================= WEATHER ================================ */
+
+.mc-weather {
+    background: url('../img/imgWeather/sun-clouds_1920.jpg') center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.2rem;
+    border-radius: 10px;
+}
+
+.mc-wsearch {
+    text-align: center;
+    padding: 1rem;
+    width: 95%;
+}
+
+.mc-winput {
+    width: 100%;
+    padding: 0.4rem 1.2rem;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+::placeholder {
+    color: #f8f8f8;
+}
+
+.mc-wtop {
+    width: 100%;
+    margin: 1rem auto;
+}
+
+.mc-wlocation{
+    font-size: 2rem;
+    color: #2b2b2b;
+}
+
+.mc-wtemp {
+    font-size: 3rem;
+}
+
+.mc-wdesc {
+    position: relative;
+    font-size: 1.5rem;
+    right: -92%;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+}
+
+
+.mc-wbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
