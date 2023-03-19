@@ -7,7 +7,7 @@
 
 .mc-rampart {
     font-family: "Rampart One", cursive;
-    font-size: 4vw;
+    font-size: 3vw;
     letter-spacing: 5px;
 }
 
@@ -49,12 +49,13 @@
     /* background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
     background-size: cover; */
     background-color: rgba(135, 209, 249, 0.3);
+    padding-bottom: 30px;
 }
 
-/* ========================== PARTENERS ============================= */
+/* ========================== PARTNERS ============================= */
 
 .mc-img {
-    height: 10rem;
+    height: 8rem;
     padding: 5px;
     /* object-fit: cover; */
     filter: brightness(95%);
@@ -64,24 +65,34 @@
     padding-left: 0;
 }
 
+.mc-neon {
+    margin: auto!important;
+    background-color: #fff;
+    width: 98%!important;
+    border: 4px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #fff, 0 0 16px rgb(13, 110, 253), 0 0 32px rgb(13, 110, 253);
+}
+
 .mc-carousel-infinite {
     position: relative;
     overflow: hidden;
-    height: 10rem;
+    height: 8rem;
     width: 100%!important;
-    /* margin: 1rem 0 !important; */
 }
 
-.wrapper {
+.mc-wrapper {
     position: absolute;
     display: flex;
-    left: 0;
-    width: 100%;
 }
 
 .mc-partners-logo {
     display: flex;
     animation: defilement 20s linear infinite;
+}
+
+.mc-neon:hover {
+    animation-play-state: paused;
 }
 
 @keyframes defilement {
@@ -95,17 +106,15 @@
     
 
 .mc-partners {
-    padding: 0.25rem 0 0.325rem;
+    letter-spacing: 0;
     margin: 0 auto;
 
     /* Clip Background Image */
-
-    background: url('../img/imgPartners/animated-text-fill-light-blue1.png') repeat-y;
+    background: url('../img/imgPartners/animated-text-fill-light-blue.png') no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
 
     /* Animate Background Image */
-
     -webkit-text-fill-color: transparent;
     animation: aitf 60s linear infinite;
 }
@@ -126,26 +135,26 @@
 .mc-weather {
     background: url('../img/imgWeather/sun-clouds_1920.jpg') center center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 350px;
     color: #fff;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1rem;
     border-radius: 10px;
+    border: 2px solid rgb(45, 45, 142);
+    box-shadow: inset 0 0 30px rgb(45, 45, 142);
 }
 
 .mc-wsearch {
     text-align: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     width: 95%;
 }
 
 .mc-winput {
     width: 100%;
-    padding: 0.4rem 1.2rem;
-    font-size: 1.2rem;
+    padding: 0.4rem 1rem;
+    font-size: 1rem;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.4);
@@ -156,8 +165,11 @@
 }
 
 .mc-wtop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
 }
 
 .mc-wlocation{
@@ -167,16 +179,13 @@
 
 .mc-wtemp {
     font-size: 3rem;
+    color:black;
 }
 
 .mc-wdesc {
-    position: relative;
     font-size: 1.5rem;
-    right: -92%;
-    transform-origin: 0 0;
     transform: rotate(270deg);
 }
-
 
 .mc-wbottom {
     display: flex;
@@ -184,9 +193,10 @@
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(2, 57, 141, 0.5);
     font-weight: 700;
+    font-size: 0.8rem;
 }

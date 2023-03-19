@@ -2,21 +2,21 @@ import React, { useState, useEffect } from "react";
 import tableWeather from "../_params/tableWeather";
 
 const Weather = () => {
-  const [search, setSearch] = useState("");
-  const [values, setValues] = useState("");
+  const [location, setLocation] = useState("");
+  const [data, setData] = useState("");
   const [icon, setIcon] = useState("");
   const [latitude, setLat] = useState("");
   const [longitude, setLon] = useState("");
 
-  const handleSearch = (e) => {
+  const handleSearchLocation = (e) => {
     if (e.key === "Enter") {
-      setSearch(e.target.value);
+      setLocation(e.target.value);
     }
   };
 
   useEffect(() => {
-    if (search) {
-      const URLCITY = `https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=1&appid=0398986c08632f06c0cc09de8a03bdf3`;
+    if (location) {
+      const URLCITY = `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${process.env.REACT_APP_API_KEY}`;
 
       const getDataCity = async () => {
         await fetch(URLCITY)
@@ -30,14 +30,14 @@ const Weather = () => {
           })
           .catch((error) => {
             console.log("error fetch api.openweathermap:", error);
-            setValues(false);
+            setData(false);
           });
       };
 
       getDataCity();
 
       if (latitude) {
-        const URLWEATHER = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=fr&units=metric&appid=0398986c08632f06c0cc09de8a03bdf3`;
+        const URLWEATHER = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=fr&units=metric&appid=${process.env.REACT_APP_API_KEY}`;
 
         const getDataWeather = async () => {
           await fetch(URLWEATHER)
@@ -46,9 +46,9 @@ const Weather = () => {
             })
             .then((data) => {
               if (data.cod >= 400) {
-                setValues(false);
+                setData(false);
               } else {
-                setValues(data);
+                setData(data);
                 const iconId = data.weather[0].id;
                 setIcon(tableWeather.map((item) => item.id).indexOf(iconId));
                 console.log("data: ", data);
@@ -61,7 +61,7 @@ const Weather = () => {
         getDataWeather();
       }
     }
-  }, [search, latitude, longitude, icon]);
+  }, [location, latitude, longitude, icon]);
 
   return (
     <div className="mc-weather">
@@ -69,50 +69,59 @@ const Weather = () => {
       <div className="mc-wsearch">
         <input
           className="mc-winput"
-          onKeyDown={handleSearch}
+          onKeyDown={handleSearchLocation}
           type="text"
           placeholder="ville ?"
           autoFocus
         />
       </div>
 
-      {values ? (
+      {data ? (
         <div className="mc-wcontainer">
           <div className="mc-wtop">
             <div className="mc-wlocation">
-              <p className="">{values.name}</p>
+              <p className="m-0 text-black-50 fw-bold">{data.name}</p>
             </div>
             <div className="mc-wtemp">
-              <p>{values.main.temp.toFixed(0)}&deg;C</p>
-            </div>
-            <div className="mc-wdesc">
-              <p>{"Clair"}</p>
-            </div>
-            <div className="mc-wtemp-min-max">
-              <p>
-                <small className="text-muted">min </small>
-                {values.main.temp_min.toFixed(0)}&deg;C |
-                <small className="text-muted"> max </small>
-                {values.main.temp_max.toFixed(0)}&deg;C
+              <p className="m-0 text-black-50 fw-bold">
+                {data.main.temp.toFixed(0)}&deg;C
               </p>
             </div>
           </div>
-          <div className="mc-animated-icon">
+          <div className="d-flex align-items-center justify-content-around">
+            <div className="mc-wdesc">
+              <p className="m-0">{tableWeather[icon].desc}</p>
+            </div>
+            {/* <div className="m-0"> */}
             <img
-              className="mc-icon"
+              className="w-50"
               src={tableWeather[icon].icon}
               alt="icon-weather"
             />
+            {/* </div> */}
+            <div className="mc-wtemp-min-max">
+              <p className="m-0">
+                <small className="text-light fw-bold">min </small>
+                {data.main.temp_min.toFixed(0)}&deg;C
+              </p>
+              <p className="m-0">
+                <small className="text-light fw-bold">max </small>
+                {data.main.temp_max.toFixed(0)}&deg;C
+              </p>
+            </div>
           </div>
           <div className="mc-wbottom">
             <div className="mc-feels">
-              <p>{"Ressenti"}</p>
+              {data.main.feels_like.toFixed(0)}&deg;C
+              <p className="m-0">{"Ressenti"}</p>
             </div>
             <div className="mc-humidity">
-              <p>{"Humidité"}</p>
+              {data.main.humidity.toFixed(0)} %
+              <p className="m-0">{"Humidité"}</p>
             </div>
             <div className="mc-wind">
-              <p>{"Vent"}</p>
+              {data.wind.speed.toFixed(0)} kh
+              <p className="m-0">{"Vent"}</p>
             </div>
           </div>
         </div>
