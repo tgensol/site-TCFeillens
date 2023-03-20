@@ -16,21 +16,30 @@ const programme = () => {
 
         <Table responsive bordered hover>
           <caption>
-            Liste des activités - Si vous avez de nouvelles idées contactez-nous
+            <span className="text-primary pt-4">
+              Liste des activités - Si vous avez de nouvelles idées,
+            </span>
+            <a href="/contact" className="text-decoration-none">
+              <span className="mc-nous-contacter ps-1 fw-bold fs-5 fst-italic">
+                contactez-nous
+              </span>
+            </a>
           </caption>
           <thead>
             <tr className="bg-danger text-light">
               <th>Animations</th>
-              <th>Date</th>
+              <th>Date début</th>
+              <th>Date fin</th>
               <th>Lieu</th>
             </tr>
           </thead>
 
           {tableAnimations.map((activite) => (
-            <tbody>
+            <tbody key={activite.id}>
               <tr>
                 <td>{activite.animation}</td>
-                <td>{activite.date}</td>
+                <td>{activite.dateDebut}</td>
+                <td>{activite.dateFin}</td>
                 <td>{activite.lieu}</td>
               </tr>
             </tbody>

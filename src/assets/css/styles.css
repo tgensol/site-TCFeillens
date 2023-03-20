@@ -26,7 +26,8 @@
 }
 
 #tcf-email,
-#nav-dropdown {
+#nav-dropdown,
+.mc-nous-contacter {
     color: gray;
     padding-top: 0;
     padding-bottom: 0;
@@ -34,9 +35,11 @@
 }
 
 #tcf-email:hover,
-#nav-dropdown:hover {
+#nav-dropdown:hover,
+.mc-nous-contacter:hover {
     text-decoration-line: underline;
     font-weight: 600;
+    color: blue;
 }
 
 .dropdown-item {

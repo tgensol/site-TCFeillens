@@ -2,8 +2,8 @@ import React from "react";
 import imgPartners from "../assets/img/imgPartners";
 
 export const Partners = () => {
-  const listImgPartners = imgPartners.map((image) => (
-    <div key={Math.random()}>
+  const listImgPartners = imgPartners.map((image, index) => (
+    <div key={index}>
       <img className="mc-img" src={image} alt="" />
     </div>
   ));

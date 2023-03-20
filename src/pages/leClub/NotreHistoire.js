@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 
 const NotreHistoire = () => {
   return (
-    <div>
+    <div className="mc-fond-ecran">
       <Container>
         <Row>
           <h1 className="mc-rampart">Le TCF de 1983 à nos jours</h1>

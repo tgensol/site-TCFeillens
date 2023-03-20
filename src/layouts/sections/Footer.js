@@ -11,8 +11,8 @@ const Footer = () => {
   return (
     <div className="footer">
       <Container fluid className="pt-5 border-top">
-        <Row>
-          <Col xs={12} md={6}>
+        <Row className="justify-content-between mb-5">
+          <Col xs={12} md={4}>
             <div className="ps-2">
               <OverlayTrigger
                 placement={"bottom"}
@@ -173,8 +173,6 @@ const Footer = () => {
               <span id="tcf-email">tcfeillens@gmail.com</span>
             </a>
           </Col>
-          {/* <Col xs={6} md={4} className="text-center">
-          </Col> */}
         </Row>
         <Row>
           <Col className="text-center py-2 bg-secondary text-light">

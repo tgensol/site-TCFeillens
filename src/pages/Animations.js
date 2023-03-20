@@ -19,7 +19,7 @@ const Animations = () => {
               <Card.ImgOverlay>
                 <Card.Title>Programme 2023</Card.Title>
                 <Card.Text>
-                  Découvrez toutes les animations prévues pour vous ...
+                  Découvrez toutes les animations prévues cette saison ...
                 </Card.Text>
                 <Button
                   role="button"

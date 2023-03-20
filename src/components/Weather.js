@@ -113,7 +113,10 @@ const Weather = () => {
           <div className="mc-wbottom">
             <div className="mc-feels">
               {data.main.feels_like.toFixed(0)}&deg;C
-              <p className="m-0">{"Ressenti"}</p>
+              <p className="m-0">
+                Ressenti
+                <img src="icons/thermometer-celsius.svg" alt="" />
+              </p>
             </div>
             <div className="mc-humidity">
               {data.main.humidity.toFixed(0)} %
@@ -121,7 +124,9 @@ const Weather = () => {
             </div>
             <div className="mc-wind">
               {data.wind.speed.toFixed(0)} kh
-              <p className="m-0">{"Vent"}</p>
+              <p className="m-0">
+                <img src="icons/windsock.svg" alt="" />
+              </p>
             </div>
           </div>
         </div>
