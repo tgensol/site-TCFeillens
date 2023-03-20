@@ -5,7 +5,7 @@ import tableNews from "../_params/tableNews";
 const News = () => {
   return (
     <>
-      <Carousel fade className="text-light">
+      <Carousel fade className="text-light w-100">
         {tableNews.map((news) => (
           <Carousel.Item key={news.id}>
             <img

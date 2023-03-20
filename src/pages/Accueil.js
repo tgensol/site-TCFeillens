@@ -13,9 +13,7 @@ const Accueil = () => {
     <div className="mc-fond-ecran">
       <Container fluid>
         <Row className="pt-3 ps-4">
-          <span className="mc-rampart fs-1 text-primary">
-            Programmes à venir
-          </span>
+          <span className="mc-rampart fs-1 text-primary">Ne pas manquer !</span>
         </Row>
         <Row>
           <Agenda />
@@ -24,11 +22,29 @@ const Accueil = () => {
           <span className="mc-rampart fs-1 text-primary">Actualités</span>
         </Row>
         <Row>
-          <Col xs={8} lg={6} className="p-4">
+          <Col
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 7, offset: 0 }}
+            lg={5}
+            className="p-4"
+          >
             <News />
           </Col>
-          <Col xs={8} lg={6} className="p-4">
+          <Col
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 5, offset: 0 }}
+            lg={3}
+            className="p-4 "
+          >
             <Weather />
+          </Col>
+          <Col
+            xs={{ span: 10, offset: 1 }}
+            md={{ span: 6, offset: 0 }}
+            lg={4}
+            className="p-4"
+          >
+            Réserve
           </Col>
         </Row>
         <Row className="py-3 ps-4">

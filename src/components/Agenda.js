@@ -8,11 +8,29 @@ import { FaChevronRight } from "react-icons/fa";
 import saveDate from "../assets/img/imgHeader/save-date-red.png";
 import tableAnimations from "../_params/tableAnimations";
 import { format, parseISO } from "date-fns";
+import { fr } from "date-fns/locale";
 
 const Agenda = () => {
   let counter = 0;
 
-  const cardColor = ["bg-danger", "bg-warning", "bg-success", "bg-primary"];
+  const cardColor = [
+    {
+      bgColor: "bg-danger",
+      textColor: "text-light",
+    },
+    {
+      bgColor: "bg-warning",
+      textColor: "text-dark",
+    },
+    {
+      bgColor: "bg-success",
+      textColor: "text-light",
+    },
+    {
+      bgColor: "bg-info",
+      textColor: "text-dark",
+    },
+  ];
 
   const listPgmAVenir = [];
   const listNbDays = [];
@@ -31,36 +49,49 @@ const Agenda = () => {
       }
     }
   }
-  console.log("listPgmAVenir: ", listPgmAVenir);
+
   return (
     <>
       {listPgmAVenir.map((pgm, index) => (
-        <Col xs={5} lg={3} key={pgm.id} className="p-4 border-end">
-          <Card>
+        <Col
+          xs={{ span: 10, offset: 1 }}
+          sm={{ span: 6, offset: 0 }}
+          md={6}
+          lg={3}
+          key={pgm.id}
+          className="p-4 border-end"
+        >
+          <Card style={{ width: "100%", height: "100%" }}>
             <Card.Img variant="top" src={pgm.image} />
             <Card.Img
-              className="position-absolute ms-2 mt-2 w-25 bg-light"
+              className="position-absolute ms-2 mt-2 bg-light"
+              style={{ width: "20%" }}
               variant="top"
               src={saveDate}
             />
             <Card.Body
-              className={`rounded-bottom text-light ${cardColor[index]}`}
+              className={`rounded-bottom ${cardColor[index].bgColor} ${cardColor[index].textColor}`}
             >
-              <Card.Title>
-                {format(parseISO(pgm.dateDebut), "EEEE d MMMM")}
+              <Card.Title style={{ fontSize: "1.4rem" }}>
+                {format(parseISO(pgm.dateDebut), "EEEE d MMMM", { locale: fr })}
                 <Badge bg="secondary" className="ms-2">
                   {listNbDays[index]}
                 </Badge>
               </Card.Title>
-              <Card.Text className="my-1 fw-bold text-decoration-underline">
+              <Card.Text
+                className="my-1 fw-bold text-decoration-underline"
+                style={{ fontSize: "1.2rem" }}
+              >
                 {pgm.animation}
               </Card.Text>
-              <Card.Text className="lh-1">{pgm.desc}</Card.Text>
+              <Card.Text className="lh-1" style={{ fontSize: "1rem" }}>
+                {pgm.desc}
+              </Card.Text>
               <Button
                 role="button"
                 variant="muted"
                 href="/animations/badminton"
-                className="shadow border border-2"
+                className={`shadow border border-2 ${cardColor[index].textColor}`}
               >
                 <span className="pe-2">Voir</span>
                 <IconContext.Provider value={{ size: "1rem" }}>
