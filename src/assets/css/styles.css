@@ -144,8 +144,8 @@
     flex-direction: column;
     padding: 1rem;
     border-radius: 10px;
-    border: 2px solid rgb(45, 45, 142);
-    box-shadow: inset 0 0 30px rgb(45, 45, 142);
+    border: 2px solid rgb(2, 57, 141);
+    box-shadow: inset 0 0 30px rgb(2, 57, 141);
 }
 
 .mc-wsearch {
@@ -154,14 +154,14 @@
     width: 95%;
 }
 
-.mc-winput {
+/* .mc-winput {
     width: 100%;
     padding: 0 1rem;
     font-size: 1.5rem;
     border-radius: 25px;
     border: 1px solid rgba(255, 255, 255, 0.8);
     background: rgba(255, 255, 255, 0.4);
-}
+} */
 
 ::placeholder {
     color: #f8f8f8;
@@ -174,22 +174,28 @@
     width: 100%;
     margin: 0.5rem auto;
     font-size: 1.6rem;
+    border-radius: 25px;
+    border: 2px solid rgb(255, 255, 0);
+    background:  rgba(2, 57, 141, 0.5);
+    box-shadow: 0 0 10px rgb(2, 57, 141), 0 0 20px rgb(2, 57, 141), 0 0 30px rgb(2, 57, 141), inset 0 0 20px rgb(2, 57, 141);
 }
 
-.mc-wlocation{
+/* .mc-wlocation{
     font-size: 1.5rem;
     color: #2b2b2b;
-}
+} */
 
 .mc-wtemp {
     font-size: 2rem;
-    color:rgb(0, 0, 0);
 }
 
 .mc-wdesc {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 1rem;
     transform: rotate(270deg);
-    line-height: 1.3;
+    background: rgba(2, 57, 141, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
 .mc-wbottom {
@@ -202,6 +208,21 @@
     padding: 0.5rem;
     border-radius: 10px;
     background-color: rgba(2, 57, 141, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8);
     font-weight: 700;
     font-size: 0.8rem;
+}
+
+/* ======================= NOTRE HISTOIRE ================================ */
+
+.mc-img-les3Presidents {
+    box-shadow: 0 0 10px gray, inset 0 0 10px gray;
+    width: 38%;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.mc-img-declaration {
+    box-shadow: 0 0 10px gray, inset 0 0 10px gray;
+    width: 50%;
 }

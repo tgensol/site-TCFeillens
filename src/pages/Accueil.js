@@ -1,12 +1,14 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Weather from "../components/Weather";
 import News from "../components/News";
 import Partners from "../components/Partners";
+import Reserve from "../components/Reserve";
 import Agenda from "../components/Agenda";
 import "../assets/css/styles.css";
+import ImageMagnifier from "../_utils/ImageMagnifier";
+import declarationJOTCF from "../assets/img/imgHistoire/declarationJOTCF.png";
 
 const Accueil = () => {
   return (
@@ -22,36 +24,18 @@ const Accueil = () => {
           <span className="mc-rampart fs-1 text-primary">Actualités</span>
         </Row>
         <Row>
-          <Col
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 7, offset: 0 }}
-            lg={5}
-            className="p-4"
-          >
-            <News />
-          </Col>
-          <Col
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 5, offset: 0 }}
-            lg={3}
-            className="p-4 "
-          >
-            <Weather />
-          </Col>
-          <Col
-            xs={{ span: 10, offset: 1 }}
-            md={{ span: 6, offset: 0 }}
-            lg={4}
-            className="p-4"
-          >
-            Réserve
-          </Col>
+          <News />
+          <Weather />
+          <Reserve />
         </Row>
         <Row className="py-3 ps-4">
           <span className="mc-partners fs-1 mc-rampart">Nos partenaires</span>
         </Row>
         <Row className="pt-3">
           <Partners />
+        </Row>
+        <Row className="m-5">
+          <ImageMagnifier width={"500px"} src={declarationJOTCF} />
         </Row>
       </Container>
     </div>
