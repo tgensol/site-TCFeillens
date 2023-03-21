@@ -4,8 +4,8 @@ const ImageMagnifier = ({
   src = "",
   width = "",
   height = "",
-  magnifierHeight = 500,
-  magnifieWidth = 500,
+  magnifierHeight = 400,
+  magnifieWidth = 400,
   zoomLevel = 4,
 }) => {
   const [[x, y], setXY] = useState([0, 0]);
@@ -17,11 +17,17 @@ const ImageMagnifier = ({
         position: "relative",
         height: height,
         width: width,
+        textAlign: "center",
       }}
     >
       <img
         src={src}
-        style={{ height: height, width: width }}
+        style={{
+          height: height,
+          width: width,
+          borderRadius: "1.5rem",
+          cursor: "zoom-in",
+        }}
         onMouseEnter={(e) => {
           // update image size and turn-on magnifier
           const elem = e.currentTarget;

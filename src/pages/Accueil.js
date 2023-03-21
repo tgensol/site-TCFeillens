@@ -7,8 +7,6 @@ import Partners from "../components/Partners";
 import Reserve from "../components/Reserve";
 import Agenda from "../components/Agenda";
 import "../assets/css/styles.css";
-import ImageMagnifier from "../_utils/ImageMagnifier";
-import declarationJOTCF from "../assets/img/imgHistoire/declarationJOTCF.png";
 
 const Accueil = () => {
   return (
@@ -33,9 +31,6 @@ const Accueil = () => {
         </Row>
         <Row className="pt-3">
           <Partners />
-        </Row>
-        <Row className="m-5">
-          <ImageMagnifier width={"500px"} src={declarationJOTCF} />
         </Row>
       </Container>
     </div>

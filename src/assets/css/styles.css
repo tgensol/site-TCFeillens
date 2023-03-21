@@ -48,11 +48,17 @@
     padding-bottom: 0!important;
 }
 
+.mc-fond-ecran1,
 .mc-fond-ecran {
     /* background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
     background-size: cover; */
     background-color: rgba(135, 209, 249, 0.3);
     padding-bottom: 30px;
+}
+
+.mc-fond-ecran1 {
+    background: url("../img/imgHeader/court-couverts-tennis.jpg") center center fixed no-repeat;
+    background-size: cover;
 }
 
 /* ========================== PARTNERS ============================= */
@@ -177,7 +183,11 @@
     border-radius: 25px;
     border: 2px solid rgb(255, 255, 0);
     background:  rgba(2, 57, 141, 0.5);
-    box-shadow: 0 0 10px rgb(2, 57, 141), 0 0 20px rgb(2, 57, 141), 0 0 30px rgb(2, 57, 141), inset 0 0 20px rgb(2, 57, 141);
+    box-shadow:
+    0 0 10px rgb(2, 57, 141),
+    0 0 20px rgb(2, 57, 141),
+    0 0 30px rgb(2, 57, 141),
+    inset 0 0 20px rgb(2, 57, 141);
 }
 
 /* .mc-wlocation{
@@ -215,11 +225,15 @@
 
 /* ======================= NOTRE HISTOIRE ================================ */
 
-.mc-img-les3Presidents {
-    box-shadow: 0 0 10px gray, inset 0 0 10px gray;
-    width: 38%;
+.mc-div-les3Presidents {
+    border: 2px solid white;
+    box-shadow: inset 0 0 30px black;
+    width: 40%;
+    border-radius: 5px;
     margin-right: 2rem;
     margin-bottom: 1rem;
+    padding: 1rem;
+    
 }
 
 .mc-img-declaration {
