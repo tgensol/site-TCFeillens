@@ -27,6 +27,8 @@ const ImageMagnifier = ({
           width: width,
           borderRadius: "1.5rem",
           cursor: "zoom-in",
+          border: "5px solid lightgray",
+          boxShadow: "inner 0 0 20px gray",
         }}
         onMouseEnter={(e) => {
           // update image size and turn-on magnifier
@@ -80,6 +82,7 @@ const ImageMagnifier = ({
           //calculate position of zoomed image.
           backgroundPositionX: `${-x * zoomLevel + magnifieWidth / 2}px`,
           backgroundPositionY: `${-y * zoomLevel + magnifierHeight / 2}px`,
+          zIndex: "1000",
         }}
       ></div>
     </div>

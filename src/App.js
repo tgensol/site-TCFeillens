@@ -7,6 +7,7 @@ import Accueil from "./pages/Accueil";
 import Contact from "./pages/Contact";
 // Le Club
 import NotreHistoire from "./pages/leClub/NotreHistoire";
+import NosInstallations from "./pages/leClub/NosInstallations";
 import LeBureau from "./pages/leClub/LeBureau";
 // Animations
 import Animations from "./pages/Animations";
@@ -23,6 +24,7 @@ const App = () => {
           <Route index element={<Accueil />} />
           <Route path="/accueil" element={<Accueil />} />
           <Route path="/histoire" element={<NotreHistoire />} />
+          <Route path="/installations" element={<NosInstallations />} />
           <Route path="/bureau" element={<LeBureau />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/animations" element={<Animations />} />

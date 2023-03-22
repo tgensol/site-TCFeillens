@@ -225,18 +225,27 @@
 
 /* ======================= NOTRE HISTOIRE ================================ */
 
-.mc-div-les3Presidents {
+.mc-les3Presidents {
     border: 2px solid white;
     box-shadow: inset 0 0 30px black;
-    width: 40%;
-    border-radius: 5px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    border-radius: 25px;
     padding: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mc-img-declaration {
     box-shadow: 0 0 10px gray, inset 0 0 10px gray;
     width: 50%;
+}
+
+.mc-1981 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 7rem;
+    color: blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
