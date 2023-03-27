@@ -15,6 +15,7 @@ import Programme from "./pages/animations/Programme";
 import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
+import LeClub from "./pages/leClub/LeClub.js";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Route element={<Layout />}>
           <Route index element={<Accueil />} />
           <Route path="/accueil" element={<Accueil />} />
+          <Route path="/leclub" element={<LeClub />} />
           <Route path="/histoire" element={<NotreHistoire />} />
           <Route path="/installations" element={<NosInstallations />} />
           <Route path="/bureau" element={<LeBureau />} />

@@ -48,7 +48,6 @@
     padding-bottom: 0!important;
 }
 
-.mc-fond-ecran1,
 .mc-fond-ecran {
     /* background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
     background-size: cover; */
@@ -57,7 +56,7 @@
 }
 
 .mc-fond-ecran1 {
-    background: url("../img/imgHeader/court-couverts-tennis.jpg") center center fixed no-repeat;
+    background: url("../img/imgHistoire/clubHouse2.jpg") center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -248,4 +247,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.mc-card {
+    background-color: rgba(255, 255, 255, 0.5)!important;
+}
+
+/* ======================= LE CLUB ================================ */
+
+.mc-menu-club {
+    display: flex;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 700;
+    height: 100%;
+    width: 30%;
+    left: -30%;
+    background: rgba(100, 150, 255, 0.8);
+    color: #fff!important;
+    animation: menu-visible 1s ease 1s forwards;
+}
+
+.mc-position-logo {
+    position: absolute;
+    width: 30%;
+}
+
+.mc-animation-logo {
+    animation: animation-logo 3s ease 0.5s forwards;
+}
+
+@keyframes animation-logo {
+100% {
+    transform: translateX(105vw) translateY(-90vh) rotate(0deg) rotate(1440deg);
+    scale: 0.4;
+}
+
+}
+@keyframes menu-visible {
+100% {
+    transform: translateX(100%);
+}
 }

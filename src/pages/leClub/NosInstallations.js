@@ -4,9 +4,10 @@ import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import clubHouse1 from "../../assets/img/imgInstallations/clubHouse1.jpg";
 import clubHouse2 from "../../assets/img/imgInstallations/clubHouse2.jpg";
-import clubVuDuCiel from "../../assets/img/imgInstallations/clubVuDuCiel.png";
+import clubVuDuCiel from "../../assets/img/imgInstallations/clubVuDuCiel.jpg";
 import courtsCouverts from "../../assets/img/imgInstallations/courtsCouverts.jpg";
 import courtsExterieurs from "../../assets/img/imgInstallations/courtsExterieurs.jpg";
+import courtsExterieurs1 from "../../assets/img/imgInstallations/courtsExterieurs1.png";
 
 const NosInstallations = () => {
   return (
@@ -16,34 +17,27 @@ const NosInstallations = () => {
           <h1 className="mc-rampart mc-1981 mb-5">Nos installations</h1>
         </Row>
         <Row>
-          <Card className="border border-5 rounded-5 p-2 my-3 bg-light">
-            <Card.Body className="mx-3">
-              <Card.Title className="display-6 fw-bold">
-                Vue du cliel
-              </Card.Title>
-              <div className="d-flex align-items-center">
-                <img width={"20%"} src={clubVuDuCiel} alt="" />
-                <div className="mx-5">Notre club vu du ciel.</div>
-              </div>
-            </Card.Body>
-          </Card>
-        </Row>
-        <Row>
-          <Card className="border border-5 rounded-5 p-2 my-3 bg-light">
+          <Card className="border border-5 rounded-5 p-2 my-3 mc-card">
             <Card.Body>
-              <Card.Title className="display-6 fw-bold">
+              <Card.Title className="display-6 fw-bold text-center mb-3">
                 Notre clubhouse
               </Card.Title>
               <div className="d-flex justify-content-evenly">
                 <img
-                  width={"45%"}
-                  className="border border-5 rounded-4"
+                  width={"30%"}
+                  className="border border-5 rounded-4 border-dark"
+                  src={clubVuDuCiel}
+                  alt=""
+                />
+                <img
+                  width={"30%"}
+                  className="border border-5 rounded-4 border-dark"
                   src={clubHouse1}
                   alt=""
                 />
                 <img
-                  width={"45%"}
-                  className="border border-5 rounded-4"
+                  width={"30%"}
+                  className="border border-5 rounded-4 border-dark"
                   src={clubHouse2}
                   alt=""
                 />
@@ -52,38 +46,46 @@ const NosInstallations = () => {
           </Card>
         </Row>
         <Row>
-          <Card className="align-items-center border border-5 rounded-5 p-2 my-3 bg-light">
+          <Card className="border border-5 rounded-5 p-2 my-3  mc-card">
             <Card.Body>
-              <Card.Title className="display-6 fw-bold">
+              <Card.Title className="display-6 fw-bold text-center mb-3">
                 Nos courts extérieurs
               </Card.Title>
-              <img
-                width={"50%"}
-                src={courtsExterieurs}
-                className="border border-5 rounded-4"
-                alt=""
-              />
+              <div className="d-flex justify-content-evenly">
+                <img
+                  width={"45%"}
+                  src={courtsExterieurs}
+                  className="border border-5 rounded-4 border-dark"
+                  alt=""
+                />
+                <img
+                  width={"45%"}
+                  src={courtsExterieurs1}
+                  className="border border-5 rounded-4 border-dark"
+                  alt=""
+                />
+              </div>
             </Card.Body>
           </Card>
         </Row>
         <Row>
-          <Card className="border border-5 rounded-5 p-2 my-3 bg-light">
+          <Card className="border border-5 rounded-5 p-2 my-3 mc-card">
             <Card.Body>
-              <Card.Title className="display-6 fw-bold">
+              <Card.Title className="display-6 fw-bold text-center mb-3">
                 Nos courts couverts
               </Card.Title>
               <div className="d-flex justify-content-evenly">
                 <img
                   width={"45%"}
                   src={courtsCouverts}
-                  className="border border-5 rounded-4"
+                  className="border border-5 rounded-4 border-dark"
                   alt=""
                 />
                 <img
                   width={"45%"}
                   src={courtsCouverts}
                   alt=""
-                  className="border border-5 rounded-4"
+                  className="border border-5 rounded-4 border-dark"
                 />
               </div>
             </Card.Body>
