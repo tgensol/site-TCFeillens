@@ -49,13 +49,11 @@
 }
 
 .mc-fond-ecran {
-    /* background: url("../img/imgHeader/clubHouse1.jpg") center center fixed no-repeat;
-    background-size: cover; */
     background-color: rgba(135, 209, 249, 0.3);
     padding-bottom: 30px;
 }
 
-.mc-fond-ecran1 {
+.mc-fond-clubhouse {
     background: url("../img/imgHistoire/clubHouse2.jpg") center center fixed no-repeat;
     background-size: cover;
 }
@@ -111,7 +109,6 @@
         transform: translate(-100%);
     }
   }
-    
 
 .mc-partners {
     letter-spacing: 0;
@@ -239,8 +236,8 @@
     width: 50%;
 }
 
-.mc-1981 {
-    background-color: rgba(255, 255, 255, 0.5);
+.mc-title {
+    background-color: rgba(255, 255, 255, 0.7);
     height: 7rem;
     color: blue;
     border-radius: 20px;
@@ -250,26 +247,82 @@
 }
 
 .mc-card {
-    background-color: rgba(255, 255, 255, 0.5)!important;
+    /* background-color: rgba(41, 41, 41, 0.5)!important; */
+    background-color: rgba(0, 43, 110, 0.5)!important;
 }
 
-/* ======================= LE CLUB ================================ */
+/* ======================= MENU LE CLUB ================================ */
 
-.mc-menu-club {
-    display: flex;
-    position: absolute;
-    font-size: 2vw;
-    font-weight: 700;
-    height: 100%;
-    width: 30%;
-    left: -30%;
-    background: rgba(100, 150, 255, 0.8);
-    color: #fff!important;
+.mc-menu {
+    /* background-color: rgba(135, 209, 249, 0.8); */
+    background: rgba(0, 43, 110, 0.5);
+    border-right: #fff solid 1px;
+    position: relative;
+    left: -25%;
     animation: menu-visible 1s ease 1s forwards;
 }
 
+@keyframes menu-visible {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.mc-menu-club {
+    padding-top: 1rem;
+    position: sticky;
+    top: 7%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4vw;
+    font-weight: 400;
+}
+
+.mc-menu-club a {
+    color: #fff;
+    font-weight: 400;
+    margin: 1rem auto;
+    padding: 1rem auto;
+}
+
+.mc-menu-club a:hover {
+    color: #fff;
+    text-shadow: 0 0 4px #fff;
+    font-weight: 600;
+    font-size: 1.3vw;
+    width: 100%;
+    background-color: rgb(103, 155, 255);
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+@media (max-width: 766px) {
+    .mc-menu-club {
+        padding: 0;
+        width: 100vw;
+        height: 2.5rem;        
+        left: -100vw;
+        margin-bottom: 1rem;
+    }
+    .mc-menu-club a {
+        padding: auto;
+        font-size: 2vw;
+        height: 100%;
+        margin: 0;
+    }
+    
+    .mc-menu-club a:hover {
+        font-size: 2.5vw;
+        width: auto;
+    }
+}
+
+
+/* ======================= ANIMATION LOGO ================================ */
+
 .mc-position-logo {
     position: absolute;
+    left: 35%;
     width: 30%;
 }
 
@@ -278,14 +331,73 @@
 }
 
 @keyframes animation-logo {
-100% {
-    transform: translateX(105vw) translateY(-90vh) rotate(0deg) rotate(1440deg);
-    scale: 0.4;
+    100% {
+        transform: translateX(110vw) translateY(-120vh) rotate(0deg) rotate(720deg);
+        scale: 0.3;
+    }
 }
 
+/* ========================== OÙ SOMMES-NOUS ? ============================= */
+
+.mc-fond-europe {
+    background: url("../img/imgHeader/europe-map_1920.jpg") center center fixed no-repeat;
+    background-size: cover;
 }
-@keyframes menu-visible {
-100% {
-    transform: translateX(100%);
+
+.mc-osn-point-visible {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 0 0.3rem;
+    border-radius: 5%;
+    position: fixed;
+    left: 40%;
+    font-weight: 600;
 }
+
+.mc-osn-point1-visible {
+    color:yellow;
+    background-color: rgba(255, 255, 134, 0.6);
+    animation: animation-point1 4s linear infinite;
+}
+.mc-osn-point2-visible {
+    color:white;
+    background-color: rgba(255, 148, 148, 0.6);
+    animation: animation-point2 3s linear infinite;
+}
+
+.mc-osn-point-invisible {
+    visibility: hidden;
+}
+
+.mc-osn-map-visible {
+    position: fixed;
+    left: 55%;
+    top: 43%;
+    width: 13%;
+    z-index: 2000;
+    animation: animation-map 2s ease forwards;
+}
+
+.mc-osn-map-invisible {
+    visibility: hidden;
+}
+
+@keyframes animation-point1 {
+    100% {
+        scale: 3;
+        transform: translateX(-3vw);
+    }
+}
+
+@keyframes animation-point2 {
+    100% {
+        scale: 3;
+        transform: translateX(3vw);
+    }
+}
+
+@keyframes animation-map {
+    100% {
+        scale: 4.5;
+    }
 }

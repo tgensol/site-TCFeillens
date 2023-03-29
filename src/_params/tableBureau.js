@@ -69,7 +69,7 @@ const tableBureau = [
     name: "Frédéric GAUVRIT",
     position: "Moniteur",
     phone: "06.06.06.06.06",
-    commission: "Formation École de tennis / Adultes, Entraînement compétition",
+    commission: "Formation Jeunes / Adultes Entraînement compétition",
     photoId: idFred,
   },
 ];

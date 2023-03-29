@@ -4,21 +4,22 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import tableBureau from "../../_params/tableBureau";
+import MenuClubSection from "../../layouts/sections/MenuClubSection";
 
 const LeBureau = () => {
   const idCardBureau = tableBureau.map((card) => {
     return (
       <Col xs={12} lg={6} key={card.id}>
-        <Card className="flex-row justify-content-between my-3 bg-light border border-success border-3">
+        <Card className="flex-row justify-content-between my-3 bg-light border border-success border-5 rounded-4">
           <Col xs={4}>
-            <Card.Img src={card.photoId} alt="..." />
+            <Card.Img src={card.photoId} alt="..." className="rounded-3" />
           </Col>
           <Col xs={7}>
-            <Card.Body>
+            <Card.Body className="">
               <Card.Title className="fs-4 mc-rampart text-primary">
                 {card.name}
               </Card.Title>
-              <Card.Title className="text-primary fs-3 fw-bold">
+              <Card.Title className="text-primary fs-4 fw-bold">
                 {card.position}
               </Card.Title>
               <Card.Text className="fs-5 fst-italic fw-bold">
@@ -33,10 +34,17 @@ const LeBureau = () => {
   });
 
   return (
-    <div className="mc-fond-ecran">
-      <Container>
-        <h1 className="fs-1 mc-rampart text-primary mb-4">Le Bureau</h1>
-        <Row>{idCardBureau}</Row>
+    <div className="mc-fond-clubhouse">
+      <Container fluid>
+        <Row>
+          <Col xs={12} md={3} className="mc-menu">
+            <MenuClubSection menuVisible={false} />
+          </Col>
+          <Col xs={12} md={9}>
+            <h1 className="mt-5 mc-rampart mc-title mb-2">Le Bureau</h1>
+            <Row>{idCardBureau}</Row>
+          </Col>
+        </Row>
       </Container>
     </div>
   );

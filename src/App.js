@@ -1,3 +1,4 @@
+// most of photos from https://pixabay.com/fr/
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./assets/css/styles.css";
@@ -16,6 +17,7 @@ import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
 import LeClub from "./pages/leClub/LeClub.js";
+import OuSommesNous from "./pages/leClub/OuSommesNous";
 
 const App = () => {
   return (
@@ -24,16 +26,21 @@ const App = () => {
         <Route element={<Layout />}>
           <Route index element={<Accueil />} />
           <Route path="/accueil" element={<Accueil />} />
+          {/* Page Le Club */}
           <Route path="/leclub" element={<LeClub />} />
           <Route path="/histoire" element={<NotreHistoire />} />
           <Route path="/installations" element={<NosInstallations />} />
+          <Route path="/ousommesnous" element={<OuSommesNous />} />
           <Route path="/bureau" element={<LeBureau />} />
+          {/* Page Contacts */}
           <Route path="/contact" element={<Contact />} />
+          {/* Page Animations */}
           <Route path="/animations" element={<Animations />} />
           <Route path="/programme" element={<Programme />} />
           <Route path="/vente" element={<Ventes />} />
           <Route path="/feteecole" element={<FeteEcole />} />
           <Route path="/soireeclub" element={<SoireeClub />} />
+          {/* Page Not Found */}
           <Route path="*" element={<h1>Page not FOUND !</h1>} />
         </Route>
       </Routes>

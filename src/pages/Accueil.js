@@ -13,7 +13,9 @@ const Accueil = () => {
     <div className="mc-fond-ecran">
       <Container fluid>
         <Row className="pt-3 ps-4">
-          <span className="mc-rampart fs-1 text-primary">Ne pas manquer !</span>
+          <span className="mc-rampart fs-1 text-primary">
+            À ne pas manquer !
+          </span>
         </Row>
         <Row>
           <Agenda />
