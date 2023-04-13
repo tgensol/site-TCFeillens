@@ -1,7 +1,6 @@
 // most of photos from https://pixabay.com/fr/
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./assets/css/styles.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./layouts/Layout";
 import Accueil from "./pages/Accueil";

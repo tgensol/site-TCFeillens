@@ -7,6 +7,16 @@ import Button from "react-bootstrap/Button";
 import { IconContext } from "react-icons";
 import { FaChevronRight } from "react-icons/fa";
 import imgAnim from "../assets/img/imgAnim";
+import { motion } from "framer-motion";
+
+const buttonVariants = {
+  hover: {
+    // scale: [1, 1.2, 1, 1.2, 1, 1.2, 1, 1.2, 1, 1.2, 1],
+    scale: 1.3,
+    textShadow: "0 0 8px rgb(255, 255, 255)",
+    transition: { duration: 0.5, repeat: Infinity },
+  },
+};
 
 const Animations = () => {
   return (
@@ -25,12 +35,14 @@ const Animations = () => {
                   role="button"
                   variant="warning"
                   href="/programme"
-                  className="mt-2"
+                  className="mt-2 border border-2 border-muted"
                 >
-                  <span className="pe-2">Voir</span>
-                  <IconContext.Provider value={{ size: "1em" }}>
-                    <FaChevronRight />
-                  </IconContext.Provider>
+                  <motion.div variants={buttonVariants} whileHover="hover">
+                    <span className="pe-2">Voir</span>
+                    <IconContext.Provider value={{ size: "1em" }}>
+                      <FaChevronRight />
+                    </IconContext.Provider>
+                  </motion.div>
                 </Button>
               </Card.ImgOverlay>
             </Card>
@@ -44,11 +56,17 @@ const Animations = () => {
                   Soutenez le club en participant à la vente de fromages et de
                   vins spécialement pour les fêtes ...
                 </Card.Text>
-                <Button variant="success" href="/vente" className="mt-2">
-                  <span className="pe-2">Voir</span>
-                  <IconContext.Provider value={{ size: "1em" }}>
-                    <FaChevronRight />
-                  </IconContext.Provider>
+                <Button
+                  variant="success"
+                  href="/vente"
+                  className="mt-2 border border-2 border-muted"
+                >
+                  <motion.div variants={buttonVariants} whileHover="hover">
+                    <span className="pe-2">Voir</span>
+                    <IconContext.Provider value={{ size: "1em" }}>
+                      <FaChevronRight />
+                    </IconContext.Provider>
+                  </motion.div>
                 </Button>
               </Card.ImgOverlay>
             </Card>
@@ -62,7 +80,11 @@ const Animations = () => {
                   En juin participez à la fête des enfants inscrits à l'cole de
                   tennis ...
                 </Card.Text>
-                <Button variant="info" href="/feteecole" className="mt-2">
+                <Button
+                  variant="info"
+                  href="/feteecole"
+                  className="mt-2 border border-2 border-muted"
+                >
                   <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
                     <FaChevronRight />
@@ -79,11 +101,17 @@ const Animations = () => {
                 <Card.Text className="bg-light">
                   Soirée d'été entre amis ...
                 </Card.Text>
-                <Button variant="secondary" href="/soireeclub" className="mt-2">
-                  <span className="pe-2">Voir</span>
-                  <IconContext.Provider value={{ size: "1em" }}>
-                    <FaChevronRight />
-                  </IconContext.Provider>
+                <Button
+                  variant="secondary"
+                  href="/soireeclub"
+                  className="mt-2 border border-2 border-muted"
+                >
+                  <motion.div variants={buttonVariants} whileHover="hover">
+                    <span className="pe-2">Voir</span>
+                    <IconContext.Provider value={{ size: "1em" }}>
+                      <FaChevronRight />
+                    </IconContext.Provider>
+                  </motion.div>
                 </Button>
               </Card.ImgOverlay>
             </Card>
@@ -98,7 +126,7 @@ const Animations = () => {
                   role="button"
                   variant="primary"
                   href="/badminton"
-                  className="mt-2"
+                  className="mt-2 border border-2 border-muted"
                 >
                   <span className="pe-2">Voir</span>
                   <IconContext.Provider value={{ size: "1em" }}>
@@ -114,11 +142,17 @@ const Animations = () => {
               <Card.ImgOverlay>
                 <Card.Title>Pickleball</Card.Title>
                 <Card.Text>Tournois de novembre et de juillet.</Card.Text>
-                <Button variant="danger" href="/pickleball" className="mt-2">
-                  <span className="pe-2">Voir</span>
-                  <IconContext.Provider value={{ size: "1em" }}>
-                    <FaChevronRight />
-                  </IconContext.Provider>
+                <Button
+                  variant="danger"
+                  href="/pickleball"
+                  className="mt-2 border border-2 border-muted"
+                >
+                  <motion.div variants={buttonVariants} whileHover="hover">
+                    <span className="pe-2">Voir</span>
+                    <IconContext.Provider value={{ size: "1em" }}>
+                      <FaChevronRight />
+                    </IconContext.Provider>
+                  </motion.div>
                 </Button>
               </Card.ImgOverlay>
             </Card>

@@ -9,6 +9,15 @@ import saveDate from "../assets/img/imgHeader/save-date-red.png";
 import tableAnimations from "../_params/tableAnimations";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
+import { motion } from "framer-motion";
+
+const buttonVariants = {
+  hover: {
+    scale: 1.2,
+    textShadow: "0 0 8px rgb(255, 255, 255)",
+    transition: { duration: 0.5, repeat: Infinity },
+  },
+};
 
 const Agenda = () => {
   let counter = 0;
@@ -91,12 +100,17 @@ const Agenda = () => {
                 role="button"
                 variant="muted"
                 href="/animations/badminton"
-                className={`shadow border border-2 ${cardColor[index].textColor}`}
               >
-                <span className="pe-2">Voir</span>
-                <IconContext.Provider value={{ size: "1rem" }}>
-                  <FaChevronRight />
-                </IconContext.Provider>
+                <motion.div
+                  variants={buttonVariants}
+                  whileHover="hover"
+                  className={`shadow border border-2 rounded px-2 ${cardColor[index].textColor}`}
+                >
+                  <span className="pe-2">Voir</span>
+                  <IconContext.Provider value={{ size: "1rem" }}>
+                    <FaChevronRight />
+                  </IconContext.Provider>
+                </motion.div>
               </Button>
             </Card.Body>
           </Card>

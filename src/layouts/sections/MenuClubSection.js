@@ -2,8 +2,6 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 
 const MenuClubSection = (menuVisible) => {
-  console.log("menuVisible: ", menuVisible);
-
   return (
     <Nav
       className={menuVisible ? "mc-menu-club mc-menu-visible" : "mc-menu-club"}

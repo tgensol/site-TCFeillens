@@ -1,7 +1,37 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }  
+
 :root {
     --red-color: #ff035b;
     --blue-color: #04d9ff;
     --green-color: green;
+    --x-pos1: Math.cos(0);
+    --x-pos2: Math.cos((45 * Math.PI) / 180);
+    --x-pos3: Math.cos((90 * Math.PI) / 180);
+    --x-pos4: Math.cos((135 * Math.PI) / 180);
+    --x-pos5: Math.cos((180 * Math.PI) / 180);
+    --x-pos6: Math.cos((225 * Math.PI) / 180);
+    --x-pos7: Math.cos((270 * Math.PI) / 180);
+    --x-pos8: Math.cos((315 * Math.PI) / 180);
+    --y-pos1: Math.sin(1);
+    --y-pos2: Math.sin((45 * Math.PI) / 180);
+    --y-pos3: Math.sin((90 * Math.PI) / 180);
+    --y-pos4: Math.sin((135 * Math.PI) / 180);
+    --y-pos5: Math.sin((180 * Math.PI) / 180);
+    --y-pos6: Math.sin((225 * Math.PI) / 180);
+    --y-pos7: Math.sin((270 * Math.PI) / 180);
+    --y-pos8: Math.sin((315 * Math.PI) / 180);
 }
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
@@ -23,6 +53,10 @@
 .imgHeader {
     margin-right: 10px;
     height: 100px;
+}
+
+.mc-navbar {
+    background-color: rgba(255, 110, 253, 0.5);
 }
 
 #tcf-email,
@@ -247,17 +281,16 @@
 }
 
 .mc-card {
-    /* background-color: rgba(41, 41, 41, 0.5)!important; */
     background-color: rgba(0, 43, 110, 0.5)!important;
 }
 
 /* ======================= MENU LE CLUB ================================ */
 
 .mc-menu {
-    /* background-color: rgba(135, 209, 249, 0.8); */
     background: rgba(0, 43, 110, 0.5);
     border-right: #fff solid 1px;
     position: relative;
+    width: 25%;
     left: -25%;
     animation: menu-visible 1s ease 1s forwards;
 }
@@ -271,12 +304,10 @@
 .mc-menu-club {
     padding-top: 1rem;
     position: sticky;
-    top: 7%;
+    top: 5%;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-size: 1.4vw;
-    font-weight: 400;
 }
 
 .mc-menu-club a {
@@ -284,6 +315,8 @@
     font-weight: 400;
     margin: 1rem auto;
     padding: 1rem auto;
+    font-size: 1.8vw;
+    font-weight: 400;
 }
 
 .mc-menu-club a:hover {
@@ -297,13 +330,18 @@
 }
 
 @media (max-width: 766px) {
+    .mc-menu {
+        border-right: none;
+        left: -100vw;
+        }
+
     .mc-menu-club {
         padding: 0;
         width: 100vw;
         height: 2.5rem;        
-        left: -100vw;
         margin-bottom: 1rem;
     }
+
     .mc-menu-club a {
         padding: auto;
         font-size: 2vw;
@@ -316,7 +354,6 @@
         width: auto;
     }
 }
-
 
 /* ======================= ANIMATION LOGO ================================ */
 
@@ -350,19 +387,20 @@
     padding: 0 0.3rem;
     border-radius: 5%;
     position: fixed;
+    top: 43%;
     left: 40%;
     font-weight: 600;
 }
 
 .mc-osn-point1-visible {
-    color:yellow;
+    color:rgb(96, 96, 2);
     background-color: rgba(255, 255, 134, 0.6);
-    animation: animation-point1 4s linear infinite;
+    animation: animation-interrogation-point 4s linear infinite;
 }
 .mc-osn-point2-visible {
-    color:white;
+    color:rgb(90, 1, 1);
     background-color: rgba(255, 148, 148, 0.6);
-    animation: animation-point2 3s linear infinite;
+    animation: animation-exclamation-point 3s linear infinite;
 }
 
 .mc-osn-point-invisible {
@@ -382,14 +420,14 @@
     visibility: hidden;
 }
 
-@keyframes animation-point1 {
+@keyframes animation-interrogation-point {
     100% {
         scale: 3;
         transform: translateX(-3vw);
     }
 }
 
-@keyframes animation-point2 {
+@keyframes animation-exclamation-point {
     100% {
         scale: 3;
         transform: translateX(3vw);
@@ -400,4 +438,33 @@
     100% {
         scale: 4.5;
     }
+}
+
+/* ========================== ANIMATION BUREAU ============================= */
+
+.mc-bureau {
+    /* height: 100%; */
+    width: 75%;
+    padding: 2rem;
+}
+.mc-wheel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #ff035b;
+    height: 600px;
+    width: 600px;
+    color: #fff;
+    border-radius: 50%;
+  }
+
+@keyframes turnin {
+    from {transform: translate(-50%, -50%) rotate(0);}
+    to {transform: translate(-50%, -50%) rotate(360deg);}
+}
+
+@keyframes turnout {
+    from {transform: rotate(360deg);}
+    to {transform: rotate(0deg);}
 }

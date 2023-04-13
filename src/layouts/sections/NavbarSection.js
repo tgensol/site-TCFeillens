@@ -45,28 +45,6 @@ const NavbarSection = () => {
               >
                 Le Club
               </Nav.Link>
-              {/* <NavDropdown
-                title="Le Club"
-                id={`offcanvasNavbarDropdown-expand`}
-                menuVariant={"dark"}
-                className="bg-primary bg-gradient text-light px-2 text-center"
-              >
-                <NavDropdown.Item href="/leclub">Le Club</NavDropdown.Item>
-                <NavDropdown.Item href="/histoire">
-                  Notre Histoire
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/bureau">Le Bureau</NavDropdown.Item>
-                <NavDropdown.Item href="/installations">
-                  Nos Installations
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/localisation">
-                  Où Sommes-Nous ?
-                </NavDropdown.Item>
-                <NavDropdown.Divider className="bg-light" />
-                <NavDropdown.Item href="/mentionsLegales">
-                  Mentions Légales
-                </NavDropdown.Item>
-              </NavDropdown> */}
               <NavDropdown
                 title="Compétitions"
                 id={`offcanvasNavbarDropdown-expand`}

@@ -37,67 +37,60 @@ const OuSommesNous = () => {
             <MenuClubSection menuVisible={false} />
           </Col>
           <Col xs={12} md={{ span: 7, offset: 1 }}>
-            <Row className="pt-5">
-              <div className="">
-                <div
-                  className={
-                    pointVisible
-                      ? "mc-osn-point-visible mc-osn-point1-visible"
-                      : "mc-osn-point-invisible"
-                  }
-                  onMouseEnter={handleMapExtVisible}
-                >
-                  <span className="fs-6">?</span>
-                  <br />
-                  <span className="">courts extérieurs</span>
-                </div>
-
-                <div
-                  className={
-                    pointVisible
-                      ? "mc-osn-point-visible mc-osn-point2-visible"
-                      : "mc-osn-point-invisible"
-                  }
-                  onMouseEnter={handleMapCouVisible}
-                >
-                  <span className="fs-6">!</span>
-                  <br />
-                  <span className="">courts couverts</span>
-                </div>
-
-                <div
-                  onMouseLeave={handlePointVisible}
-                  className={
-                    mapExtVisible
-                      ? "mc-osn-map-visible"
-                      : "mc-osn-map-invisible"
-                  }
-                >
-                  <img
-                    width={"100%"}
-                    className="border border-2 rounded-2 border-warning"
-                    src={accesCourtsExt}
-                    alt=""
-                  />
-                </div>
-
-                <div
-                  onMouseLeave={handlePointVisible}
-                  className={
-                    mapCouVisible
-                      ? "mc-osn-map-visible"
-                      : "mc-osn-map-invisible"
-                  }
-                >
-                  <img
-                    width={"100%"}
-                    className="border border-2 rounded-1 border-danger"
-                    src={accesCourtsCouv}
-                    alt=""
-                  />
-                </div>
+            <div className="pt-5">
+              <div
+                className={
+                  pointVisible
+                    ? "mc-osn-point-visible mc-osn-point1-visible"
+                    : "mc-osn-point-invisible"
+                }
+                onMouseEnter={handleMapExtVisible}
+              >
+                <span className="fs-6">?</span>
+                <br />
+                <span className="">courts extérieurs</span>
               </div>
-            </Row>
+              <div
+                className={
+                  pointVisible
+                    ? "mc-osn-point-visible mc-osn-point2-visible"
+                    : "mc-osn-point-invisible"
+                }
+                onMouseEnter={handleMapCouVisible}
+              >
+                <span className="fs-6">!</span>
+                <br />
+                <span className="">courts couverts</span>
+              </div>
+
+              <div
+                onMouseLeave={handlePointVisible}
+                className={
+                  mapExtVisible ? "mc-osn-map-visible" : "mc-osn-map-invisible"
+                }
+              >
+                <img
+                  width={"100%"}
+                  className="border border-2 rounded-2 border-warning"
+                  src={accesCourtsExt}
+                  alt=""
+                />
+              </div>
+
+              <div
+                onMouseLeave={handlePointVisible}
+                className={
+                  mapCouVisible ? "mc-osn-map-visible" : "mc-osn-map-invisible"
+                }
+              >
+                <img
+                  width={"100%"}
+                  className="border border-2 rounded-1 border-danger"
+                  src={accesCourtsCouv}
+                  alt=""
+                />
+              </div>
+            </div>
           </Col>
         </Row>
       </Container>
