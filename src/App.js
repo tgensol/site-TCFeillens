@@ -17,6 +17,12 @@ import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
 import LeClub from "./pages/leClub/LeClub.js";
 import OuSommesNous from "./pages/leClub/OuSommesNous";
+import Jchampt from "./pages/competitions/Jchampt";
+import Jtournoi from "./pages/competitions/Jtournoi";
+import Schampt from "./pages/competitions/Schampt";
+import Stournoi from "./pages/competitions/Stournoi";
+import Stinterne from "./pages/competitions/Stinterne";
+import Competitions from "./pages/competitions/Competitions";
 
 const App = () => {
   return (
@@ -31,6 +37,13 @@ const App = () => {
           <Route path="/installations" element={<NosInstallations />} />
           <Route path="/ousommesnous" element={<OuSommesNous />} />
           <Route path="/bureau" element={<LeBureau />} />
+          {/* Page Competitions */}
+          <Route path="/competitions" element={<Competitions />} />
+          <Route path="/jchampt" element={<Jchampt />} />
+          <Route path="/schampt" element={<Schampt />} />
+          <Route path="/jtournoi" element={<Jtournoi />} />
+          <Route path="/stournoi" element={<Stournoi />} />
+          <Route path="/stinterne" element={<Stinterne />} />
           {/* Page Contacts */}
           <Route path="/contact" element={<Contact />} />
           {/* Page Animations */}

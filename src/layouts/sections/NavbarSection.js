@@ -45,21 +45,27 @@ const NavbarSection = () => {
               >
                 Le Club
               </Nav.Link>
-              <NavDropdown
+              <Nav.Link
+                href="/competitions"
+                className="bg-primary bg-gradient text-light px-2 text-center"
+              >
+                Compétitions
+              </Nav.Link>
+              {/* <NavDropdown
                 title="Compétitions"
                 id={`offcanvasNavbarDropdown-expand`}
                 menuVariant={"dark"}
                 className="bg-primary bg-gradient text-light px-2 text-center"
               >
                 <NavDropdown.Item href="/compJeunes">Jeunes</NavDropdown.Item>
-                <NavDropdown.Item href="/compAdultes">Adultes</NavDropdown.Item>
+                <NavDropdown.Item href="/compSeniors">Seniors</NavDropdown.Item>
                 <NavDropdown.Item href="/compTournoiOpen">
                   Tournoi - NC à 4/6
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/compTournoiIntenre">
                   Tournoi - Interne
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
               <NavDropdown
                 title="Enseignement"
                 id={`offcanvasNavbarDropdown-expand`}

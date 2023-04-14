@@ -18,8 +18,6 @@ const Card = (cards) => {
         ...styles.card,
         left: `${cards.center.x + newCoords.x}px`,
         top: `${cards.center.y - newCoords.y}px`,
-        // left: `${0 + newCoords.x}px`,
-        // top: `${0 - newCoords.y}px`,
         animation: `${cards.animation}`,
       }}
     >
@@ -31,8 +29,6 @@ const Card = (cards) => {
 const styles = {
   card: {
     position: "absolute",
-    // top: "50%",
-    // left: "50%",
     transform: "translate(-50%, -50%)",
     animation: "",
     height: "200px",

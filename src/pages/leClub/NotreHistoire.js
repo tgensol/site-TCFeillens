@@ -14,7 +14,7 @@ import inaugurationCh from "../../assets/img/imgHistoire/inaugurationCh.jpg";
 import inaugurationChBureau from "../../assets/img/imgHistoire/inaugurationChBureau.jpg";
 import tournoiTCF from "../../assets/img/imgHistoire/tournoiTCF1.jpg";
 import evolutionTCF from "../../assets/img/imgHistoire/evolutionTCF.png";
-import MenuClubSection from "../../layouts/sections/MenuClubSection";
+import { MenuClubSection } from "../../layouts/sections/MenuSection";
 
 const NotreHistoire = () => {
   return (
@@ -24,7 +24,7 @@ const NotreHistoire = () => {
           <Col xs={12} md={3} className="mc-menu">
             <MenuClubSection menuVisible={false} />
           </Col>
-          <Col xs={12} md={{ span: 7, offset: 1 }}>
+          <Col xs={12} md={9} className="px-5">
             <Row className="pt-5">
               <h1 className="mc-rampart mc-title mb-2">
                 Le TCF de 1981 à nos jours
@@ -52,48 +52,52 @@ const NotreHistoire = () => {
             </Row>
             <Row>
               <Card className="flex-lg-row align-items-center border border-5 rounded-5 p-2 my-3 bg-light">
-                <Col xs={12} lg={9}>
-                  <Card.Body>
+                <Card.Body>
+                  <Col xs={12} className="ps-3">
                     <Card.Title className="display-6 fw-bold">
                       Siège du club
                     </Card.Title>
-                    <Card.Text>
-                      Le premier siège social fut <b>le Café « Le Feillens »</b>
-                      , remplacé quelques années plus tard par « Chez Patrick »,
-                      avant qu'une salle de réunion, dans la salle polyvalente
-                      route des Dîmes, ne soit mise à disposition du club par la
-                      Municipalité.
-                    </Card.Text>
-
-                    <div className="d-flex flex-lg-row flex-column align-items-center">
-                      <Col xs={12} lg={3} className="pb-3">
-                        <img width={"100%"} src={inaugurationCh} alt="" />
-                      </Col>
-                      <Col xs={12} lg={6} className="px-3">
-                        <Card.Text>
-                          Le <b>8 juin 2009</b>, la commune remettait aux
-                          membres du bureau les clés du clubhouse en présence de
-                          Florence Pocheron Présidente du comité de l'Ain qui
-                          remettait pour l'occasion le chèque d'aide fédérale
-                          validée la la FFT suite à la demande de subvention
-                          formulée par le club dans le cadre de son projet club.
-                          Ce nouveau clubhouse, situé <b>575 route des Dîmes</b>{" "}
-                          devenait de fait le nouveau siège du club.
-                        </Card.Text>
-                        <Col xs={12} lg={3} className="pt-3"></Col>
-                        <img width={"100%"} src={inaugurationChBureau} alt="" />
-                      </Col>
-                    </div>
-                  </Card.Body>
-                </Col>
-                <Col xs={12} lg={3} className="ps-3">
-                  <img
-                    width={"100%"}
-                    src={clubHouse}
-                    alt=""
-                    className="border border-5 rounded-4"
-                  />
-                </Col>
+                  </Col>
+                  <div className="d-flex flex-lg-row flex-column justify-content-between">
+                    <Col xs={12} lg={8} className="ps-3">
+                      <Card.Text>
+                        Le premier siège social fut{" "}
+                        <b>le Café « Le Feillens »</b>, remplacé quelques années
+                        plus tard par « Chez Patrick », avant qu'une salle de
+                        réunion, dans la salle polyvalente route des Dîmes, ne
+                        soit mise à disposition du club par la Municipalité.
+                      </Card.Text>
+                    </Col>
+                    <Col xs={12} lg={3} className="ps-3">
+                      <img
+                        width={"100%"}
+                        src={clubHouse}
+                        alt=""
+                        className="border border-5 rounded-4"
+                      />
+                    </Col>
+                  </div>
+                  <div className="d-flex flex-lg-row flex-column align-items-center">
+                    <Col xs={12} lg={3} className="pb-3">
+                      <img width={"100%"} src={inaugurationCh} alt="" />
+                    </Col>
+                    <Col xs={12} lg={6} className="px-3">
+                      <Card.Text>
+                        Le <b>8 juin 2009</b>, la commune remettait aux membres
+                        du bureau les clés du clubhouse en présence de Florence
+                        Pocheron Présidente du comité de l'Ain qui remettait
+                        pour l'occasion le chèque d'aide fédérale validée la la
+                        FFT suite à la demande de subvention formulée par le
+                        club dans le cadre de son projet club. Ce nouveau
+                        clubhouse, situé <b>575 route des Dîmes</b> devenait de
+                        fait le nouveau siège du club.
+                      </Card.Text>
+                    </Col>
+                    <Col xs={12} lg={3} className="pt-3">
+                      <img width={"100%"} src={inaugurationChBureau} alt="" />
+                    </Col>
+                  </div>
+                </Card.Body>
               </Card>
             </Row>
             <Row>
@@ -131,76 +135,77 @@ const NotreHistoire = () => {
             </Row>
             <Row>
               <Card className="flex-lg-row align-items-center border border-5 rounded-5 p-2 my-3 bg-light">
-                <Col xs={12} lg={7}>
-                  <Card.Body className="mx-3">
+                <Card.Body className="mx-3">
+                  <Col xs={12}>
                     <Card.Title className="display-6 fw-bold">
                       Équipements du club
                     </Card.Title>
-                    <Card.Text>
-                      Le premier court de tennis fut construit place Lacharme
-                      considéré comme l'ancien plateau sportif de la commune et
-                      qui permettait également la pratique d'autres sports comme
-                      le basket et le handball. En 1984 face à l'explosion du
-                      tennis, 2 courts extérieurs en résine furennt mis à
-                      disposition du club à l'actuel complexe sportif des Dîmes.
-                    </Card.Text>
+                  </Col>
+                  <div>
+                    <Col xs={12} className="ps-3 mb-3">
+                      <Card.Text>
+                        Le premier court de tennis fut construit place Lacharme
+                        considéré comme l'ancien plateau sportif de la commune
+                        et qui permettait également la pratique d'autres sports
+                        comme le basket et le handball. En 1984 face à
+                        l'explosion du tennis, 2 courts extérieurs en résine
+                        furent mis à disposition du club à l'actuel complexe
+                        sportif des Dîmes.
+                      </Card.Text>
+                    </Col>
+                  </div>
 
-                    <div className="d-flex flex-column flex-lg-row align-items-center">
-                      <Col xs={12} lg={4} className="me-3">
-                        <img width={"100%"} src={inondationCourts} alt="" />
-                      </Col>
-                      <Col xs={12} lg={8}>
-                        <Card.Text>
-                          Face à l'instabilité du sol, de nombreuses fissures
-                          firent leur apparition sur les terrains au fil des
-                          ans. La réfection des courts devenait indispensable.
-                          Ce fut fait avec un début des travaux en 1999 et une
-                          inauguration des nouvelles installations en décembre
-                          2000. Les mois qui suivirent cette inauguration
-                          plongèrent les adhérents dans la plus grande
-                          inquiètude lorsque suite aux inondations de mars 2001
-                          plus d'un mètre d'eau recouvrait les 2 courts tout
-                          neufs.
-                        </Card.Text>
-                      </Col>
-                    </div>
-
-                    <Card.Text>
-                      En novembre 2011, ce sont 2 courts couverts, qui sont mis
-                      à disposition par la Communauté de Communes du Pays de
-                      Bâgé aujourd'hui Bresse et Saône. Ils furent inaugurés le
-                      samedi 20/4/2013 (voir article).
-                    </Card.Text>
-                  </Card.Body>
-                </Col>
-                <Col xs={12} lg={5}>
-                  <ImgMagnifierCircle
-                    width={"90%"}
-                    src={inaugurationCourtsExterieurs}
-                  />
-                  <small className="text-muted fst-italic">
-                    Gauche à droite : Christian Chanut (président USF), Gilbert
-                    Thomas (maire de Bâgé-la-ville), Michel Voisin (député-maire
-                    de Replonges), Guy Billoudet (maire de Feillens) Michel
-                    CEDDIA (président TCF)
-                  </small>
-                </Col>
+                  <div className="d-flex flex-column flex-lg-row align-items-center mb-3">
+                    <Col xs={12} lg={4} className="me-3">
+                      <img width={"100%"} src={inondationCourts} alt="" />
+                    </Col>
+                    <Col xs={12} lg={8}>
+                      <Card.Text>
+                        Face à l'instabilité du sol, de nombreuses fissures
+                        firent leur apparition sur les terrains au fil des ans.
+                        La réfection des courts devenait indispensable. Ce fut
+                        fait avec un début des travaux en 1999 et une
+                        inauguration des nouvelles installations en décembre
+                        2000. Les mois qui suivirent cette inauguration
+                        plongèrent les adhérents dans la plus grande inquiètude
+                        lorsque suite aux inondations de mars 2001 plus d'un
+                        mètre d'eau recouvrait les 2 courts tout neufs.
+                      </Card.Text>
+                    </Col>
+                  </div>
+                  <div className="d-flex flex-column flex-lg-row align-items-center">
+                    <Col xs={12} lg={7} className="me-3">
+                      <Card.Text>
+                        En novembre 2011, ce sont 2 courts couverts, qui sont
+                        mis à disposition par la Communauté de Communes du Pays
+                        de Bâgé aujourd'hui Bresse et Saône. Ils furent
+                        inaugurés le samedi 20/4/2013 (voir article).
+                      </Card.Text>
+                    </Col>
+                    <Col xs={12} lg={5}>
+                      <ImgMagnifierCircle
+                        width={"90%"}
+                        src={inaugurationCourtsExterieurs}
+                      />
+                      <small className="text-muted fst-italic">
+                        Gauche à droite : Christian Chanut (président USF),
+                        Gilbert Thomas (maire de Bâgé-la-ville), Michel Voisin
+                        (député-maire de Replonges), Guy Billoudet (maire de
+                        Feillens) Michel CEDDIA (président TCF)
+                      </small>
+                    </Col>
+                  </div>
+                </Card.Body>
               </Card>
             </Row>
             <Row>
               <Card className="flex-lg-row align-items-center border border-5 rounded-5 p-2 my-3 bg-light">
                 <Col xs={12} lg={5}>
                   <img
-                    width={"50%"}
+                    width={"100%"}
                     src={tournoiTCF}
                     alt=""
-                    className="border border-5 rounded-5 border-dark"
-                  />
-                  <img
-                    width={"50%"}
-                    src={evolutionTCF}
-                    alt=""
-                    className="border border-5 rounded-5 border-warning"
+                    className="border border-5 rounded-5 border-dark "
                   />
                   <img
                     width={"100%"}
@@ -214,6 +219,12 @@ const NotreHistoire = () => {
                     <Card.Title className="display-6 fw-bold">
                       Le club en chiffres
                     </Card.Title>
+                    <img
+                      width={"100%"}
+                      src={evolutionTCF}
+                      alt=""
+                      className="border border-5 rounded-5 border-warning my-2"
+                    />
                     <Card.Text>
                       Le premier tournoi homologué seniors fut lancé en 1983. Il
                       se poursuit sans interruption depuis sa création. En 2004

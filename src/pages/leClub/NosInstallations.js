@@ -5,11 +5,12 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import clubHouse1 from "../../assets/img/imgInstallations/clubHouse1.jpg";
 import clubHouse2 from "../../assets/img/imgInstallations/clubHouse2.jpg";
+import clubHouse3 from "../../assets/img/imgInstallations/clubHouse3.jpg";
 import clubVuDuCiel from "../../assets/img/imgInstallations/clubVuDuCiel.jpg";
 import courtsCouverts from "../../assets/img/imgInstallations/courtsCouverts.jpg";
 import courtsExterieurs from "../../assets/img/imgInstallations/courtsExterieurs.jpg";
 import courtsExterieurs1 from "../../assets/img/imgInstallations/courtsExterieurs1.png";
-import MenuClubSection from "../../layouts/sections/MenuClubSection";
+import { MenuClubSection } from "../../layouts/sections/MenuSection";
 
 const NosInstallations = () => {
   return (
@@ -19,7 +20,7 @@ const NosInstallations = () => {
           <Col xs={12} md={3} className="mc-menu">
             <MenuClubSection menuVisible={false} />
           </Col>
-          <Col xs={12} md={{ span: 7, offset: 1 }}>
+          <Col xs={12} md={9} className="px-5">
             <Row className="pt-5 align-content-center">
               <h1 className="mc-rampart mc-title mb-2">Nos installations</h1>
             </Row>
@@ -29,6 +30,14 @@ const NosInstallations = () => {
                   <Card.Title className="display-6 fw-bold text-center mb-3">
                     Notre clubhouse
                   </Card.Title>
+                  <div className="m-4">
+                    <img
+                      width={"100%"}
+                      className="border border-5 rounded-4 border-dark"
+                      src={clubHouse3}
+                      alt=""
+                    />
+                  </div>
                   <div className="d-flex justify-content-evenly">
                     <img
                       width={"30%"}
