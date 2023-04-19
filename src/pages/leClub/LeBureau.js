@@ -37,12 +37,14 @@ const LeBureau = () => {
     <div className="mc-fond-clubhouse">
       <Container fluid>
         <Row>
-          <Col xs={12} lg={3} className="mc-menu">
-            <MenuClubSection menuVisible={false} />
+          <Col xs={12} lg={3} className="mc-menu-fixe">
+            <MenuClubSection />
           </Col>
-          <Col xs={12} lg={9}>
-            <h1 className="mt-5 mc-rampart mc-title mb-2">Le Bureau</h1>
-            <Row>{idCardBureau}</Row>
+          <Col xs={12} lg={8} className="m-auto">
+            <h1 className="my-5 mc-rampart mc-title">Le Bureau</h1>
+            <div className="mc-container-club">
+              <Row>{idCardBureau}</Row>
+            </div>
           </Col>
         </Row>
       </Container>

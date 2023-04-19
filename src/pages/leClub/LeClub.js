@@ -9,14 +9,10 @@ const LeClub = () => {
       <Container fluid>
         <Row className="vh-100">
           <Col xs={12} md={3} className="mc-menu">
-            <MenuClubSection menuVisible={true} />
+            <MenuClubSection />
           </Col>
           <Col xs={12} md={9} className="d-flex align-items-center">
-            <img
-              src="logoTCF1.png"
-              className="mc-position-logo mc-animation-logo"
-              alt=""
-            />
+            <img src="logoTCF1.png" className="mc-position-logo" alt="" />
           </Col>
         </Row>
       </Container>

@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
 import "../../assets/css/competitions.css";
 
-const MenuClubSection = (menuVisible) => {
+const MenuClubSection = () => {
   return (
-    <Nav
-      className={menuVisible ? "mc-menu-club mc-menu-visible" : "mc-menu-club"}
-    >
+    <Nav className="mc-menu-club">
       <Nav.Link href="histoire">Notre histoire</Nav.Link>
       <Nav.Link href="bureau">Le bureau</Nav.Link>
       <Nav.Link href="installations">Nos installations</Nav.Link>
@@ -16,28 +14,29 @@ const MenuClubSection = (menuVisible) => {
   );
 };
 
-const MenuCompetitionSection = ({ title, menu, menuVisible }) => {
+const MenuCompetitionSection = ({ title, links }) => {
   const [isActive, setIsActive] = useState(false);
+
+  console.log("Hello compétitions: ");
+  console.log("isActive: ", isActive);
 
   const handleClick = () => {
     setIsActive(!isActive);
   };
 
   return (
-    <Nav
-      className={menuVisible ? "mc-menu-club mc-menu-visible" : "mc-menu-club"}
-    >
+    <Nav className="mc-menu-club">
       <div className="mc-accordion">
         <div className="mc-accordion-item">
           <div className="mc-accordion-title" onClick={handleClick}>
             <div>{title}</div>
-            <div>{isActive ? "-" : "+"}</div>
+            <div>{isActive ? "▲" : "▼"}</div>
           </div>
           {isActive ? (
             <div className="mc-accordion-content">
-              {menu.map((menu, index) => (
-                <Nav.Link href={menu.path} key={index}>
-                  {menu.link}
+              {links.map((item, index) => (
+                <Nav.Link href={item.path} key={index}>
+                  {item.link}
                 </Nav.Link>
               ))}
             </div>

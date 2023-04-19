@@ -253,6 +253,68 @@ body {
     font-size: 0.8rem;
 }
 
+/* ======================= LE CLUB ================================ */
+
+.mc-container-club {
+    padding: 5rem;
+    margin: 2rem auto;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(21, 18, 38, 0.6);
+    overflow: hidden;
+    animation: slideContainerUp 2s ease forwards;
+}
+
+.mc-container-histoire1 {
+    transform: translateY(100vh);
+    animation: slideContainerUp 1s ease forwards .5s;
+}
+.mc-container-histoire2 {
+    transform: translateY(100vh);
+    animation: slideContainerUp 1s ease forwards 1s;
+}
+.mc-container-histoire3 {
+    transform: translateY(100vh);
+    animation: slideContainerUp 1s ease forwards 1.5s;
+}
+.mc-container-histoire4 {
+    transform: translateY(100vh);
+    animation: slideContainerUp  1s ease forwards 2s;
+}
+.mc-container-histoire5 {
+    transform: translateY(100vh);
+    animation: slideContainerUp 1s ease forwards 2.5s;
+}
+
+.mc-title {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    color: blue;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: expandTitle 1s linear forwards;
+}
+
+@keyframes expandTitle {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+@keyframes slideContainerUp {
+    0% {
+      transform: translateY(100vh);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
 /* ======================= NOTRE HISTOIRE ================================ */
 
 .mc-les3Presidents {
@@ -270,16 +332,6 @@ body {
     width: 50%;
 }
 
-.mc-title {
-    background-color: rgba(255, 255, 255, 0.9);
-    height: 7rem;
-    color: blue;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .mc-card {
     background-color: rgba(0, 43, 110, 0.5)!important;
 }
@@ -293,6 +345,13 @@ body {
     width: 25%;
     left: -25%;
     animation: menu-visible 1s ease 1s forwards;
+}
+
+.mc-menu-fixe {
+    background: rgba(0, 43, 110, 0.5);
+    border-right: #fff solid 1px;
+    position: relative;
+    width: 25%;
 }
 
 @keyframes menu-visible {
@@ -366,15 +425,15 @@ body {
     position: absolute;
     left: 35%;
     width: 30%;
-}
-
-.mc-animation-logo {
     animation: animation-logo 3s ease 0.5s forwards;
 }
 
 @keyframes animation-logo {
+    30% {
+        transform: rotate(720deg);
+    }
     100% {
-        transform: translateX(110vw) translateY(-120vh) rotate(0deg) rotate(720deg);
+        transform: translateX(110vw) translateY(-110vh);
         scale: 0.3;
     }
 }

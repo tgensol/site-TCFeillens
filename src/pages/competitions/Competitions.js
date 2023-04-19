@@ -14,8 +14,7 @@ const Competitions = () => {
               return (
                 <MenuCompetitionSection
                   title={menu.title}
-                  menu={menu.menu}
-                  menuVisible={true}
+                  links={menu.links}
                   key={index}
                 />
               );

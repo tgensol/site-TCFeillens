@@ -17,96 +17,96 @@ const NosInstallations = () => {
     <div className="mc-fond-clubhouse">
       <Container fluid>
         <Row>
-          <Col xs={12} md={3} className="mc-menu">
-            <MenuClubSection menuVisible={false} />
+          <Col xs={12} md={3} className="mc-menu-fixe">
+            <MenuClubSection />
           </Col>
-          <Col xs={12} md={9} className="px-5">
-            <Row className="pt-5 align-content-center">
-              <h1 className="mc-rampart mc-title mb-2">Nos installations</h1>
-            </Row>
-            <Row>
-              <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
-                <Card.Body>
-                  <Card.Title className="display-6 fw-bold text-center mb-3">
-                    Notre clubhouse
-                  </Card.Title>
-                  <div className="m-4">
-                    <img
-                      width={"100%"}
-                      className="border border-5 rounded-4 border-dark"
-                      src={clubHouse3}
-                      alt=""
-                    />
-                  </div>
-                  <div className="d-flex justify-content-evenly">
-                    <img
-                      width={"30%"}
-                      className="border border-5 rounded-4 border-dark"
-                      src={clubVuDuCiel}
-                      alt=""
-                    />
-                    <img
-                      width={"30%"}
-                      className="border border-5 rounded-4 border-dark"
-                      src={clubHouse1}
-                      alt=""
-                    />
-                    <img
-                      width={"30%"}
-                      className="border border-5 rounded-4 border-dark"
-                      src={clubHouse2}
-                      alt=""
-                    />
-                  </div>
-                </Card.Body>
-              </Card>
-            </Row>
-            <Row>
-              <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
-                <Card.Body>
-                  <Card.Title className="display-6 fw-bold text-center mb-3">
-                    Nos courts extérieurs
-                  </Card.Title>
-                  <div className="d-flex justify-content-evenly">
-                    <img
-                      width={"45%"}
-                      src={courtsExterieurs}
-                      className="border border-5 rounded-4 border-dark"
-                      alt=""
-                    />
-                    <img
-                      width={"45%"}
-                      src={courtsExterieurs1}
-                      className="border border-5 rounded-4 border-dark"
-                      alt=""
-                    />
-                  </div>
-                </Card.Body>
-              </Card>
-            </Row>
-            <Row>
-              <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
-                <Card.Body>
-                  <Card.Title className="display-6 fw-bold text-center mb-3">
-                    Nos courts couverts
-                  </Card.Title>
-                  <div className="d-flex justify-content-evenly">
-                    <img
-                      width={"45%"}
-                      src={courtsCouverts}
-                      className="border border-5 rounded-4 border-dark"
-                      alt=""
-                    />
-                    <img
-                      width={"45%"}
-                      src={courtsCouverts}
-                      alt=""
-                      className="border border-5 rounded-4 border-dark"
-                    />
-                  </div>
-                </Card.Body>
-              </Card>
-            </Row>
+          <Col xs={12} md={8} className="m-auto">
+            <h1 className="my-5 mc-rampart mc-title">Nos installations</h1>
+            <div className="mc-container-club">
+              <Row className="mc-container-histoire1">
+                <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
+                  <Card.Body>
+                    <Card.Title className="display-6 fw-bold text-center mb-3">
+                      Notre clubhouse
+                    </Card.Title>
+                    <div className="m-4">
+                      <img
+                        width={"100%"}
+                        className="border border-5 rounded-4 border-dark"
+                        src={clubHouse3}
+                        alt=""
+                      />
+                    </div>
+                    <div className="d-flex justify-content-evenly">
+                      <img
+                        width={"30%"}
+                        className="border border-5 rounded-4 border-dark"
+                        src={clubVuDuCiel}
+                        alt=""
+                      />
+                      <img
+                        width={"30%"}
+                        className="border border-5 rounded-4 border-dark"
+                        src={clubHouse1}
+                        alt=""
+                      />
+                      <img
+                        width={"30%"}
+                        className="border border-5 rounded-4 border-dark"
+                        src={clubHouse2}
+                        alt=""
+                      />
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Row>
+              <Row className="mc-container-histoire2">
+                <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
+                  <Card.Body>
+                    <Card.Title className="display-6 fw-bold text-center mb-3">
+                      Nos courts extérieurs
+                    </Card.Title>
+                    <div className="d-flex justify-content-evenly">
+                      <img
+                        width={"45%"}
+                        src={courtsExterieurs}
+                        className="border border-5 rounded-4 border-dark"
+                        alt=""
+                      />
+                      <img
+                        width={"45%"}
+                        src={courtsExterieurs1}
+                        className="border border-5 rounded-4 border-dark"
+                        alt=""
+                      />
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Row>
+              <Row className="mc-container-histoire3">
+                <Card className="border border-5 rounded-5 p-2 my-3 mc-card text-light">
+                  <Card.Body>
+                    <Card.Title className="display-6 fw-bold text-center mb-3">
+                      Nos courts couverts
+                    </Card.Title>
+                    <div className="d-flex justify-content-evenly">
+                      <img
+                        width={"45%"}
+                        src={courtsCouverts}
+                        className="border border-5 rounded-4 border-dark"
+                        alt=""
+                      />
+                      <img
+                        width={"45%"}
+                        src={courtsCouverts}
+                        alt=""
+                        className="border border-5 rounded-4 border-dark"
+                      />
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Row>
+            </div>
           </Col>
         </Row>
       </Container>

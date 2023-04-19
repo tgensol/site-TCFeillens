@@ -1,7 +1,7 @@
 const tableMenuCompetition = [
   {
     title: "Compétitions Jeunes",
-    menu: [
+    links: [
       {
         path: "jchampt",
         link: "Championnats Jeunes",
@@ -14,7 +14,7 @@ const tableMenuCompetition = [
   },
   {
     title: "Compétitions Seniors",
-    menu: [
+    links: [
       {
         path: "schampt",
         link: "Championnats Seniors",
