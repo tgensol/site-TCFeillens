@@ -17,10 +17,7 @@ const MenuClubSection = () => {
 const MenuCompetitionSection = ({ title, links }) => {
   const [isActive, setIsActive] = useState(false);
 
-  console.log("Hello compétitions: ");
-  console.log("isActive: ", isActive);
-
-  const handleClick = () => {
+  const handleClickAccordion = () => {
     setIsActive(!isActive);
   };
 
@@ -28,7 +25,7 @@ const MenuCompetitionSection = ({ title, links }) => {
     <Nav className="mc-menu-club">
       <div className="mc-accordion">
         <div className="mc-accordion-item">
-          <div className="mc-accordion-title" onClick={handleClick}>
+          <div className="mc-accordion-title" onClick={handleClickAccordion}>
             <div>{title}</div>
             <div>{isActive ? "▲" : "▼"}</div>
           </div>

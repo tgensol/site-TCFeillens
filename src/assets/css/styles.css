@@ -348,8 +348,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     background: rgba(0, 43, 110, 0.5);
     border-right: #fff solid 1px;
     position: relative;
-    width: 25%;
-    left: -25%;
+    width: 20%;
+    left: -20%;
     animation: menu-visible 1s ease 1s forwards;
 }
 
@@ -357,7 +357,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     background: rgba(0, 43, 110, 0.5);
     border-right: #fff solid 1px;
     position: relative;
-    width: 25%;
+    width: 20%;
 }
 
 @keyframes menu-visible {

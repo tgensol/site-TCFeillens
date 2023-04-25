@@ -1,5 +1,6 @@
 .mc-container {
   display: flex;
+  flex-direction: column;
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 20px;
@@ -82,11 +83,14 @@
   background: url('../img/imgHeader/court-couverts-tennis.jpg') center center fixed no-repeat;
   background-size: cover;
   height: 100%;
-  border-radius: 20px;
+  padding: 2rem;
 }
 
 .mc-player {
-  margin: 2 rem;
+  background-color: var(--warning-color);
+  opacity: 0.2;
+  /* visibility: hidden; */
+  /* margin: 2rem; */
 }
 
 @keyframes slideIn {
