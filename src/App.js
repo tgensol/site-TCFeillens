@@ -15,14 +15,14 @@ import Programme from "./pages/animations/Programme";
 import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
-import LeClub from "./pages/leClub/LeClub.js";
+import LeClub from "./pages/LeClub";
 import OuSommesNous from "./pages/leClub/OuSommesNous";
 import Jchampt from "./pages/competitions/Jchampt";
 import Jtournoi from "./pages/competitions/Jtournoi";
 import Schampt from "./pages/competitions/Schampt";
 import Stournoi from "./pages/competitions/Stournoi";
 import Stinterne from "./pages/competitions/Stinterne";
-import Competitions from "./pages/competitions/Competitions";
+import Competitions from "./pages/Competitions";
 
 const App = () => {
   return (

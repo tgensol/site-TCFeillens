@@ -4,17 +4,21 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import tableBureau from "../../_params/tableBureau";
-import { MenuClubSection } from "../../layouts/sections/MenuSection";
+import MenuClub from "../../layouts/sections/MenuClub";
 
 const LeBureau = () => {
   const idCardBureau = tableBureau.map((card) => {
     return (
-      <Col xs={12} lg={6} key={card.id}>
+      <Col md={12} xl={6} key={card.id}>
         <Card className="flex-row justify-content-between my-3 bg-light border border-success border-5 rounded-4">
           <Col xs={4}>
-            <Card.Img src={card.photoId} alt="..." className="rounded-3" />
+            <Card.Img
+              src={card.photoId}
+              alt="Photo Id?"
+              className="rounded-3"
+            />
           </Col>
-          <Col xs={7}>
+          <Col xs={8}>
             <Card.Body className="">
               <Card.Title className="fs-4 mc-rampart text-primary">
                 {card.name}
@@ -37,10 +41,10 @@ const LeBureau = () => {
     <div className="mc-fond-clubhouse">
       <Container fluid>
         <Row>
-          <Col xs={12} lg={3} className="mc-menu-fixe">
-            <MenuClubSection />
+          <Col xs={12} md={3} className="mc-menu-fixe">
+            <MenuClub />
           </Col>
-          <Col xs={12} lg={8} className="m-auto">
+          <Col xs={12} md={8} className="m-auto">
             <h1 className="my-5 mc-rampart mc-title">Le Bureau</h1>
             <div className="mc-container-club">
               <Row>{idCardBureau}</Row>

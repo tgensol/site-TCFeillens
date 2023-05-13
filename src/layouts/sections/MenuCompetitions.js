@@ -1,20 +1,8 @@
 import React, { useState } from "react";
-import { Nav } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
 import "../../assets/css/competitions.css";
 
-const MenuClubSection = () => {
-  return (
-    <Nav className="mc-menu-club">
-      <Nav.Link href="histoire">Notre histoire</Nav.Link>
-      <Nav.Link href="bureau">Le bureau</Nav.Link>
-      <Nav.Link href="installations">Nos installations</Nav.Link>
-      <Nav.Link href="ousommesnous">Où sommes-nous ?</Nav.Link>
-      <Nav.Link href="mentions">Mentions légales</Nav.Link>
-    </Nav>
-  );
-};
-
-const MenuCompetitionSection = ({ title, links }) => {
+const MenuCompetitions = ({ title, links }) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleClickAccordion = () => {
@@ -44,4 +32,4 @@ const MenuCompetitionSection = ({ title, links }) => {
   );
 };
 
-export { MenuClubSection, MenuCompetitionSection };
+export default MenuCompetitions;

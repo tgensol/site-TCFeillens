@@ -4,46 +4,76 @@ import { Link } from "react-router-dom";
 import PlayersList from "./PlayersList";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
+import Accordion from "react-bootstrap/Accordion";
+import { useAccordionButton } from "react-bootstrap/AccordionButton";
+import Card from "react-bootstrap/Card";
+
+function CustomToggle({ children, eventKey }) {
+  const decoratedOnClick = useAccordionButton(eventKey, () => null);
+
+  return (
+    <button type="button" onClick={decoratedOnClick}>
+      {children}
+    </button>
+  );
+}
 
 const CompetitionsTeams = ({ teamsList }) => {
   const [teamVisible, setTeamVisible] = useState(false);
 
-  const handleOnClickUserFriends = () => {
-    setTeamVisible(!teamVisible);
-  };
-
   return (
     <div>
-      {teamsList.map((team, index) => (
+      {teamsList[1].map((team, index) => (
         <div key={index}>
-          <div className="mc-team d-flex align-items-center justify-content-between">
-            <div className="mc-team-line">
-              {`Équipe ${team.teamNum} - ${team.level} - Poule ${team.group}`}
-            </div>
-            <div>
-              <Link to={team.path} target="_blank" rel="noreferrer">
-                <button type="button" className="mc-btn mc-btn_more">
+          <Accordion>
+            <div className="mc-team d-flex align-items-center justify-content-between">
+              <div className="mc-team-line">
+                {`Équipe ${team.teamNum} - ${team.level} - Poule ${team.group}`}
+              </div>
+              <div className="mc-btn">
+                <Link
+                  to={team.path}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-decoration-none text-light fst-normal fs-5"
+                >
                   Voir le championnat
-                </button>
-              </Link>
+                </Link>
+              </div>
+              <CustomToggle eventKey="0">
+                <OverlayTrigger
+                  placement={"top"}
+                  overlay={
+                    <Tooltip>{`Liste des ${
+                      teamsList[0] === "Dames" || teamsList[0] === "Filles"
+                        ? "joueuses"
+                        : "joueurs"
+                    } - Équipe ${team.teamNum}`}</Tooltip>
+                  }
+                >
+                  <div
+                    className="mc-userFriends d-flex justify-content-center align-items-center"
+                    onClick={() => {
+                      setTeamVisible(!teamVisible);
+                    }}
+                  >
+                    <FaUserFriends />
+                  </div>
+                </OverlayTrigger>
+              </CustomToggle>
             </div>
-            <div
-              class="mc-userFriends d-flex justify-content-center align-items-center"
-              onClick={handleOnClickUserFriends}
-            >
-              <OverlayTrigger
-                placement={"top"}
-                overlay={
-                  <Tooltip>{`Liste des joueurs - Équipe ${team.teamNum}`}</Tooltip>
-                }
-              >
-                <a href="#mc-player">
-                  <FaUserFriends />
-                </a>
-              </OverlayTrigger>
-            </div>
-          </div>
-          <PlayersList playersList={team.players} teamVisible={teamVisible} />
+            <Accordion.Collapse eventKey="0">
+              <Card.Body className="fs-6 text-light ms-4">
+                <span>
+                  Liste des&nbsp;
+                  {teamsList[0] === "Dames" || teamsList[0] === "Filles"
+                    ? "joueuses"
+                    : "joueurs"}
+                </span>
+                <PlayersList teamsPlayers={teamsList[1][index].players} />
+              </Card.Body>
+            </Accordion.Collapse>
+          </Accordion>
         </div>
       ))}
     </div>

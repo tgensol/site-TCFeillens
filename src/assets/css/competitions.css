@@ -1,22 +1,23 @@
 
   .mc-accordion {
     width: 90%;
-    /* background-color: rgba(255, 43, 110, 1); */
+    margin: 0 auto;
   }
   
   .mc-accordion-item {
-    margin: 1rem auto;
-    font-size: 1rem;
+    margin: auto;
+    /* font-size: 1rem; */
     color: #fff;
   }
   
   .mc-accordion-title {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     cursor: pointer;
     background-color: rgba(0, 43, 110, 0.8);
-    font-size: 1.5rem;
+    /* font-size: 1.7vw; */
+    padding: 1vw;
   }
   
   .mc-accordion-title:hover {
@@ -27,19 +28,39 @@
     box-shadow: 0 0 8px rgb(255, 255, 255);
   }
   
-  .mc-accordion-title,
   .mc-accordion-content {
-    padding: 1rem;
-  }
-  
-  .mc-accordion-content {
-    background-color: rgba(0, 43, 110, 0.4);
+    position:relative;
+    background-color: rgba(103, 155, 255, 0.5);
     overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: menu-dropdown 0.3s linear forwards;
   }
+
   .mc-accordion-content a {
     visibility: hidden;
-    font-size: 1.2rem;
-    animation: menua 0.5s linear forwards;
+    /* font-size: 1.1vw; */
+    animation: menua 0.5s linear 0.3s forwards;
+  }
+  
+  @media (max-width: 900px) {
+    .mc-accordion-title {
+      /* font-size: 1.7vw; */
+    }
+
+    .mc-accordion-content a {
+      /* font-size: 1.7vw; */
+    }
+  }
+
+  @keyframes menu-dropdown {
+    0% {
+      transform-origin: top;
+      transform: scaleY(0%);
+    }
+    100% {
+      transform: scaleY(100%);
+    }
   }
 
   @keyframes menua {

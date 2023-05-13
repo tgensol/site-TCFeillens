@@ -10,7 +10,7 @@ import clubVuDuCiel from "../../assets/img/imgInstallations/clubVuDuCiel.jpg";
 import courtsCouverts from "../../assets/img/imgInstallations/courtsCouverts.jpg";
 import courtsExterieurs from "../../assets/img/imgInstallations/courtsExterieurs.jpg";
 import courtsExterieurs1 from "../../assets/img/imgInstallations/courtsExterieurs1.png";
-import { MenuClubSection } from "../../layouts/sections/MenuSection";
+import MenuClub from "../../layouts/sections/MenuClub";
 
 const NosInstallations = () => {
   return (
@@ -18,7 +18,7 @@ const NosInstallations = () => {
       <Container fluid>
         <Row>
           <Col xs={12} md={3} className="mc-menu-fixe">
-            <MenuClubSection />
+            <MenuClub />
           </Col>
           <Col xs={12} md={8} className="m-auto">
             <h1 className="my-5 mc-rampart mc-title">Nos installations</h1>

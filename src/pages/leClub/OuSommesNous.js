@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { MenuClubSection } from "../../layouts/sections/MenuSection";
+import MenuClub from "../../layouts/sections/MenuClub";
 import accesCourtsExt from "../../assets/img/imgInstallations/accesCourtsExterieurs.png";
 import accesCourtsCouv from "../../assets/img/imgInstallations/accesCourtsCouverts.png";
 
@@ -34,7 +34,7 @@ const OuSommesNous = () => {
       <Container fluid>
         <Row>
           <Col xs={12} md={3} className="mc-menu-fixe">
-            <MenuClubSection />
+            <MenuClub />
           </Col>
           <Col xs={12} md={{ span: 7, offset: 1 }}>
             <div className="pt-5">

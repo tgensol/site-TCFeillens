@@ -98,6 +98,11 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     background-size: cover;
 }
 
+.mc-fond-courts-couverts {
+    background: url("../img/imgInstallations/courtsCouverts.jpg") center center fixed no-repeat;
+    background-size: cover;
+}
+
 /* ========================== PARTNERS ============================= */
 
 .mc-img {
@@ -262,7 +267,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 /* ======================= LE CLUB ================================ */
 
 .mc-container-club {
-    padding: 5rem;
+    padding: 3rem;
     margin: 2rem auto;
     height: 100%;
     border-radius: 20px;
@@ -342,94 +347,19 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     background-color: rgba(0, 43, 110, 0.5)!important;
 }
 
-/* ======================= MENU LE CLUB ================================ */
+/* ======================= ANIMATION LOGO ================================ */
 
-.mc-menu {
-    background: rgba(0, 43, 110, 0.5);
-    border-right: #fff solid 1px;
-    position: relative;
-    width: 20%;
-    left: -20%;
-    animation: menu-visible 1s ease 1s forwards;
-}
-
-.mc-menu-fixe {
-    background: rgba(0, 43, 110, 0.5);
-    border-right: #fff solid 1px;
-    position: relative;
-    width: 20%;
-}
-
-@keyframes menu-visible {
-    100% {
-        transform: translateX(100%);
-    }
-}
-
-.mc-menu-club {
-    padding-top: 1rem;
-    position: sticky;
-    top: 7%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.mc-page-logo {
+    text-align:center;
+    /* display: flex;
+    justify-content: center; */
     /* height: 100%; */
 }
 
-.mc-menu-club a {
-    color: #fff;
-    font-weight: 400;
-    margin: 1rem auto;
-    padding: 1rem auto;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.mc-menu-club a:hover {
-    color: #fff;
-    text-shadow: 0 0 4px #fff;
-    font-weight: 600;
-    /* font-size: 1.3rem; */
-    width: 100%;
-    background-color: rgb(103, 155, 255);
-    box-shadow: 0 0 8px rgb(255, 255, 255);
-}
-
-@media (max-width: 766px) {
-    .mc-menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: none;
-        width: 100%;
-        left: -100%;
-        height: 4rem;
-        }
-
-    .mc-menu-club {
-        padding: 0;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
-    
-    .mc-menu-club a {
-        padding: auto;
-        font-size: 1rem;
-        height: 100%;
-        margin: 0;
-    }
-    
-    .mc-menu-club a:hover {
-        font-size: 2.1vw;
-        width: auto;
-    }
-}
-
-/* ======================= ANIMATION LOGO ================================ */
-
 .mc-position-logo {
-    position: absolute;
-    left: 35%;
+    position: relative;
+    /* left: 35%; */
+    top: 40%;
     width: 30%;
     animation: animation-logo 3s ease 0.5s forwards;
 }
@@ -437,10 +367,12 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 @keyframes animation-logo {
     30% {
         transform: rotate(720deg);
+        top: 20%;
     }
     100% {
-        transform: translateX(110vw) translateY(-110vh);
+        transform: translateX(480%) translateY(-100%);
         scale: 0.3;
+        top: 5%;
     }
 }
 

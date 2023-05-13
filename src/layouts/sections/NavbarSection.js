@@ -14,6 +14,7 @@ const NavbarSection = () => {
       className="border-0 border-bottom border-1 sticky-top"
     >
       <Container fluid>
+        {/* <div> required to keep the burger aligned on the right */}
         <div></div>
         <Navbar.Toggle
           aria-controls={`offcanvasNavbar-expand`}
@@ -22,51 +23,38 @@ const NavbarSection = () => {
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand`}
           aria-labelledby={`offcanvasNavbarLabel-expand`}
-          placement="end"
+          placement="start"
           className="bg-primary text-light"
         >
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-              Tennis Club de Feillens
-              <hr></hr>
+              {/* Tennis Club de Feillens
+              <hr></hr> */}
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="flex-wrap justify-content-between flex-grow-1 pe-3">
+            <Nav className="flex-wrap justify-content-between flex-grow-1 pe-3 mc-nav-hover">
               <Nav.Link
                 href="/accueil"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Accueil
               </Nav.Link>
               <Nav.Link
                 href="/leclub"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Le Club
               </Nav.Link>
+
               <Nav.Link
-                href="/competitions"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                href="/animations"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
-                Compétitions
+                Enseignement
               </Nav.Link>
+
               {/* <NavDropdown
-                title="Compétitions"
-                id={`offcanvasNavbarDropdown-expand`}
-                menuVariant={"dark"}
-                className="bg-primary bg-gradient text-light px-2 text-center"
-              >
-                <NavDropdown.Item href="/compJeunes">Jeunes</NavDropdown.Item>
-                <NavDropdown.Item href="/compSeniors">Seniors</NavDropdown.Item>
-                <NavDropdown.Item href="/compTournoiOpen">
-                  Tournoi - NC à 4/6
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/compTournoiIntenre">
-                  Tournoi - Interne
-                </NavDropdown.Item>
-              </NavDropdown> */}
-              <NavDropdown
                 title="Enseignement"
                 id={`offcanvasNavbarDropdown-expand`}
                 menuVariant={"dark"}
@@ -85,11 +73,18 @@ const NavbarSection = () => {
                   Tennis Santé
                 </NavDropdown.Item>
                 <NavDropdown.Item href="/coursStages">Stages</NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
+
+              <Nav.Link
+                href="/competitions"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
+              >
+                Compétitions
+              </Nav.Link>
 
               <Nav.Link
                 href="/animations"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Animations
               </Nav.Link>
@@ -98,7 +93,7 @@ const NavbarSection = () => {
                 title="Réservations"
                 id={`offcanvasNavbarDropdown-expand`}
                 menuVariant={"dark"}
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 <NavDropdown.Item href="/resaCouverts">
                   Courts Couverts
@@ -111,7 +106,7 @@ const NavbarSection = () => {
                 title="Évènements"
                 id={`offcanvasNavbarDropdown-expand`}
                 menuVariant={"dark"}
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 <NavDropdown.Item href="/event30Ans">
                   Le Club Fête Ses 30 ans
@@ -122,13 +117,13 @@ const NavbarSection = () => {
               </NavDropdown>
               <Nav.Link
                 href="/adherez"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Adhérez...
               </Nav.Link>
               <Nav.Link
                 href="/partenaire"
-                className="bg-primary bg-gradient text-light px-2 text-center"
+                className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Devenez Partenaire ...
               </Nav.Link>

@@ -1,5 +1,5 @@
 import React from "react";
-import MenuClubSection from "../../layouts/sections/MenuSection";
+import MenuClubSection from "../layouts/sections/MenuSection";
 import Wheel from "../../components/Wheel";
 
 const LeBureau = () => {

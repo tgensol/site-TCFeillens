@@ -3,9 +3,7 @@ import idYvan from "../assets/img/imgBureau/idYvan.jpg";
 import idJeremie from "../assets/img/imgBureau/idJeremie.jpg";
 import idShauna from "../assets/img/imgBureau/idShauna.jpg";
 import idLaurence from "../assets/img/imgBureau/idLaurence.jpg";
-import idAntonio from "../assets/img/imgBureau/idAntonio.jpg";
 import idMagaly from "../assets/img/imgBureau/idMagaly.jpg";
-import idFred from "../assets/img/imgBureau/idFred.jpg";
 
 const tableBureau = [
   {
@@ -50,27 +48,11 @@ const tableBureau = [
   },
   {
     id: 5,
-    name: "Antonio SALGADO",
-    position: "Membre",
-    phone: "06.06.06.06.06",
-    commission: "Commission Équipement",
-    photoId: idAntonio,
-  },
-  {
-    id: 6,
     name: "Magaly LAMPIS",
     position: "Membre",
     phone: "06.06.06.06.06",
     commission: "Commission Animations",
     photoId: idMagaly,
-  },
-  {
-    id: 7,
-    name: "Frédéric GAUVRIT",
-    position: "Moniteur",
-    phone: "06.06.06.06.06",
-    commission: "Formation Jeunes / Adultes Entraînement compétition",
-    photoId: idFred,
   },
 ];
 

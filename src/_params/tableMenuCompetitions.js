@@ -1,4 +1,4 @@
-const tableMenuCompetition = [
+const tableMenuCompetitions = [
   {
     title: "Compétitions Jeunes",
     links: [
@@ -31,4 +31,4 @@ const tableMenuCompetition = [
   },
 ];
 
-export default tableMenuCompetition;
+export default tableMenuCompetitions;

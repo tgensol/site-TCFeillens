@@ -14,7 +14,7 @@ import inaugurationCh from "../../assets/img/imgHistoire/inaugurationCh.jpg";
 import inaugurationChBureau from "../../assets/img/imgHistoire/inaugurationChBureau.jpg";
 import tournoiTCF from "../../assets/img/imgHistoire/tournoiTCF1.jpg";
 import evolutionTCF from "../../assets/img/imgHistoire/evolutionTCF.png";
-import { MenuClubSection } from "../../layouts/sections/MenuSection";
+import MenuClub from "../../layouts/sections/MenuClub";
 
 const NotreHistoire = () => {
   return (
@@ -22,7 +22,7 @@ const NotreHistoire = () => {
       <Container fluid>
         <Row>
           <Col xs={12} md={3} className="mc-menu-fixe">
-            <MenuClubSection />
+            <MenuClub />
           </Col>
           <Col xs={12} md={8} className="m-auto">
             <h1 className="my-5 mc-rampart mc-title">

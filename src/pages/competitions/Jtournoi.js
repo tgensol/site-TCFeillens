@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import tableMenuCompetition from "../../_params/tableMenuCompetition";
-import { MenuCompetitionSection } from "../../layouts/sections/MenuSection";
+import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
+import MenuCompetitions from "../../layouts/sections/MenuCompetitions";
 import galaxie from "../../assets/img/Photos/galaxie.jpg";
 
 const Jtournoi = () => {
@@ -12,9 +12,9 @@ const Jtournoi = () => {
       <Container fluid>
         <Row>
           <Col xs={12} lg={3} className="mc-menu-fixe">
-            {tableMenuCompetition.map((menu, index) => {
+            {tableMenuCompetitions.map((menu, index) => {
               return (
-                <MenuCompetitionSection
+                <MenuCompetitions
                   title={menu.title}
                   links={menu.links}
                   isActive={isActive}

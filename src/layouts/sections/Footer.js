@@ -65,48 +65,21 @@ const Footer = () => {
                 Accueil
               </Nav.Link>
 
-              <NavDropdown
-                title="Le club"
+              <Nav.Link
+                href="/leclub"
                 id="nav-dropdown"
-                menuVariant={"dark"}
-                align="end"
-                className=" w-25"
+                className="text-muted py-0 w-25"
               >
-                <NavDropdown.Item href="/contact">
-                  Notre histoire
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/bureau">Le bureau</NavDropdown.Item>
-                <NavDropdown.Item href="/installations">
-                  Nos installations
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/ousommesnous">
-                  Où sommmes-nous ?
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item className="" href="/mentionsLegales">
-                  Mentions légales
-                </NavDropdown.Item>
-              </NavDropdown>
+                Le Club
+              </Nav.Link>
 
-              <NavDropdown
-                title="Compétitions"
+              <Nav.Link
+                href="/competitions"
                 id="nav-dropdown"
-                menuVariant={"dark"}
-                align="end"
-                className=" w-25"
+                className="text-muted py-0 w-25"
               >
-                <NavDropdown.Item href="/compJeunes">Jeunes</NavDropdown.Item>
-                <NavDropdown.Item href="/compAdultes">Adultes</NavDropdown.Item>
-                <NavDropdown.Item href="/compTournoiOpen">
-                  Tournois - NC à 4/6
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/compTournoiIntenre">
-                  Tournois - Interne
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/compTournoiJeunes">
-                  Tournois - Jeunes
-                </NavDropdown.Item>
-              </NavDropdown>
+                Compétitions
+              </Nav.Link>
 
               <NavDropdown
                 title="Enseignement"
