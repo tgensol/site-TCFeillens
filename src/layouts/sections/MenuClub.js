@@ -38,7 +38,7 @@ const MenuClub = () => {
 
   return (
     <div className={`mc-menu${showLinks ? " mc-show-nav" : ""}`}>
-      <Nav className="mc-menu-club">
+      <Nav className="mc-menu-club bg-success">
         <Nav.Item className="mc-menu-item mc-slideInDown-1">
           <Nav.Link href="histoire">Notre histoire</Nav.Link>
         </Nav.Item>
@@ -62,6 +62,7 @@ const MenuClub = () => {
       >
         <span className="mc-burger-bar"></span>
       </button>
+      <div className="bg-warning">hello</div>
     </div>
   );
 };

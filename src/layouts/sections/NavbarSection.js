@@ -48,7 +48,7 @@ const NavbarSection = () => {
               </Nav.Link>
 
               <Nav.Link
-                href="/animations"
+                href="/enseignement"
                 className="bg-primary bg-gradient text-light my-1 px-2 text-center"
               >
                 Enseignement

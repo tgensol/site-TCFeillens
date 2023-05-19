@@ -5,14 +5,13 @@ import Col from "react-bootstrap/Col";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Footer = () => {
   return (
     <div className="footer">
       <Container fluid className="pt-5 border-top">
         <Row className="justify-content-between mb-5">
-          <Col xs={12} md={4}>
+          <Col xs={12} md={5}>
             <div className="ps-2">
               <OverlayTrigger
                 placement={"bottom"}
@@ -54,96 +53,61 @@ const Footer = () => {
               </p>
             </div>
           </Col>
-          <Col xs={12} md={6} className="ps-2">
+          <Col xs={12} md={7} className="ps-2">
             <p className="fw-bold text-muted ps-3 my-3">Liens du site</p>
-            <Nav defaultActiveKey="/accueil" className="">
+            <Nav defaultActiveKey="/accueil" className="d-wrap">
               <Nav.Link
                 href="/accueil"
-                id="nav-dropdown"
-                className="text-muted py-0 w-25"
+                className="mc-footer-link text-muted py-0 w-25"
               >
                 Accueil
               </Nav.Link>
 
               <Nav.Link
                 href="/leclub"
-                id="nav-dropdown"
-                className="text-muted py-0 w-25"
+                className="mc-footer-link text-muted py-0 w-25"
               >
                 Le Club
               </Nav.Link>
 
               <Nav.Link
+                href="/enseignement"
+                className="mc-footer-link text-muted py-0 w-25"
+              >
+                Enseignement
+              </Nav.Link>
+
+              <Nav.Link
                 href="/competitions"
-                id="nav-dropdown"
-                className="text-muted py-0 w-25"
+                className="mc-footer-link text-muted py-0 w-25"
               >
                 Compétitions
               </Nav.Link>
 
-              <NavDropdown
-                title="Enseignement"
-                id="nav-dropdown"
-                menuVariant={"dark"}
-                align="end"
-                className=" w-25"
-              >
-                <NavDropdown.Item href="/coursEquipe">
-                  Equipe Pédagogique
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/coursJeunes">
-                  Ecole de Tennis
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/coursAdultes">
-                  Cours Adultes
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/coursSante">
-                  Tennis Santé
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/coursStages">Stages</NavDropdown.Item>
-              </NavDropdown>
-
               <Nav.Link
                 href="/animations"
-                id="nav-dropdown"
-                className="text-muted py-0 w-25"
+                className="mc-footer-link text-muted py-0 w-25"
               >
                 Animations
               </Nav.Link>
 
-              <NavDropdown
-                title="Réservations"
-                id="nav-dropdown"
-                menuVariant={"dark"}
-                align="end"
-                className=" w-25"
+              <Nav.Link
+                href="/reservations"
+                className="mc-footer-link text-muted py-0 w-25"
               >
-                <NavDropdown.Item href="/resaCouverts">
-                  Courts Couverts
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/resaExterieur">
-                  Courts Extérieurs
-                </NavDropdown.Item>
-              </NavDropdown>
+                Réservations
+              </Nav.Link>
 
-              <NavDropdown
-                title="Évènements"
-                id="nav-dropdown"
-                menuVariant={"dark"}
-                align="end"
-                className=" w-25"
+              <Nav.Link
+                href="/evenements"
+                className="mc-footer-link text-muted py-0 w-25"
               >
-                <NavDropdown.Item href="/event30Ans">
-                  Le Club Fête Ses 30 ans
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/event40Ans">
-                  Le Club Fête Ses 40 ans
-                </NavDropdown.Item>
-              </NavDropdown>
+                Évènements
+              </Nav.Link>
             </Nav>
             <p className="fw-bold text-muted ps-3 pt-4">Contactez-nous</p>
             <a className="text-muted text-decoration-none ps-3" href="/contact">
-              <span id="tcf-email">tcfeillens@gmail.com</span>
+              <span className="mc-tcf-email">tcfeillens@gmail.com</span>
             </a>
           </Col>
         </Row>
