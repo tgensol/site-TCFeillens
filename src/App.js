@@ -11,10 +11,10 @@ import NosInstallations from "./pages/leClub/NosInstallations";
 import LeBureau from "./pages/leClub/LeBureau";
 // Animations
 import Animations from "./pages/Animations";
-import Programme from "./pages/animations/Programme";
-import Ventes from "./pages/animations/Ventes";
-import FeteEcole from "./pages/animations/FeteEcole";
-import SoireeClub from "./pages/animations/SoireeClub";
+import Programme from "./pages/Animations/Programme";
+import Ventes from "./pages/Animations/Ventes";
+import FeteEcole from "./pages/Animations/FeteEcole";
+import SoireeClub from "./pages/Animations/SoireeClub";
 import LeClub from "./pages/LeClub";
 import OuSommesNous from "./pages/leClub/OuSommesNous";
 import Jchampt from "./pages/competitions/Jchampt";
