@@ -16,7 +16,6 @@ import Programme from "./pages/animations/Programme";
 import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
-import LeClub from "./pages/LeClub";
 import OuSommesNous from "./pages/leClub/OuSommesNous";
 // Compétitions
 import Competitions from "./pages/Competitions";
