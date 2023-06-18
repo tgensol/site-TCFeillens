@@ -1,5 +1,15 @@
 /* ======================= MENU LE CLUB ================================ */
 
+.mc-menu-fixe {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 43, 110, 0.5);
+    border-right: #fff solid 1px;
+    position: relative;
+    padding: 0;
+    width: 25%;
+}
+
 .mc-menu {
     display: flex;
     flex-wrap: wrap;
@@ -16,16 +26,6 @@
     100% {
         transform: translateX(100%);
     }
-}
-
-.mc-menu-fixe {
-    display: flex;
-    flex-direction: column;
-    background: rgba(0, 43, 110, 0.5);
-    border-right: #fff solid 1px;
-    position: relative;
-    padding: 0;
-    width: 25%;
 }
 
 .mc-menu-club {
@@ -54,6 +54,7 @@
     background-color: rgb(103, 155, 255);
     box-shadow: 0 0 8px rgb(255, 255, 255);
 }
+
 .mc-menu-club a:hover {
     width: 100%;
 }
@@ -68,13 +69,23 @@
     display: none;
 }
 
-
 @media (max-width: 767px) {
+    
+    .mc-menu-fixe {
+        flex-direction: row;
+        width: 100%;
+        position: sticky;
+        top: 6%;
+        border-right: none;
+        z-index: 1020;
+    }
+
     .mc-menu {
         justify-content: center;
         border-right: none;
-        left: -100%;
-        /* height: 7vh; */
+        /* left: -100%; */
+        height: 100%;
+        top: 0%;
         padding: 0;
         background: none;
     }
@@ -92,15 +103,7 @@
     .mc-menu-club a {
         padding: auto;
         margin: 0;
-    }
-
-    .mc-menu-fixe {
-        flex-direction: row;
-        width: 100%;
-        position: sticky;
-        top: 6%;
-        border-right: none;
-        z-index: 1020;
+        
     }
 
 }
@@ -112,7 +115,10 @@
 
     .mc-menu {
         justify-content: flex-start;
+        /* left: -10%; */
+        background: rgba(0, 43, 110, 0.8);
     }
+
     .mc-menu-club {
         flex-direction: column;
         justify-content: center;
@@ -158,6 +164,7 @@
         align-items: center;
         position: relative;
         margin: 5px;
+        z-index: 1000;
     }
 
     .mc-menu-burger:hover {
@@ -174,12 +181,12 @@
         background: #fff;
         transition: all 1s ease;
     }
-
+    
     .mc-burger-bar::before,
     .mc-burger-bar::after {
         content: "";
         position: absolute;
-        left: 11px;
+        left: 10px;
     }
 
     .mc-burger-bar::before {

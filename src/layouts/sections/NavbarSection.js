@@ -28,8 +28,8 @@ const NavbarSection = () => {
         >
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title id={`offcanvasNavbarLabel-expand`}>
-              {/* Tennis Club de Feillens
-              <hr></hr> */}
+              Tennis Club de Feillens
+              <hr></hr>
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>

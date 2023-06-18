@@ -12,7 +12,7 @@ import NosInstallations from "./pages/leClub/NosInstallations";
 import LeBureau from "./pages/leClub/LeBureau";
 // Animations
 import Animations from "./pages/Animations";
-import Programme from "./pages/animations/Programme";
+import Programme from "./pages/animations/ListeActivites";
 import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";

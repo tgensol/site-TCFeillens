@@ -14,18 +14,15 @@ const MenuClub = () => {
     setShowLinks(!showLinks);
   };
 
-  // A chaque clique de lien pour changer de route le useEffect est actionné.
+  // A chaque clic de lien pour changer de route/location le useEffect est actionné.
   useEffect(() => {
     setShowLinks(false);
   }, [location, showLinks]);
 
-  // /******** Suppression du lien du "burger" lorsque la taille de l'écran est > 767. *****/
-
   // récupération de la taille de l'écran à partir du hook "useWindowSize".
   const windowWidth = useWindowSize().width;
 
-  // A chaque changement de la taille de l'écran
-  // mise à jour de la variable permettant l'apparition ou non du "burger".
+  // mise à jour de la variable permettant l'apparition ou non du "burger" lorsque la taille de l'écran est >= 576.
   useEffect(() => {
     if (showLinks) {
       if (windowWidth < 576) {
@@ -38,7 +35,7 @@ const MenuClub = () => {
 
   return (
     <div className={`mc-menu${showLinks ? " mc-show-nav" : ""}`}>
-      <Nav className="mc-menu-club bg-success">
+      <Nav className="mc-menu-club">
         <Nav.Item className="mc-menu-item mc-slideInDown-1">
           <Nav.Link href="histoire">Notre histoire</Nav.Link>
         </Nav.Item>
@@ -62,7 +59,6 @@ const MenuClub = () => {
       >
         <span className="mc-burger-bar"></span>
       </button>
-      <div className="bg-warning">hello</div>
     </div>
   );
 };
