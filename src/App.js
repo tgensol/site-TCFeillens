@@ -3,22 +3,22 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./layouts/Layout";
-import Accueil from "./pages/Accueil";
-import Contact from "./pages/Contact";
+import Accueil from "./pages/f-accueil";
+import Contact from "./pages/f-contact";
 // Le Club
-import LeClub from "./pages/LeClub";
+import LeClub from "./pages/f-leclub";
 import NotreHistoire from "./pages/p-leclub/notrehistoire";
 import NosInstallations from "./pages/p-leclub/nosinstallations";
 import LeBureau from "./pages/p-leclub/lebureau";
 // Animations
-import Animations from "./pages/animations";
+import Animations from "./pages/f-animations";
 import Programme from "./pages/p-animations/listeactivites";
 import Ventes from "./pages/p-animations/ventes";
 import FeteEcole from "./pages/p-animations/feteecole";
 import SoireeClub from "./pages/p-animations/soireeclub";
 import OuSommesNous from "./pages/p-leclub/ousommesnous";
 // Compétitions
-import Competitions from "./pages/competitions";
+import Competitions from "./pages/f-competitions";
 import Jchampt from "./pages/p-competitions/jchampt";
 import Jtournoi from "./pages/p-competitions/jtournoi";
 import Schampt from "./pages/p-competitions/schampt";
