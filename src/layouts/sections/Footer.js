@@ -22,7 +22,7 @@ const Footer = () => {
               >
                 <a
                   className="nav-link"
-                  href="https://www.tennis-club-de-feillens.fr"
+                  href="https://www.tennis-club-feillens.com"
                   target="_blank"
                   rel="noreferrer noopenner"
                 >
