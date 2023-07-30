@@ -6,9 +6,9 @@ import MenuClub from "../layouts/sections/MenuClub";
 const LeClub = () => {
   return (
     <div className="mc-fond-clubhouse">
-      <Container fluid className="gx-0">
-        <Row className="gx-0">
-          <Col xs={12} md={3} className="vh-100">
+      <Container fluid>
+        <Row>
+          <Col xs={12} md={3} className="gx-0">
             <MenuClub />
           </Col>
           <Col xs={12} md={9} className="mc-page-logo">

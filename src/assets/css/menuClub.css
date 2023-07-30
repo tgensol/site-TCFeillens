@@ -1,18 +1,5 @@
 /* ======================= MENU LE CLUB ================================ */
 
-.mc-menu {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: -100%;
-    background: rgba(0, 43, 110, 0.5);
-    border-right: #fff solid 1px;
-    animation: menu-visible 1s ease 1s forwards; 
-}
-
-
 .mc-menu-fixe {
     display: flex;
     flex-direction: column;
@@ -23,6 +10,26 @@
     width: 25%;
 }
 
+.mc-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    left: -100%;
+    height: 100vh;
+    background: rgba(0, 43, 110, 0.5);
+    border-right: #fff solid 1px;
+    animation: menu-visible 1s ease 1s forwards; 
+}
+
+.mc-active-link {
+    color: #fff;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: rgba(2, 55, 146, 0.5);
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
 @keyframes menu-visible {
     100% {
         transform: translateX(100%);
@@ -30,12 +37,13 @@
 }
 
 .mc-menu-club {
-    padding-top: 1rem;
-    position: sticky;
-    top: 8%;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-top: 1rem;
+    position: sticky;
+    top: 8%;
 }
 
 .mc-menu-club a {
@@ -49,11 +57,11 @@
 .mc-menu-club a:hover,
 .mc-nav-hover a:hover {
     color: #fff;
-    text-shadow: 0 0 4px #fff;
     font-weight: 600;
     background-color: rgb(103, 155, 255);
     box-shadow: 0 0 8px rgb(255, 255, 255);
 }
+
 .mc-menu-club a:hover {
     width: 100%;
 }
@@ -68,28 +76,8 @@
     display: none;
 }
 
-
 @media (max-width: 767px) {
-    .mc-menu {
-        display: flex;
-        align-items: flex-start;
-        border-right: none;
-        width: 100%;
-        left: -100%;
-        padding: 0;
-        }
-
-    .mc-menu-club {
-        padding: 0;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
     
-    .mc-menu-club a {
-        padding: auto;
-        margin: 0;
-    }
-
     .mc-menu-fixe {
         flex-direction: row;
         width: 100%;
@@ -99,12 +87,46 @@
         z-index: 1020;
     }
 
+    .mc-menu {
+        justify-content: center;
+        border-right: none;
+        /* left: -20%; */
+        height: 100%;
+        top: 0%;
+        padding: 0;
+        background: none;
+    }
+
+    .mc-menu-club {
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+        background: rgba(0, 43, 110, 0.5);
+        top: 6%;
+        position: relative;
+    }
+    
+    .mc-menu-club a {
+        padding: auto;
+        margin: 0;
+        
+    }
+
 }
 
 @media screen and (max-width: 575px) {
+    .footer .nav {
+        flex-direction: column;
+    }
+
     .mc-menu {
         justify-content: flex-start;
+        /* left: -10%; */
+        background: rgba(0, 43, 110, 0.8);
     }
+
     .mc-menu-club {
         flex-direction: column;
         justify-content: center;
@@ -118,7 +140,7 @@
     }
     
     .mc-show-nav .mc-menu-club {
-        height: 50vh;
+        height: 70vh;
         width: 50vw;
         top: 0;
         overflow: hidden;
@@ -150,6 +172,7 @@
         align-items: center;
         position: relative;
         margin: 5px;
+        z-index: 1000;
     }
 
     .mc-menu-burger:hover {
@@ -166,7 +189,7 @@
         background: #fff;
         transition: all 1s ease;
     }
-
+    
     .mc-burger-bar::before,
     .mc-burger-bar::after {
         content: "";

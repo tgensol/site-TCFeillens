@@ -3,26 +3,29 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Layout from "./layouts/Layout";
-import Accueil from "./pages/Accueil";
-import Contact from "./pages/Contact";
+import Accueil from "./pages/f-accueil";
+import Contact from "./pages/f-contact";
 // Le Club
-import NotreHistoire from "./pages/leClub/NotreHistoire";
-import NosInstallations from "./pages/leClub/NosInstallations";
-import LeBureau from "./pages/leClub/LeBureau";
+import LeClub from "./pages/f-leclub";
+import NotreHistoire from "./pages/p-leclub/notrehistoire";
+import NosInstallations from "./pages/p-leclub/nosinstallations";
+import LeBureau from "./pages/p-leclub/lebureau";
 // Animations
-import Animations from "./pages/Animations";
-import Programme from "./pages/Animations/Programme";
-import Ventes from "./pages/Animations/Ventes";
-import FeteEcole from "./pages/Animations/FeteEcole";
-import SoireeClub from "./pages/Animations/SoireeClub";
-import LeClub from "./pages/LeClub";
-import OuSommesNous from "./pages/leClub/OuSommesNous";
-import Jchampt from "./pages/competitions/Jchampt";
-import Jtournoi from "./pages/competitions/Jtournoi";
-import Schampt from "./pages/competitions/Schampt";
-import Stournoi from "./pages/competitions/Stournoi";
-import Stinterne from "./pages/competitions/Stinterne";
-import Competitions from "./pages/Competitions";
+import Animations from "./pages/f-animations";
+import Programme from "./pages/p-animations/listeactivites";
+import Ventes from "./pages/p-animations/ventes";
+import FeteEcole from "./pages/p-animations/feteecole";
+import SoireeClub from "./pages/p-animations/soireeclub";
+import OuSommesNous from "./pages/p-leclub/ousommesnous";
+// Compétitions
+import Competitions from "./pages/f-competitions";
+import Jchampt from "./pages/p-competitions/jchampt";
+import Jtournoi from "./pages/p-competitions/jtournoi";
+import Schampt from "./pages/p-competitions/schampt";
+import Stournoi from "./pages/p-competitions/stournoi";
+import Stinterne from "./pages/p-competitions/stinterne";
+// Réservations
+import Reservations from "./pages/p-reservations/reservations";
 
 const App = () => {
   return (
@@ -52,6 +55,8 @@ const App = () => {
           <Route path="/vente" element={<Ventes />} />
           <Route path="/feteecole" element={<FeteEcole />} />
           <Route path="/soireeclub" element={<SoireeClub />} />
+          {/* Page Réservations */}
+          <Route path="/reservations" element={<Reservations />} />
           {/* Page Not Found */}
           <Route path="*" element={<h1>Page not FOUND !</h1>} />
         </Route>

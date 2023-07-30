@@ -77,7 +77,7 @@ const Animations = () => {
               <Card.ImgOverlay>
                 <Card.Title>Fête de l'école de tennis</Card.Title>
                 <Card.Text className="bg-light">
-                  En juin participez à la fête des enfants inscrits à l'cole de
+                  En juin participez à la fête des enfants inscrits à l'école de
                   tennis ...
                 </Card.Text>
                 <Button

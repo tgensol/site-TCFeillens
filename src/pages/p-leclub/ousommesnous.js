@@ -33,7 +33,7 @@ const OuSommesNous = () => {
     <div className="mc-fond-europe">
       <Container fluid>
         <Row>
-          <Col xs={12} md={3} className="mc-menu-fixe">
+          <Col xs={12} md={3} className="gx-0" style={{ zIndex: 1000 }}>
             <MenuClub />
           </Col>
           <Col xs={12} md={{ span: 7, offset: 1 }}>
