@@ -28,7 +28,7 @@ const Footer = () => {
                 >
                   <img
                     className="img-fluid p-2"
-                    src="LogoTCF1.png"
+                    src="logoTCF1.png"
                     alt="Logo TCF ?"
                     width={50}
                     height={50}
