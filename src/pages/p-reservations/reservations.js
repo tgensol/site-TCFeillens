@@ -41,7 +41,7 @@ const Reservations = () => {
                   <Button
                     role="button"
                     variant="warning"
-                    href="//www.cafiresa.com/atcpb"
+                    href="http://www.cafiresa.com/atcpb"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 border border-4 border-danger"
