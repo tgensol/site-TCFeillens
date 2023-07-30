@@ -5,7 +5,7 @@ import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
 import { IconContext } from "react-icons";
 import { FaChevronRight } from "react-icons/fa";
-import saveDate from "../assets/img/imgHeader/save-date-red.png";
+import saveDate from "../assets/img/imgHeader/save-date-red-155x155.jpg";
 import tableAnimations from "../_params/tableAnimations";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
