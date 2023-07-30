@@ -4,11 +4,11 @@ const tableMenuCompetitions = [
     links: [
       {
         path: "jchampt",
-        link: "Championnats Jeunes",
+        link: "Championnats",
       },
       {
         path: "jtournoi",
-        link: "Tournoi Jeunes",
+        link: "Tournoi TTJ01",
       },
     ],
   },
@@ -17,15 +17,15 @@ const tableMenuCompetitions = [
     links: [
       {
         path: "schampt",
-        link: "Championnats Seniors",
+        link: "Championnats",
       },
       {
         path: "stournoiopen",
-        link: "Tournoi Open NC à 4/6",
+        link: "Tournoi - NC à 4/6",
       },
       {
         path: "stinterne",
-        link: "Tournoi Interne Seniors",
+        link: "Tournoi Interne",
       },
     ],
   },
