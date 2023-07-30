@@ -1,59 +1,64 @@
 
   .mc-accordion {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   
   .mc-accordion-item {
     margin: auto;
+    width: 90%;
     /* font-size: 1rem; */
     color: #fff;
   }
   
   .mc-accordion-title {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: rgba(0, 43, 110, 0.8);
+    justify-content: space-between; */
+    color: orange;
+    font-size: large;
+    font-weight: 600;
+    /* text-decoration-line: underline; */
+    /* cursor: pointer; */
+    /* background-color: rgba(0, 43, 110, 0.8); */
     /* font-size: 1.7vw; */
     padding: 1vw;
   }
   
-  .mc-accordion-title:hover {
+  /* .mc-accordion-title:hover {
     text-shadow: 0 0 4px #fff;
     font-weight: 600;
     width: 100%;
     background-color: rgb(103, 155, 255);
     box-shadow: 0 0 8px rgb(255, 255, 255);
-  }
+  } */
   
-  .mc-accordion-content {
+  /* .mc-accordion-content {
     position:relative;
     background-color: rgba(103, 155, 255, 0.5);
     overflow: hidden;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     animation: menu-dropdown 0.3s linear forwards;
-  }
+  } */
 
-  .mc-accordion-content a {
+  /* .mc-accordion-content a {
     visibility: hidden;
-    /* font-size: 1.1vw; */
-    animation: menua 0.5s linear 0.3s forwards;
-  }
+    font-size: 1.1vw;
+    animation: menu-rollup 0.5s linear 0.3s forwards;
+  } */
   
-  @media (max-width: 900px) {
+  /* @media (max-width: 900px) {
     .mc-accordion-title {
-      /* font-size: 1.7vw; */
+      font-size: 1.7vw;
     }
 
     .mc-accordion-content a {
-      /* font-size: 1.7vw; */
+      font-size: 1.7vw;
     }
-  }
+  } */
 
-  @keyframes menu-dropdown {
+  /* @keyframes menu-dropdown {
     0% {
       transform-origin: top;
       transform: scaleY(0%);
@@ -63,7 +68,7 @@
     }
   }
 
-  @keyframes menua {
+  @keyframes menu-rollup {
     0% {
       transform: translateY(-150px);
     }
@@ -71,4 +76,4 @@
       transform: translateY(0px);
       visibility: visible;
     }
-  }
+  } */

@@ -10,6 +10,9 @@ const MenuClub = () => {
   // Variable permettant l'apparition ou non du "burger"
   const [showLinks, setShowLinks] = useState(false);
 
+  // Variable permettant l'activation du lien cliqué dans le menu latéral.
+  const [menuActiveLink, setMenuActiveLink] = useState(null);
+
   const handleShowLinks = () => {
     setShowLinks(!showLinks);
   };
@@ -17,6 +20,7 @@ const MenuClub = () => {
   // A chaque clic de lien pour changer de route/location le useEffect est actionné.
   useEffect(() => {
     setShowLinks(false);
+    setMenuActiveLink(location.pathname);
   }, [location, showLinks]);
 
   // récupération de la taille de l'écran à partir du hook "useWindowSize".
@@ -37,19 +41,52 @@ const MenuClub = () => {
     <div className={`mc-menu${showLinks ? " mc-show-nav" : ""}`}>
       <Nav className="mc-menu-club">
         <Nav.Item className="mc-menu-item mc-slideInDown-1">
-          <Nav.Link href="histoire">Notre histoire</Nav.Link>
+          <Nav.Link
+            className={
+              menuActiveLink === "/histoire" ? "mc-active-link" : "null"
+            }
+            href="/histoire"
+          >
+            Notre histoire
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item className="mc-menu-item mc-slideInDown-2">
-          <Nav.Link href="bureau">Le bureau</Nav.Link>
+          <Nav.Link
+            className={menuActiveLink === "/bureau" ? "mc-active-link" : "null"}
+            href="/bureau"
+          >
+            Le bureau
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item className="mc-menu-item mc-slideInDown-3">
-          <Nav.Link href="installations">Nos installations</Nav.Link>
+          <Nav.Link
+            className={
+              menuActiveLink === "/installations" ? "mc-active-link" : "null"
+            }
+            href="/installations"
+          >
+            Nos installations
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item className="mc-menu-item mc-slideInDown-4">
-          <Nav.Link href="ousommesnous">Où sommes-nous ?</Nav.Link>
+          <Nav.Link
+            className={
+              menuActiveLink === "/ousommesnous" ? "mc-active-link" : "null"
+            }
+            href="/ousommesnous"
+          >
+            Où sommes-nous ?
+          </Nav.Link>
         </Nav.Item>
         <Nav.Item className="mc-menu-item mc-slideInDown-5">
-          <Nav.Link href="mentions">Mentions légales</Nav.Link>
+          <Nav.Link
+            className={
+              menuActiveLink === "/mentions" ? "mc-active-link" : "null"
+            }
+            href="/mentions"
+          >
+            Mentions légales
+          </Nav.Link>
         </Nav.Item>
       </Nav>
       <button

@@ -6,7 +6,7 @@
   border-radius: 20px;
   background-color: var(--tertiary-color);
   color: #fff;
-  animation: expand .8s ease forwards;
+  animation: expand 2s ease forwards;
   position: relative;
   transition: all .8s ease;
 }
@@ -181,9 +181,9 @@
 
 @keyframes expand {
   0% {
-    transform: translateX(100%) scale(.2);
+    transform: translateY(100%);
   }
   100% {
-    transform: translateX(0px) scale(1);
+    transform: translateY(0px);
   }
 }

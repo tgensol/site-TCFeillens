@@ -21,7 +21,7 @@ const NotreHistoire = () => {
     <div className="mc-fond-clubhouse">
       <Container fluid>
         <Row>
-          <Col xs={12} md={3} className="mc-menu-fixe">
+          <Col xs={12} md={3} className="gx-0" style={{ zIndex: 1000 }}>
             <MenuClub />
           </Col>
           <Col xs={12} md={8} className="m-auto">

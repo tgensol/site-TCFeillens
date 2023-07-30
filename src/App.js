@@ -24,6 +24,8 @@ import Jtournoi from "./pages/competitions/Jtournoi";
 import Schampt from "./pages/competitions/Schampt";
 import Stournoi from "./pages/competitions/Stournoi";
 import Stinterne from "./pages/competitions/Stinterne";
+// Réservations
+import Reservations from "./pages/reservations/Reservations";
 
 const App = () => {
   return (
@@ -53,6 +55,8 @@ const App = () => {
           <Route path="/vente" element={<Ventes />} />
           <Route path="/feteecole" element={<FeteEcole />} />
           <Route path="/soireeclub" element={<SoireeClub />} />
+          {/* Page Réservations */}
+          <Route path="/reservations" element={<Reservations />} />
           {/* Page Not Found */}
           <Route path="*" element={<h1>Page not FOUND !</h1>} />
         </Route>

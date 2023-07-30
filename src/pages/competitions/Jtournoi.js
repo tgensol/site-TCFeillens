@@ -1,30 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
 import MenuCompetitions from "../../layouts/sections/MenuCompetitions";
 import galaxie from "../../assets/img/Photos/galaxie.jpg";
 
 const Jtournoi = () => {
-  const [isActive, setIsActive] = useState(true);
-
   return (
     <div className="mc-fond-clubhouse">
       <Container fluid>
         <Row>
-          <Col xs={12} lg={3} className="mc-menu-fixe">
-            {tableMenuCompetitions.map((menu, index) => {
-              return (
-                <MenuCompetitions
-                  title={menu.title}
-                  links={menu.links}
-                  isActive={isActive}
-                  setIsActive={setIsActive}
-                  key={index}
-                />
-              );
-            })}
+          <Col xs={12} md={3} className="gx-0" style={{ zIndex: 1000 }}>
+            <MenuCompetitions />
           </Col>
-          <Col xs={12} lg={9}>
+          <Col xs={12} md={9}>
             <h1 className="mt-5 mc-rampart mc-title mb-2">Tournois Jeunes</h1>
             <Row>
               <div className="container">

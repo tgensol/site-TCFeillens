@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../../assets/css/jeunes.css";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import MenuCompetitions from "../../layouts/sections/MenuCompetitions";
-import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
 import tableCompetitions from "../../_params/tableCompetitions";
 import tableSaisons from "../../_params/tableSaisons";
 import TeamsList from "../../components/TeamsList";
@@ -30,37 +29,36 @@ const Jchampt = () => {
     <div className="mc-fond-courts-couverts">
       <Container fluid>
         <Row>
-          <Col xs={12} md={3} className="mc-menu-fixe">
-            {tableMenuCompetitions.map((menu, index) => {
-              return (
-                <MenuCompetitions
-                  title={menu.title}
-                  links={menu.links}
-                  key={index}
-                />
-              );
-            })}
+          <Col xs={12} md={3} className="gx-0" style={{ zIndex: 1000 }}>
+            <MenuCompetitions />
           </Col>
-          <Col xs={12} md={9} className="m-auto">
+          <Col md={9} className="m-auto">
             <h1 className="my-5 mc-rampart mc-title">Championnats Seniors</h1>
             <div className="mc-container">
-              <div className="d-flex align-items-center mb-3">
-                <div className="title">
-                  <h1>Compétitions par équipes - Saison</h1>
+              <div className="d-flex flex-wrap justify-content-center align-items-center mb-3">
+                <div className="title mx-2">
+                  <h1>Compétitions par équipes</h1>
                 </div>
-                <Form.Group>
-                  <Form.Label className="fs-1">
-                    <Form.Select
-                      className="fs-4 text-light fw-bold mc-select"
-                      value={currentSeason}
-                      onChange={(e) => setCurrentSeason(e.target.value)}
-                    >
-                      {tableSaisons.map((saison) => {
-                        return <option key={saison.id}>{saison.season}</option>;
-                      })}
-                    </Form.Select>
-                  </Form.Label>
-                </Form.Group>
+                <div className="title mx-2">
+                  <h1>Saison</h1>
+                </div>
+                <div>
+                  <Form.Group>
+                    <Form.Label className="fs-1 d-flex">
+                      <Form.Select
+                        className="fs-4 text-light fw-bold mc-select"
+                        value={currentSeason}
+                        onChange={(e) => setCurrentSeason(e.target.value)}
+                      >
+                        {tableSaisons.map((saison) => {
+                          return (
+                            <option key={saison.id}>{saison.season}</option>
+                          );
+                        })}
+                      </Form.Select>
+                    </Form.Label>
+                  </Form.Group>
+                </div>
               </div>
               {tableCompetitions
                 .filter(
