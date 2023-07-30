@@ -7,25 +7,25 @@ import Accueil from "./pages/Accueil";
 import Contact from "./pages/Contact";
 // Le Club
 import LeClub from "./pages/LeClub";
-import NotreHistoire from "./pages/leclub/NotreHistoire";
-import NosInstallations from "./pages/leclub/NosInstallations";
-import LeBureau from "./pages/leclub/LeBureau";
+import NotreHistoire from "./pages/leclub/notrehistoire";
+import NosInstallations from "./pages/leclub/nosinstallations";
+import LeBureau from "./pages/leclub/lebureau";
 // Animations
-import Animations from "./pages/Animations";
-import Programme from "./pages/animations/ListeActivites";
-import Ventes from "./pages/animations/Ventes";
-import FeteEcole from "./pages/animations/FeteEcole";
-import SoireeClub from "./pages/animations/SoireeClub";
-import OuSommesNous from "./pages/leclub/OuSommesNous";
+import Animations from "./pages/animations";
+import Programme from "./pages/animations/listeactivites";
+import Ventes from "./pages/animations/ventes";
+import FeteEcole from "./pages/animations/feteecole";
+import SoireeClub from "./pages/animations/soireeclub";
+import OuSommesNous from "./pages/leclub/ousommesnous";
 // Compétitions
-import Competitions from "./pages/Competitions";
-import Jchampt from "./pages/competitions/Jchampt";
-import Jtournoi from "./pages/competitions/Jtournoi";
-import Schampt from "./pages/competitions/Schampt";
-import Stournoi from "./pages/competitions/Stournoi";
-import Stinterne from "./pages/competitions/Stinterne";
+import Competitions from "./pages/competitions";
+import Jchampt from "./pages/competitions/jchampt";
+import Jtournoi from "./pages/competitions/jtournoi";
+import Schampt from "./pages/competitions/schampt";
+import Stournoi from "./pages/competitions/stournoi";
+import Stinterne from "./pages/competitions/stinterne";
 // Réservations
-import Reservations from "./pages/reservations/Reservations";
+import Reservations from "./pages/reservations/reservations";
 
 const App = () => {
   return (
