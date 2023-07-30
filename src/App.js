@@ -7,16 +7,16 @@ import Accueil from "./pages/Accueil";
 import Contact from "./pages/Contact";
 // Le Club
 import LeClub from "./pages/LeClub";
-import NotreHistoire from "./pages/leClub/NotreHistoire";
-import NosInstallations from "./pages/leClub/NosInstallations";
-import LeBureau from "./pages/leClub/LeBureau";
+import NotreHistoire from "./pages/leclub/NotreHistoire";
+import NosInstallations from "./pages/leclub/NosInstallations";
+import LeBureau from "./pages/leclub/LeBureau";
 // Animations
 import Animations from "./pages/Animations";
 import Programme from "./pages/animations/ListeActivites";
 import Ventes from "./pages/animations/Ventes";
 import FeteEcole from "./pages/animations/FeteEcole";
 import SoireeClub from "./pages/animations/SoireeClub";
-import OuSommesNous from "./pages/leClub/OuSommesNous";
+import OuSommesNous from "./pages/leclub/OuSommesNous";
 // Compétitions
 import Competitions from "./pages/Competitions";
 import Jchampt from "./pages/competitions/Jchampt";
