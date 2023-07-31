@@ -1,8 +1,8 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
-import MenuCompetitions from "../layouts/sections/MenuCompetitions";
-import tableMenuCompetitions from "../_params/tableMenuCompetitions";
+import MenuCompetitions from "../layouts/sections/menucompetitions";
+import tableMenuCompetitions from "../_params/tablemenucompetitions";
 
 const Competitions = () => {
   return (

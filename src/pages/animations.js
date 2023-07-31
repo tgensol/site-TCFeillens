@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { IconContext } from "react-icons";
 import { FaChevronRight } from "react-icons/fa";
-import imgAnim from "../assets/img/imgAnim";
+import imgAnim from "../assets/img/imganim";
 import { motion } from "framer-motion";
 
 const buttonVariants = {

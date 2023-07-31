@@ -1,4 +1,4 @@
-import imgNews from "../assets/img/imgNews";
+import imgNews from "../assets/img/imgnews";
 
 const tableNews = [
   {

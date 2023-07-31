@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../../assets/css/jeunes.css";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import MenuCompetitions from "../../layouts/sections/MenuCompetitions";
-import tableCompetitions from "../../_params/tableCompetitions";
-import tableSaisons from "../../_params/tableSaisons";
-import TeamsList from "../../components/TeamsList";
+import MenuCompetitions from "../../layouts/sections/menucompetitions";
+import tableCompetitions from "../../_params/tablecompetitions";
+import tableSaisons from "../../_params/tablesaisons";
+import TeamsList from "../../components/teamslist";
 
 const Jchampt = () => {
-  console.log("Hello Schampt");
+  console.log("Hello Jchampt");
 
   /*************************** Selection of today's date to select current season year */
   let year = 0;
@@ -32,8 +32,8 @@ const Jchampt = () => {
           <Col xs={12} md={3} className="gx-0" style={{ zIndex: 1000 }}>
             <MenuCompetitions />
           </Col>
-          <Col md={9} className="m-auto">
-            <h1 className="my-5 mc-rampart mc-title">Championnats Seniors</h1>
+          <Col xs={12} md={9} className="m-auto">
+            <h1 className="my-5 mc-rampart mc-title">Championnats Jeunes</h1>
             <div className="mc-container">
               <div className="d-flex flex-wrap justify-content-center align-items-center mb-3">
                 <div className="title mx-2">
@@ -64,7 +64,7 @@ const Jchampt = () => {
                 .filter(
                   (comp) =>
                     comp.season === currentSeason &&
-                    comp.category.includes("Seniors")
+                    !comp.category.includes("Seniors")
                 )
                 .map((compFiltered) => {
                   return (

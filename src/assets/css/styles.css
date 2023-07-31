@@ -3,16 +3,16 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-  
+
 code {
-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}  
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
 
 :root {
     --red-color: #ff035b;
@@ -39,6 +39,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     --y-pos7: Math.sin((270 * Math.PI) / 180);
     --y-pos8: Math.sin((315 * Math.PI) / 180); */
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 
 .mc-rampart {
@@ -48,7 +49,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .mc-banner {
-    background: url('../img/imgHeader/tennis-terre-battue_1920.jpg') center center fixed no-repeat;
+    background: url('../img/imgheader/tennis-terre-battue_1920.jpg') center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -84,8 +85,8 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 
 .dropdown-item {
     font-size: small;
-    padding-top: 0!important;
-    padding-bottom: 0!important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .mc-fond-ecran {
@@ -94,12 +95,12 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .mc-fond-clubhouse {
-    background: url("../img/imgHistoire/clubHouse2.jpg") center center fixed no-repeat;
+    background: url("../img/imghistoire/clubHouse2.jpg") center center fixed no-repeat;
     background-size: cover;
 }
 
 .mc-fond-courts-couverts {
-    background: url("../img/imgInstallations/courtsCouverts.jpg") center center fixed no-repeat;
+    background: url("../img/imginstallations/courtsCouverts.jpg") center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -117,9 +118,9 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .mc-neon {
-    margin: auto!important;
+    margin: auto !important;
     background-color: #fff;
-    width: 98%!important;
+    width: 98% !important;
     border: 4px solid #fff;
     border-radius: 5px;
     box-shadow: 0 0 8px #fff, 0 0 16px rgb(13, 110, 253), 0 0 32px rgb(13, 110, 253);
@@ -129,7 +130,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     position: relative;
     overflow: hidden;
     height: 8rem;
-    width: 100%!important;
+    width: 100% !important;
 }
 
 .mc-wrapper {
@@ -147,20 +148,21 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 @keyframes defilement {
-    0%{ 
+    0% {
         transform: translate(0);
     }
-    100%{ 
+
+    100% {
         transform: translate(-100%);
     }
-  }
+}
 
 .mc-partners {
     letter-spacing: 0;
     margin: 0 auto;
 
     /* Clip Background Image */
-    background: url('../img/imgPartners/animated-text-fill-light-blue.png') no-repeat;
+    background: url('../img/imgpartners/animated-text-fill-light-blue.png') no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
 
@@ -173,17 +175,18 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 
 @keyframes aitf {
     0% {
-      background-position: 0% 50%;
+        background-position: 0% 50%;
     }
+
     100% {
-      background-position: 100% 50%;
+        background-position: 100% 50%;
     }
-  }
-      
+}
+
 /* ======================= WEATHER ================================ */
 
 .mc-weather {
-    background: url('../img/imgWeather/sun-clouds_1920.jpg') center center;
+    background: url('../img/imgweather/sun-clouds_1920.jpg') center center;
     background-size: cover;
     width: 100%;
     color: #fff;
@@ -223,12 +226,12 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     font-size: 1.6rem;
     border-radius: 25px;
     border: 2px solid rgb(255, 255, 0);
-    background:  rgba(2, 57, 141, 0.5);
+    background: rgba(2, 57, 141, 0.5);
     box-shadow:
-    0 0 10px rgb(2, 57, 141),
-    0 0 20px rgb(2, 57, 141),
-    0 0 30px rgb(2, 57, 141),
-    inset 0 0 20px rgb(2, 57, 141);
+        0 0 10px rgb(2, 57, 141),
+        0 0 20px rgb(2, 57, 141),
+        0 0 30px rgb(2, 57, 141),
+        inset 0 0 20px rgb(2, 57, 141);
 }
 
 /* .mc-wlocation{
@@ -280,18 +283,22 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     transform: translateY(100vh);
     animation: slideContainerUp 1s ease forwards .5s;
 }
+
 .mc-container-histoire2 {
     transform: translateY(100vh);
     animation: slideContainerUp 1s ease forwards 1s;
 }
+
 .mc-container-histoire3 {
     transform: translateY(100vh);
     animation: slideContainerUp 1s ease forwards 1.5s;
 }
+
 .mc-container-histoire4 {
     transform: translateY(100vh);
-    animation: slideContainerUp  1s ease forwards 2s;
+    animation: slideContainerUp 1s ease forwards 2s;
 }
+
 .mc-container-histoire5 {
     transform: translateY(100vh);
     animation: slideContainerUp 1s ease forwards 2.5s;
@@ -312,19 +319,21 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     0% {
         transform: scale(0.2);
     }
+
     100% {
-      transform: scale(1);
+        transform: scale(1);
     }
-  }
+}
 
 @keyframes slideContainerUp {
     0% {
-      transform: translateY(100vh);
+        transform: translateY(100vh);
     }
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
-  }
+}
 
 /* ======================= NOTRE HISTOIRE ================================ */
 
@@ -344,13 +353,13 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .mc-card {
-    background-color: rgba(0, 43, 110, 0.5)!important;
+    background-color: rgba(0, 43, 110, 0.5) !important;
 }
 
 /* ======================= ANIMATION LOGO ================================ */
 
 .mc-page-logo {
-    text-align:center;
+    text-align: center;
     height: 50vh;
 }
 
@@ -367,6 +376,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         transform: rotate(720deg);
         top: 20%;
     }
+
     100% {
         transform: translateX(480%) translateY(-100%);
         scale: 0.3;
@@ -377,7 +387,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 /* ========================== OÙ SOMMES-NOUS ? ============================= */
 
 .mc-fond-europe {
-    background: url("../img/imgHeader/europe-map_1920.jpg") center center fixed no-repeat;
+    background: url("../img/imgheader/europe-map_1920.jpg") center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -393,12 +403,13 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
 
 .mc-osn-point1-visible {
-    color:rgb(96, 96, 2);
+    color: rgb(96, 96, 2);
     background-color: rgba(255, 255, 134, 0.6);
     animation: animation-interrogation-point 4s linear infinite;
 }
+
 .mc-osn-point2-visible {
-    color:rgb(90, 1, 1);
+    color: rgb(90, 1, 1);
     background-color: rgba(255, 148, 148, 0.6);
     animation: animation-exclamation-point 3s linear infinite;
 }
@@ -447,6 +458,7 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     width: 75%;
     padding: 2rem;
 }
+
 .mc-wheel {
     display: flex;
     justify-content: center;
@@ -457,14 +469,24 @@ font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     width: 600px;
     color: #fff;
     border-radius: 50%;
-  }
+}
 
 @keyframes turnin {
-    from {transform: translate(-50%, -50%) rotate(0);}
-    to {transform: translate(-50%, -50%) rotate(360deg);}
+    from {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
 
 @keyframes turnout {
-    from {transform: rotate(360deg);}
-    to {transform: rotate(0deg);}
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }

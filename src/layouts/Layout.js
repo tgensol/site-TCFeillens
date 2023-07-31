@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Header from "./sections/Header";
-import NavbarSection from "./sections/NavbarSection";
-import Footer from "./sections/Footer";
+import Header from "./sections/header";
+import NavbarSection from "./sections/navbarsection";
+import Footer from "./sections/footer";
 
 const Layout = () => {
   console.log("Hello Layout!");

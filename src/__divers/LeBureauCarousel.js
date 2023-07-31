@@ -1,6 +1,6 @@
 import React from "react";
-import MenuClubSection from "../layouts/sections/MenuSection";
-import Wheel from "../../components/Wheel";
+import MenuClubSection from "../layouts/sections/menusection";
+import Wheel from "../../components/wheel";
 
 const LeBureau = () => {
   return (

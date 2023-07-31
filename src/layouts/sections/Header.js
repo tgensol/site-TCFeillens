@@ -4,9 +4,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
-import imgFacebook from "../../assets/img/imgHeader/Facebook_logo.png";
-import imgInstagram from "../../assets/img/imgHeader/Instagram_logo.png";
-import imgTwitter from "../../assets/img/imgHeader/Twitter_logo.png";
+import imgFacebook from "../../assets/img/imgheader/Facebook_logo.png";
+import imgInstagram from "../../assets/img/imgheader/Instagram_logo.png";
+import imgTwitter from "../../assets/img/imgheader/Twitter_logo.png";
 
 const Header = () => {
   return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Col from "react-bootstrap/Col";
-import tableWeather from "../_params/tableWeather";
+import tableWeather from "../_params/tableweather";
 
 const Weather = () => {
   // const location = "Feillens";

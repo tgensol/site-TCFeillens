@@ -1,10 +1,10 @@
-import logoBabolat from "./imgPartners/logoBabolat.jpg";
-import logoBourdonCharpente from "./imgPartners/logoBourdonCharpente.jpg";
-import logoBourdonConstruction from "./imgPartners/logoBourdonConstruction.jpg";
-import logoBourdonMenuiserie from "./imgPartners/logoBourdonMenuiserie.jpg";
-import logoIDConseils from "./imgPartners/logoIDConseils.jpg";
-import logoIntermarche from "./imgPartners/logoIntermarche.png";
-import logoJaninSports from "./imgPartners/logoJaninSports.jpg";
+import logoBabolat from "./imgpartners/logoBabolat.jpg";
+import logoBourdonCharpente from "./imgpartners/logoBourdonCharpente.jpg";
+import logoBourdonConstruction from "./imgpartners/logoBourdonConstruction.jpg";
+import logoBourdonMenuiserie from "./imgpartners/logoBourdonMenuiserie.jpg";
+import logoIDConseils from "./imgpartners/logoIDConseils.jpg";
+import logoIntermarche from "./imgpartners/logoIntermarche.png";
+import logoJaninSports from "./imgpartners/logoJaninSports.jpg";
 
 const imgPartners = [
   logoBabolat,

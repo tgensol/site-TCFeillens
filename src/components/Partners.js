@@ -1,5 +1,5 @@
 import React from "react";
-import imgPartners from "../assets/img/imgPartners";
+import imgPartners from "../assets/img/imgpartners";
 
 export const Partners = () => {
   const listImgPartners = imgPartners.map((image, index) => (

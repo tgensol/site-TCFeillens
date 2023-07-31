@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import useWindowSize from "../../_utils/useWindowSize";
+import useWindowSize from "../../_utils/usewindowsize";
 import Nav from "react-bootstrap/Nav";
-import "../../assets/css/menuClub.css";
-import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
+import "../../assets/css/menuclub.css";
+import tableMenuCompetitions from "../../_params/tablemenucompetitions";
 
 const MenuCompetitions = () => {
   const location = useLocation();

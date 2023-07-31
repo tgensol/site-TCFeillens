@@ -1,11 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Weather from "../components/Weather";
-import News from "../components/News";
-import Partners from "../components/Partners";
-import Reserve from "../components/Reserve";
-import Agenda from "../components/Agenda";
+import Weather from "../components/weather";
+import News from "../components/news";
+import Partners from "../components/partners";
+import Reserve from "../components/reserve";
+import Agenda from "../components/agenda";
 import "../assets/css/styles.css";
 
 const Accueil = () => {

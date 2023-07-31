@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Container } from "react-bootstrap";
-import MenuClub from "../layouts/sections/MenuClub";
+import MenuClub from "../layouts/sections/menuclub";
 
 const LeClub = () => {
   return (

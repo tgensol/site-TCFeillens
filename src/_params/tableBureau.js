@@ -1,9 +1,9 @@
-import idMichel from "../assets/img/imgBureau/idMichel.jpg";
-import idYvan from "../assets/img/imgBureau/idYvan.jpg";
-import idJeremie from "../assets/img/imgBureau/idJeremie.jpg";
-import idShauna from "../assets/img/imgBureau/idShauna.jpg";
-import idLaurence from "../assets/img/imgBureau/idLaurence.jpg";
-import idMagaly from "../assets/img/imgBureau/idMagaly.jpg";
+import idMichel from "../assets/img/imgbureau/idMichel.jpg";
+import idYvan from "../assets/img/imgbureau/idYvan.jpg";
+import idJeremie from "../assets/img/imgbureau/idJeremie.jpg";
+import idShauna from "../assets/img/imgbureau/idShauna.jpg";
+import idLaurence from "../assets/img/imgbureau/idLaurence.jpg";
+import idMagaly from "../assets/img/imgbureau/idMagaly.jpg";
 
 const tableBureau = [
   {

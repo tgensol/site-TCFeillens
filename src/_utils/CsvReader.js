@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import DisplayTable from "../_utils/DisplayTable";
+import DisplayTable from "./displaytable";
 
 const CsvReader = () => {
   // save the input name to a state variable
   const [csvFile, setCsvFile] = useState(null);
-  //save the file data to a state variable so the DsplayTable component can use it
+  //save the file data to a state variable so the DisplayTable component can use it
   const [csvArray, setCsvArray] = useState([]);
 
   const processCSV = (str) => {

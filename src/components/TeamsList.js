@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaUserFriends } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import PlayersList from "./PlayersList";
+import PlayersList from "./playerslist";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import Accordion from "react-bootstrap/Accordion";

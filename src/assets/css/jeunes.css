@@ -16,13 +16,13 @@
   overflow: hidden;
   font-size: 1.5rem;
   font-weight: 600;
-  color:var(--warning-color);
+  color: var(--warning-color);
 }
 
 .mc-team {
   font-size: 1.2rem;
   font-style: italic;
-  color:#fff;
+  color: #fff;
   line-height: 28px;
   transform: translateY(300px);
   animation: slideUp .8s ease-in-out forwards .8s;
@@ -93,6 +93,7 @@
   background-color: transparent;
   border-style: none;
 }
+
 /* 
 .mc-userFriends:hover {
   transform: translate(-3px, -3px);
@@ -137,8 +138,8 @@
 }
 
 .title h1 {
-    font-size: 35px;
-    animation: slideUp .8s ease forwards .5s;
+  font-size: 35px;
+  animation: slideUp .8s ease forwards .5s;
 }
 
 .mc-select {
@@ -146,10 +147,10 @@
 }
 
 .mc-players-bg {
-  background: url('../img/imgHeader/court-couverts-tennis.jpg') center center fixed no-repeat;
+  background: url('../img/imgheader/court-couverts-tennis.jpg') center center fixed no-repeat;
   background-size: cover;
   height: 100%;
-  width:90%;
+  width: 90%;
   margin: 2rem 0;
 }
 
@@ -157,13 +158,14 @@
   background-color: rgba(21, 18, 38, 0.6);
   padding: 1rem 2rem;
   box-shadow: 0 0 8px #fff, 0 0 16px rgb(21, 18, 38), 0 0 32px rgb(21, 18, 38),
-  inset 0 0 8px #fff, inset 0 0 16px rgb(21, 18, 38), inset 0 0 32px rgb(21, 18, 38);
+    inset 0 0 8px #fff, inset 0 0 16px rgb(21, 18, 38), inset 0 0 32px rgb(21, 18, 38);
 }
 
 @keyframes slideIn {
   0% {
     transform: translateX(500px) scale(.2);
   }
+
   100% {
     transform: translateX(0px) scale(1);
   }
@@ -173,6 +175,7 @@
   0% {
     transform: translateY(500px);
   }
+
   100% {
     transform: translateY(0px);
     visibility: visible;
@@ -183,6 +186,7 @@
   0% {
     transform: translateY(100%);
   }
+
   100% {
     transform: translateY(0px);
   }

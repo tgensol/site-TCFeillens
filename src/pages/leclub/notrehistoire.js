@@ -3,18 +3,18 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import les3Presidents from "../../assets/img/imgHistoire/les3Presidents.jpg";
-import declaration from "../../assets/img/imgHistoire/declarationJOTCF.png";
-import ImgMagnifierCircle from "../../_utils/ImgMagnifierCircle";
-import clubHouse from "../../assets/img/imgHistoire/clubHouse.jpg";
-import courtsExterieurs from "../../assets/img/imgHistoire/courtsExterieurs.jpg";
-import inaugurationCourtsExterieurs from "../../assets/img/imgHistoire/inaugurationCourtsExterieurs.jpg";
-import inondationCourts from "../../assets/img/imgHistoire/inondationCourts.jpg";
-import inaugurationCh from "../../assets/img/imgHistoire/inaugurationCh.jpg";
-import inaugurationChBureau from "../../assets/img/imgHistoire/inaugurationChBureau.jpg";
-import tournoiTCF from "../../assets/img/imgHistoire/tournoiTCF1.jpg";
-import evolutionTCF from "../../assets/img/imgHistoire/evolutionTCF.png";
-import MenuClub from "../../layouts/sections/MenuClub";
+import les3Presidents from "../../assets/img/imghistoire/les3Presidents.jpg";
+import declaration from "../../assets/img/imghistoire/declarationJOTCF.png";
+import ImgMagnifierCircle from "../../_utils/Imgmagnifiercircle";
+import clubHouse from "../../assets/img/imghistoire/clubHouse.jpg";
+import courtsExterieurs from "../../assets/img/imghistoire/courtsExterieurs.jpg";
+import inaugurationCourtsExterieurs from "../../assets/img/imghistoire/inaugurationCourtsExterieurs.jpg";
+import inondationCourts from "../../assets/img/imghistoire/inondationCourts.jpg";
+import inaugurationCh from "../../assets/img/imghistoire/inaugurationCh.jpg";
+import inaugurationChBureau from "../../assets/img/imghistoire/inaugurationChBureau.jpg";
+import tournoiTCF from "../../assets/img/imghistoire/tournoiTCF1.jpg";
+import evolutionTCF from "../../assets/img/imghistoire/evolutionTCF.png";
+import MenuClub from "../../layouts/sections/menuclub";
 
 const NotreHistoire = () => {
   return (

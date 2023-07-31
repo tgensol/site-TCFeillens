@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import tableBureau from "../../_params/tableBureau";
-import MenuClub from "../../layouts/sections/MenuClub";
+import tableBureau from "../../_params/tablebureau";
+import MenuClub from "../../layouts/sections/menuclub";
 
 const LeBureau = () => {
   const idCardBureau = tableBureau.map((card) => {

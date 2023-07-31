@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import MenuCompetitions from "../../layouts/sections/MenuCompetitions";
-import galaxie from "../../assets/img/Photos/galaxie.jpg";
+import MenuCompetitions from "../../layouts/sections/menucompetitions";
+import galaxie from "../../assets/img/photos/galaxie.jpg";
 
 const Jtournoi = () => {
   return (

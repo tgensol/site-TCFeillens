@@ -1,11 +1,11 @@
-import badminton from "../assets/img/imgAnimations/01_badminton_1920.jpg";
-import venteFromageVin from "../assets/img/imgAnimations/02_venteFromageVin.jpg";
-import tournoiInterne from "../assets/img/imgAnimations/04_tennis-raquettes_1920.jpg";
-import programme from "../assets/img/imgAnimations/05_programme.jpg";
-import pickleball from "../assets/img/imgAnimations/06_pickleball_1920.jpg";
-import ecoleTennis from "../assets/img/imgAnimations/07_ecoleTennis_1920.jpg";
-import soireeClub from "../assets/img/imgAnimations/08_soireeClub_1920.png";
-import rolandGarros from "../assets/img/imgAnimations/09_rolandGarros_1920.jpg";
+import badminton from "../assets/img/imganimations/01_badminton_1920.jpg";
+import venteFromageVin from "../assets/img/imganimations/02_venteFromageVin.jpg";
+import tournoiInterne from "../assets/img/imganimations/04_tennis-raquettes_1920.jpg";
+import programme from "../assets/img/imganimations/05_programme.jpg";
+import pickleball from "../assets/img/imganimations/06_pickleball_1920.jpg";
+import ecoleTennis from "../assets/img/imganimations/07_ecoleTennis_1920.jpg";
+import soireeClub from "../assets/img/imganimations/08_soireeClub_1920.png";
+import rolandGarros from "../assets/img/imganimations/09_rolandGarros_1920.jpg";
 
 const tableAnimations = [
   {
