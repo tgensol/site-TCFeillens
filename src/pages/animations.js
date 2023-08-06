@@ -25,7 +25,7 @@ const Animations = () => {
         <Row>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4 text-light">
-              <Card.Img src={imgAnim[4]} width={100} height={250} />
+              <Card.Img src={imgAnim[4]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Programme 2023</Card.Title>
                 <Card.Text>
@@ -49,7 +49,7 @@ const Animations = () => {
           </Col>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4 text-light">
-              <Card.Img src={imgAnim[1]} width={100} height={250} />
+              <Card.Img src={imgAnim[1]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Vente de Fromages et de Vins</Card.Title>
                 <Card.Text>
@@ -73,7 +73,7 @@ const Animations = () => {
           </Col>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4">
-              <Card.Img src={imgAnim[6]} width={100} height={250} />
+              <Card.Img src={imgAnim[6]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Fête de l'école de tennis</Card.Title>
                 <Card.Text className="bg-light">
@@ -95,7 +95,7 @@ const Animations = () => {
           </Col>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4">
-              <Card.Img src={imgAnim[7]} width={100} height={250} />
+              <Card.Img src={imgAnim[7]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Soirée Club</Card.Title>
                 <Card.Text className="bg-light">
@@ -118,7 +118,7 @@ const Animations = () => {
           </Col>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4 text-light">
-              <Card.Img src={imgAnim[0]} width={100} height={250} />
+              <Card.Img src={imgAnim[0]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Badminton</Card.Title>
                 <Card.Text>Tournois de la Saint Patrick</Card.Text>
@@ -138,7 +138,7 @@ const Animations = () => {
           </Col>
           <Col xs={6} md={4}>
             <Card className="p-2 my-4 text-light">
-              <Card.Img src={imgAnim[5]} width={100} height={250} />
+              <Card.Img src={imgAnim[5]} width={100} height={250} alt={""} />
               <Card.ImgOverlay>
                 <Card.Title>Pickleball</Card.Title>
                 <Card.Text>Tournois de novembre et de juillet.</Card.Text>
