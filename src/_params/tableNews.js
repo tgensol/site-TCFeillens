@@ -4,26 +4,30 @@ const tableNews = [
   {
     id: 1,
     img: imgNews[0],
-    title: "Balle mouillée en couleur",
-    texte: "Nulla vitae elit libero, a pharetra augue mollis interdum ...",
+    title: "Inscriptions 2024",
+    texte:
+      "Les inscriptions auront lieu le samedi 2 septembre à la salle polyvalente ...",
   },
   {
     id: 2,
     img: imgNews[1],
-    title: "Court Central US Open",
-    texte: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ...",
+    title: "Inscriptions 2024",
+    texte:
+      "Les inscriptions auront lieu le samedi 2 septembre à la salle polyvalente ...",
   },
   {
     id: 3,
     img: imgNews[2],
-    title: "Match de tennis féminin",
-    texte: "Praesent commodo cursus magna, vel scelerisque nisl consecte ...",
+    title: "Inscriptions 2024",
+    texte:
+      "Les inscriptions auront lieu le samedi 2 septembre à la salle polyvalente ...",
   },
   {
     id: 4,
     img: imgNews[3],
-    title: "Balle mouillée noire et blanc",
-    texte: "Praesent commodo cursus magna, vel scelerisque nisl consecte ...",
+    title: "Inscriptions 2024",
+    texte:
+      "Les inscriptions auront lieu le samedi 2 septembre à la salle polyvalente ...",
   },
 ];
 

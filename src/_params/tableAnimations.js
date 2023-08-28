@@ -6,6 +6,7 @@ import pickleball from "../assets/img/imganimations/06_pickleball_1920.jpg";
 import ecoleTennis from "../assets/img/imganimations/07_ecoleTennis_1920.jpg";
 import soireeClub from "../assets/img/imganimations/08_soireeClub_1920.png";
 import rolandGarros from "../assets/img/imganimations/09_rolandGarros_1920.jpg";
+import inscriptions2024 from "../assets/img/imganimations/10_inscriptions_1280.jpg";
 
 const tableAnimations = [
   {
@@ -169,6 +170,15 @@ const tableAnimations = [
     dateDebut: "2023-08-19",
     dateFin: "2023-08-26",
     lieu: "Courts extérieurs",
+  },
+  {
+    id: 19,
+    image: inscriptions2024,
+    animation: "Insciptions 2024",
+    desc: "Les insciptions auront lieu samedi 2/9 à partir de 13h30",
+    dateDebut: "2023-09-02",
+    dateFin: "2023-09-02",
+    lieu: "Salle polyvalente",
   },
 ];
 

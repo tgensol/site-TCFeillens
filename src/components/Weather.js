@@ -3,8 +3,8 @@ import Col from "react-bootstrap/Col";
 import tableWeather from "../_params/tableweather";
 
 const Weather = () => {
-  // const location = "Feillens";
-  const location = "";
+  const location = "Feillens";
+  // const location = "";
   const [data, setData] = useState("");
   const [icon, setIcon] = useState("");
   const [latitude, setLat] = useState("");
