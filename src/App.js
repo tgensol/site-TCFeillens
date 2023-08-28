@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Layout from "./layouts/layout";
+import Layout from "./layouts/layout1";
 import Accueil from "./pages/accueil";
 import Contact from "./pages/contact";
 // Le Club
