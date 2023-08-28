@@ -6,7 +6,8 @@ import pickleball from "../assets/img/imganimations/06_pickleball_1920.jpg";
 import ecoleTennis from "../assets/img/imganimations/07_ecoleTennis_1920.jpg";
 import soireeClub from "../assets/img/imganimations/08_soireeClub_1920.png";
 import rolandGarros from "../assets/img/imganimations/09_rolandGarros_1920.jpg";
-import inscriptions2024 from "../assets/img/imganimations/10_inscriptions_1280.jpg";
+import inscriptions2024 from "../assets/img/imgnews/inscriptions.jpg";
+import repriseCours from "../assets/img/imgnews/repriseCours.jpeg";
 
 const tableAnimations = [
   {
@@ -179,6 +180,15 @@ const tableAnimations = [
     dateDebut: "2023-09-02",
     dateFin: "2023-09-02",
     lieu: "Salle polyvalente",
+  },
+  {
+    id: 20,
+    image: repriseCours,
+    animation: "Reprise des cours",
+    desc: "Les cours reprendront à partir du lundi 11/9",
+    dateDebut: "2023-09-11",
+    dateFin: "2024-06-29",
+    lieu: "Courts extérieurs ou couverts",
   },
 ];
 
