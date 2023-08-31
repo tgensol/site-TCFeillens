@@ -7,7 +7,7 @@ import clubHouse1 from "../../assets/img/imginstallations/clubHouse1.jpg";
 import clubHouse2 from "../../assets/img/imginstallations/clubHouse2.jpg";
 import clubHouse3 from "../../assets/img/imginstallations/clubHouse3.jpg";
 import clubVuDuCiel from "../../assets/img/imginstallations/clubVuDuCiel.jpg";
-import courtsCouverts from "../../assets/img/imginstallations/courtsCouverts.jpg";
+import courtsCouverts from "../../assets/img/imginstallations/courtsCouvert.jpg";
 import courtsExterieurs from "../../assets/img/imginstallations/courtsExterieurs.jpg";
 import courtsExterieurs1 from "../../assets/img/imginstallations/courtsExterieurs1.png";
 import MenuClub from "../../layouts/sections/menuclub";
