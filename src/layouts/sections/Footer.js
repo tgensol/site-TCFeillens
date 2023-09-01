@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import Nav from "react-bootstrap/Nav";
-
 const Footer = () => {
   return (
     <div className="footer">
