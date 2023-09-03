@@ -1,6 +1,6 @@
-import news1 from "./imgnews/inscriptions.jpg";
-import news2 from "./imgnews/repriseCours.jpeg";
+import news1 from "./img-news/inscriptions.jpg";
+import news2 from "./img-news/repriseCours.jpeg";
 
-const imgNews = [news1, news2];
+const imgnews = [news1, news2];
 
-export default imgNews;
+export default imgnews;

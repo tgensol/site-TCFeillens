@@ -3,13 +3,13 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import clubHouse1 from "../../assets/img/imginstallations/clubHouse1.jpg";
-import clubHouse2 from "../../assets/img/imginstallations/clubHouse2.jpg";
-import clubHouse3 from "../../assets/img/imginstallations/clubHouse3.jpg";
-import clubVuDuCiel from "../../assets/img/imginstallations/clubVuDuCiel.jpg";
-import courtsCouverts from "../../assets/img/imginstallations/courtsCouvert.jpg";
-import courtsExterieurs from "../../assets/img/imginstallations/courtsExterieurs.jpg";
-import courtsExterieurs1 from "../../assets/img/imginstallations/courtsExterieurs1.png";
+import clubHouse1 from "../../assets/img/img-installations/clubHouse1.jpg";
+import clubHouse2 from "../../assets/img/img-installations/clubHouse2.jpg";
+import clubHouse3 from "../../assets/img/img-installations/clubHouse3.jpg";
+import clubVuDuCiel from "../../assets/img/img-installations/clubVuDuCiel.jpg";
+import courtsCouverts from "../../assets/img/img-installations/courtsCouvert.jpg";
+import courtsExterieurs from "../../assets/img/img-installations/courtsExterieurs.jpg";
+import courtsExterieurs1 from "../../assets/img/img-installations/courtsExterieurs1.png";
 import MenuClub from "../../layouts/sections/menuclub";
 
 const NosInstallations = () => {

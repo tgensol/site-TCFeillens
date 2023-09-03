@@ -3,17 +3,17 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
-import les3Presidents from "../../assets/img/imghistoire/les3Presidents.jpg";
-import declaration from "../../assets/img/imghistoire/declarationJOTCF.png";
+import les3Presidents from "../../assets/img/img-histoire/les3Presidents.jpg";
+import declaration from "../../assets/img/img-histoire/declarationJOTCF.png";
 import ImgMagnifierCircle from "../../_utils/Imgmagnifiercircle";
-import clubHouse from "../../assets/img/imghistoire/clubHouse.jpg";
-import courtsExterieurs from "../../assets/img/imghistoire/courtsExterieurs.jpg";
-import inaugurationCourtsExterieurs from "../../assets/img/imghistoire/inaugurationCourtsExterieurs.jpg";
-import inondationCourts from "../../assets/img/imghistoire/inondationCourts.jpg";
-import inaugurationCh from "../../assets/img/imghistoire/inaugurationCh.jpg";
-import inaugurationChBureau from "../../assets/img/imghistoire/inaugurationChBureau.jpg";
-import tournoiTCF from "../../assets/img/imghistoire/tournoiTCF1.jpg";
-import evolutionTCF from "../../assets/img/imghistoire/evolutionTCF.png";
+import clubHouse from "../../assets/img/img-histoire/clubHouse.jpg";
+import courtsExterieurs from "../../assets/img/img-histoire/courtsExterieurs.jpg";
+import inaugurationCourtsExterieurs from "../../assets/img/img-histoire/inaugurationCourtsExterieurs.jpg";
+import inondationCourts from "../../assets/img/img-histoire/inondationCourts.jpg";
+import inaugurationCh from "../../assets/img/img-histoire/inaugurationCh.jpg";
+import inaugurationChBureau from "../../assets/img/img-histoire/inaugurationChBureau.jpg";
+import tournoiTCF from "../../assets/img/img-histoire/tournoiTCF1.jpg";
+import evolutionTCF from "../../assets/img/img-histoire/evolutionTCF.png";
 import MenuClub from "../../layouts/sections/menuclub";
 
 const NotreHistoire = () => {

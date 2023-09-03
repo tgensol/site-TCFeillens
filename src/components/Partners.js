@@ -1,8 +1,8 @@
 import React from "react";
-import imgPartners from "../assets/img/imgpartners";
+import imgpartners from "../assets/img/imgpartners";
 
 export const Partners = () => {
-  const listImgPartners = imgPartners.map((image, index) => (
+  const listimgpartners = imgpartners.map((image, index) => (
     <div key={index}>
       <img className="mc-img" src={image} alt="" />
     </div>
@@ -12,8 +12,8 @@ export const Partners = () => {
     <div className="mc-neon">
       <div className="mc-carousel-infinite">
         <div className="mc-wrapper">
-          <div className="mc-partners-logo">{listImgPartners}</div>
-          <div className="mc-partners-logo">{listImgPartners}</div>
+          <div className="mc-partners-logo">{listimgpartners}</div>
+          <div className="mc-partners-logo">{listimgpartners}</div>
         </div>
       </div>
     </div>

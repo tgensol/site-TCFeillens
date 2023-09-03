@@ -3,8 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import MenuClub from "../../layouts/sections/menuclub";
-import accesCourtsExt from "../../assets/img/imginstallations/accesCourtsExterieurs.png";
-import accesCourtsCouv from "../../assets/img/imginstallations/accesCourtsCouverts.png";
+import accesCourtsExt from "../../assets/img/img-installations/accesCourtsExterieurs.png";
+import accesCourtsCouv from "../../assets/img/img-installations/accesCourtsCouverts.png";
 
 const OuSommesNous = () => {
   const [pointVisible, setPointVisible] = useState(true);

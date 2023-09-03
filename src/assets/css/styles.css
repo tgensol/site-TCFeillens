@@ -49,7 +49,7 @@ code {
 }
 
 .mc-banner {
-    background: url('../img/imgheader/tennis-terre-battue.png') center center fixed no-repeat;
+    background: url('../img/img-header/tennis-terre-battue.png') center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -57,7 +57,7 @@ code {
     background-color: rgba(135, 209, 249, 0.2);
 }
 
-.imgHeader {
+.img-header {
     margin-right: 10px;
     height: 100px;
 }
@@ -95,7 +95,7 @@ code {
 }
 
 .mc-fond-clubhouse {
-    background: url("../img/imghistoire/clubHouse2.jpg") center center fixed no-repeat;
+    background: url("../img/img-histoire/clubHouse2.jpg") center center fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -103,7 +103,7 @@ code {
 }
 
 .mc-fond-courts-couverts {
-    background: url("../img/imginstallations/courtsCouvert.jpg") center center fixed no-repeat;
+    background: url("../img/img-installations/courtsCouvert.jpg") center center fixed no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -168,7 +168,7 @@ code {
     margin: 0 auto;
 
     /* Clip Background Image */
-    background: url('../img/imgpartners/animated-text-fill-light-blue.png') no-repeat;
+    background: url('../img/img-partners/animated-text-fill-light-blue.png') no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
 
@@ -192,7 +192,7 @@ code {
 /* ======================= WEATHER ================================ */
 
 .mc-weather {
-    background: url('../img/imgweather/sun-clouds_1920.jpg') center center;
+    background: url('../img/img-weather/sun-clouds_1920.jpg') center center;
     background-size: cover;
     width: 100%;
     color: #fff;
@@ -393,7 +393,7 @@ code {
 /* ========================== OÙ SOMMES-NOUS ? ============================= */
 
 .mc-fond-europe {
-    background: url("../img/imgheader/europe-map.png") center center fixed no-repeat;
+    background: url("../img/img-header/europe-map.png") center center fixed no-repeat;
     background-size: cover;
 }
 

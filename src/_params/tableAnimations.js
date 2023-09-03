@@ -1,13 +1,13 @@
-import badminton from "../assets/img/imganimations/01_badminton.png";
-import venteFromageVin from "../assets/img/imganimations/02_venteFromageVin.png";
-import tournoiInterne from "../assets/img/imganimations/04_tennis-raquettes.png";
-import programme from "../assets/img/imganimations/05_programme.png";
-import pickleball from "../assets/img/imganimations/06_pickleball.png";
-import ecoleTennis from "../assets/img/imganimations/07_ecoleTennis.png";
-import soireeClub from "../assets/img/imganimations/08_soireeClub.png";
-import rolandGarros from "../assets/img/imganimations/09_rolandGarros.png";
-import inscriptions2024 from "../assets/img/imgnews/inscriptions.jpg";
-import repriseCours from "../assets/img/imgnews/repriseCours.jpeg";
+import badminton from "../assets/img/img-animations/01_badminton.png";
+import venteFromageVin from "../assets/img/img-animations/02_venteFromageVin.png";
+import tournoiInterne from "../assets/img/img-animations/04_tennis-raquettes.png";
+import programme from "../assets/img/img-animations/05_programme.png";
+import pickleball from "../assets/img/img-animations/06_pickleball.png";
+import ecoleTennis from "../assets/img/img-animations/07_ecoleTennis.png";
+import soireeClub from "../assets/img/img-animations/08_soireeClub.png";
+import rolandGarros from "../assets/img/img-animations/09_rolandGarros.png";
+import inscriptions2024 from "../assets/img/img-news/inscriptions.jpg";
+import repriseCours from "../assets/img/img-news/repriseCours.jpeg";
 
 const tableAnimations = [
   {

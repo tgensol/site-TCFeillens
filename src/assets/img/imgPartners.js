@@ -1,12 +1,12 @@
-import logoBabolat from "./imgpartners/logoBabolat.jpg";
-import logoBourdonCharpente from "./imgpartners/logoBourdonCharpente.jpg";
-import logoBourdonConstruction from "./imgpartners/logoBourdonConstruction.jpg";
-import logoBourdonMenuiserie from "./imgpartners/logoBourdonMenuiserie.jpg";
-import logoIDConseils from "./imgpartners/logoIDConseils.jpg";
-import logoIntermarche from "./imgpartners/logoIntermarche.png";
-import logoJaninSports from "./imgpartners/logoJaninSports.jpg";
+import logoBabolat from "./img-partners/logoBabolat.jpg";
+import logoBourdonCharpente from "./img-partners/logoBourdonCharpente.jpg";
+import logoBourdonConstruction from "./img-partners/logoBourdonConstruction.jpg";
+import logoBourdonMenuiserie from "./img-partners/logoBourdonMenuiserie.jpg";
+import logoIDConseils from "./img-partners/logoIDConseils.jpg";
+import logoIntermarche from "./img-partners/logoIntermarche.png";
+import logoJaninSports from "./img-partners/logoJaninSports.jpg";
 
-const imgPartners = [
+const imgs= [
   logoBabolat,
   logoBourdonCharpente,
   logoBourdonConstruction,
@@ -16,4 +16,4 @@ const imgPartners = [
   logoJaninSports,
 ];
 
-export default imgPartners;
+export default imgs;
