@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import useWindowSize from "../../_utils/usewindowsize";
+import useWindowSize from "../../_utils/use-window-size";
 import Nav from "react-bootstrap/Nav";
 import "../../assets/css/menuclub.css";
 import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
