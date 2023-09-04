@@ -4,7 +4,7 @@ import { Col, Container, Form, Row } from "react-bootstrap";
 import MenuCompetitions from "../../layouts/sections/menu-competitions";
 import tableCompetitions from "../../_params/tableCompetitions";
 import tableSaisons from "../../_params/tableSaisons";
-import TeamsList from "../../components/teamslist";
+import TeamsList from "../../components/c-teams-list";
 
 const Jchampt = () => {
   console.log("Hello Schampt");
