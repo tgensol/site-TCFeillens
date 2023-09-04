@@ -14,7 +14,7 @@ import inaugurationCh from "../../assets/img/img-histoire/inaugurationCh.jpg";
 import inaugurationChBureau from "../../assets/img/img-histoire/inaugurationChBureau.jpg";
 import tournoiTCF from "../../assets/img/img-histoire/tournoiTCF1.jpg";
 import evolutionTCF from "../../assets/img/img-histoire/evolutionTCF.png";
-import MenuClub from "../../layouts/sections/menuclub";
+import MenuClub from "../../layouts/sections/menu-club";
 
 const NotreHistoire = () => {
   return (

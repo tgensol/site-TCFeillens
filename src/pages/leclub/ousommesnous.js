@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import MenuClub from "../../layouts/sections/menuclub";
+import MenuClub from "../../layouts/sections/menu-club";
 import accesCourtsExt from "../../assets/img/img-installations/accesCourtsExterieurs.png";
 import accesCourtsCouv from "../../assets/img/img-installations/accesCourtsCouverts.png";
 

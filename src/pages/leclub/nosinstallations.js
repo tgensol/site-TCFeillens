@@ -10,7 +10,7 @@ import clubVuDuCiel from "../../assets/img/img-installations/clubVuDuCiel.jpg";
 import courtsCouverts from "../../assets/img/img-installations/courtsCouvert.jpg";
 import courtsExterieurs from "../../assets/img/img-installations/courtsExterieurs.jpg";
 import courtsExterieurs1 from "../../assets/img/img-installations/courtsExterieurs1.png";
-import MenuClub from "../../layouts/sections/menuclub";
+import MenuClub from "../../layouts/sections/menu-club";
 
 const NosInstallations = () => {
   return (
