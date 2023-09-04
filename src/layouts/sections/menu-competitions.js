@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import useWindowSize from "../../_utils/usewindowsize";
 import Nav from "react-bootstrap/Nav";
 import "../../assets/css/menuclub.css";
-import tableMenuCompetitions from "../../_params/tablemenucompetitions";
+import tableMenuCompetitions from "../../_params/tableMenuCompetitions";
 
 const MenuCompetitions = () => {
   const location = useLocation();

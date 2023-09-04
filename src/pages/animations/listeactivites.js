@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Table } from "react-bootstrap";
-import tableAnimations from "../../_params/tableanimations";
+import tableAnimations from "../../_params/tableAnimations";
 
 const programme = () => {
   return (

@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../../assets/css/jeunes.css";
 import { Col, Container, Form, Row } from "react-bootstrap";
-import MenuCompetitions from "../../layouts/sections/menucompetitions";
-import tableCompetitions from "../../_params/tablecompetitions";
-import tableSaisons from "../../_params/tablecaisons";
-import TeamsList from "../components/teamslist";
+import MenuCompetitions from "../../layouts/sections/menu-competitions";
+import tableCompetitions from "../../_params/tableCompetitions";
+import tableSaisons from "../../_params/tableSaisons";
+import TeamsList from "../components/c-teams-list";
 
 const Jchampt = () => {
   console.log("Hello Jchampt");

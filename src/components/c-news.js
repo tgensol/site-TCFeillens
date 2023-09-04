@@ -1,6 +1,6 @@
 import React from "react";
 import { Carousel, Col } from "react-bootstrap";
-import tableNews from "../_params/tablenews";
+import tableNews from "../_params/tableNews";
 
 const News = () => {
   return (
