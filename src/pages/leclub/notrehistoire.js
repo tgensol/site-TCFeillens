@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import les3Presidents from "../../assets/img/img-histoire/les3Presidents.jpg";
 import declaration from "../../assets/img/img-histoire/declarationJOTCF.png";
-import ImgMagnifierCircle from "../../_utils/Imgmagnifiercircle";
+import ImgMagnifierCircle from "../../_utils/circle";
 import clubHouse from "../../assets/img/img-histoire/clubHouse.jpg";
 import courtsExterieurs from "../../assets/img/img-histoire/courtsExterieurs.jpg";
 import inaugurationCourtsExterieurs from "../../assets/img/img-histoire/inaugurationCourtsExterieurs.jpg";
