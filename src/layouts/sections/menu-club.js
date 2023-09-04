@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import useWindowSize from "../../_utils/use-window-size";
 import Nav from "react-bootstrap/Nav";
-import "../../assets/css/menuclub.css";
+import "../../assets/css/menu-club.css";
 
 const MenuClub = () => {
   const location = useLocation();
